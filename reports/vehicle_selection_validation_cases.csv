@@ -1,0 +1,601 @@
+Case ID,Category,Expected Family,Raw Selected,Normalized Selected,Matches Expected,Is Valid Input,Top Score,Top Confidence,Expected Reasoning
+CASE_MR_001,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_002,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_003,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_004,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_005,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_006,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_007,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_008,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_009,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_010,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_011,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_012,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_013,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_014,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_015,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_016,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_017,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_018,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_019,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_020,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_021,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_022,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_023,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_024,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_025,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_026,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_027,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_028,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_029,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_030,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_031,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_032,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_033,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_034,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_035,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_036,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_037,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_038,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_039,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_040,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_041,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_042,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_043,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_044,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_045,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_046,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_047,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_048,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_049,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_050,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_051,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_052,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_053,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_054,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_055,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_056,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_057,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_058,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_059,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_060,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_061,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_062,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_063,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_064,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_065,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_066,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_067,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_068,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_069,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_070,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_071,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_072,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_073,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_074,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_075,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_076,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_077,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_078,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_079,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_080,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_081,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_082,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_083,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_084,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_085,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_086,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_087,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_088,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_089,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_090,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_091,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_092,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_093,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_094,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_095,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_096,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_097,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_098,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_099,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_100,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_101,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_102,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_103,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_104,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_105,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_106,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_107,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_108,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_109,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_110,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_111,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_112,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_113,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_114,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_115,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_116,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_117,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_118,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_119,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_120,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_121,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_122,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_123,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_124,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_125,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_126,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_127,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_128,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_129,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_130,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_131,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_132,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_133,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_134,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_135,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_136,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_137,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_138,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_139,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_140,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_141,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_142,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_143,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_144,DETERMINISTIC,MULTIROTOR,QUADCOPTER,MULTIROTOR,True,True,0.8,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_145,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_146,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_147,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_148,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Short-range precision hover/inspection requirement.
+CASE_MR_149,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_MR_150,DETERMINISTIC,MULTIROTOR,OCTOCOPTER,MULTIROTOR,True,True,0.9,0.88,Short-range precision hover/inspection requirement.
+CASE_FW_001,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_002,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_003,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_004,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_005,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_006,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_007,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_008,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_009,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_010,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_011,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_012,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_013,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_014,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_015,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_016,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_017,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_018,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_019,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_020,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_021,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_022,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_023,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_024,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_025,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_026,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_027,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_028,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_029,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_030,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_031,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_032,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_033,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_034,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_035,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_036,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_037,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_038,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_039,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_040,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_041,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_042,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_043,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_044,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_045,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_046,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_047,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_048,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_049,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_050,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_051,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_052,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_053,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_054,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_055,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_056,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_057,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_058,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_059,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_060,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_061,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_062,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_063,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_064,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_065,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_066,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_067,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_068,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_069,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_070,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_071,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_072,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_073,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_074,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_075,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_076,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_077,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_078,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_079,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_080,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_081,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_082,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_083,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_084,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_085,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_086,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_087,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_088,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_089,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_090,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_091,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_092,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_093,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_094,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_095,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_096,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_097,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_098,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_099,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_100,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_101,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_102,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_103,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_104,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_105,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_106,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_107,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_108,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_109,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_110,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_111,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_112,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_113,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_114,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_115,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_116,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_117,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_118,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_119,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_120,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_121,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_122,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_123,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_124,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_125,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_126,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_127,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_128,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_129,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_130,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_131,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_132,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_133,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_134,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_135,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_136,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_137,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_138,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_139,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_140,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_141,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_142,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_143,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_144,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_145,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_146,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_147,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,1.0,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_148,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_149,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_FW_150,DETERMINISTIC,FIXED_WING,FIXED_WING,FIXED_WING,True,True,0.9,0.92,"Long-range, high-efficiency wing-borne cruise with non-vertical takeoff."
+CASE_VTOL_001,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_002,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_003,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_004,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_005,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_006,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_007,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_008,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_009,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_010,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_011,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_012,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_013,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_014,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_015,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_016,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_017,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_018,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_019,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_020,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_021,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_022,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_023,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_024,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_025,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_026,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_027,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_028,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_029,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_030,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_031,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_032,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_033,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_034,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_035,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_036,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_037,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_038,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_039,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_040,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_041,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_042,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_043,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_044,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_045,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_046,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_047,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_048,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_049,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_050,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_051,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_052,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_053,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_054,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_055,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_056,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_057,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_058,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_059,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_060,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_061,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_062,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_063,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_064,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_065,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_066,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_067,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_068,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_069,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_070,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_071,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_072,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_073,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_074,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_075,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_076,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_077,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_078,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_079,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_080,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_081,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_082,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_083,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_084,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_085,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_086,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_087,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_088,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_089,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_090,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_091,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_092,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_093,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_094,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_095,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_096,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_097,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_098,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_099,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_100,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_101,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_102,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_103,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_104,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_105,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_106,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_107,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_108,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_109,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_110,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_111,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_112,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_113,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_114,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_115,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_116,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_117,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_118,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_119,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_120,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_121,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_122,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_123,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_124,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_125,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_126,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_127,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_128,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_129,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_130,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_131,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_132,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_133,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_134,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_135,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_136,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_137,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_138,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_139,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_140,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_141,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_142,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_143,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_144,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_145,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_146,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_147,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_148,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_149,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_VTOL_150,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Combines mandatory vertical takeoff with long range (> 30 km).
+CASE_BND_RNG_01,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Range sweep transition point at 5.0 km.
+CASE_BND_RNG_02,DETERMINISTIC,MULTIROTOR,HEXACOPTER,MULTIROTOR,True,True,0.9,0.9,Range sweep transition point at 10.0 km.
+CASE_BND_RNG_03,BOUNDARY,BOUNDARY,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Range sweep transition point at 15.0 km.
+CASE_BND_RNG_04,BOUNDARY,BOUNDARY,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Range sweep transition point at 20.0 km.
+CASE_BND_RNG_05,BOUNDARY,BOUNDARY,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Range sweep transition point at 25.0 km.
+CASE_BND_RNG_06,BOUNDARY,BOUNDARY,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Range sweep transition point at 28.0 km.
+CASE_BND_RNG_07,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Range sweep transition point at 30.0 km.
+CASE_BND_RNG_08,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Range sweep transition point at 32.0 km.
+CASE_BND_RNG_09,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Range sweep transition point at 35.0 km.
+CASE_BND_RNG_10,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Range sweep transition point at 40.0 km.
+CASE_BND_RNG_11,DETERMINISTIC,VTOL,VTOL,VTOL,True,True,0.95,0.9,Range sweep transition point at 45.0 km.
+CASE_BND_PAY_01,BOUNDARY,MULTIROTOR,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Multirotor payload capacity transition at 1.0 kg.
+CASE_BND_PAY_02,BOUNDARY,MULTIROTOR,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Multirotor payload capacity transition at 3.0 kg.
+CASE_BND_PAY_03,BOUNDARY,MULTIROTOR,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Multirotor payload capacity transition at 5.0 kg.
+CASE_BND_PAY_04,BOUNDARY,MULTIROTOR,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Multirotor payload capacity transition at 7.0 kg.
+CASE_BND_PAY_05,BOUNDARY,MULTIROTOR,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Multirotor payload capacity transition at 9.0 kg.
+CASE_BND_PAY_06,BOUNDARY,MULTIROTOR,HEXACOPTER,MULTIROTOR,N/A,True,0.9,0.9,Multirotor payload capacity transition at 10.0 kg.
+CASE_BND_PAY_07,BOUNDARY,MULTIROTOR,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Multirotor payload capacity transition at 11.0 kg.
+CASE_BND_PAY_08,BOUNDARY,MULTIROTOR,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Multirotor payload capacity transition at 13.0 kg.
+CASE_BND_PAY_09,BOUNDARY,MULTIROTOR,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Multirotor payload capacity transition at 15.0 kg.
+CASE_BND_AMB_01,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_02,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_03,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_04,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_05,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_06,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_07,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_08,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_09,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_10,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_11,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_12,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_13,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_14,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_15,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_16,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_17,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_18,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_19,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_20,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_21,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_22,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_23,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_24,AMBIGUOUS,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_25,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_26,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_27,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_28,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_29,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_BND_AMB_30,AMBIGUOUS,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Mid-range (18-25 km) requirement with vertical takeoff.
+CASE_CNF_001,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_002,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_003,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_004,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_005,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_CNF_006,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_007,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_008,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_009,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_010,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_CNF_011,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_012,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_013,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_014,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_015,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_CNF_016,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_017,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_018,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_019,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_020,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_CNF_021,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_022,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_023,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_024,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_025,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_CNF_026,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Long range (100km) + Hover Mandatory + Vertical Takeoff
+CASE_CNF_027,CONFLICTING,AMBIGUOUS,VTOL,VTOL,N/A,True,0.95,0.9,Conflicting requirements: Very long endurance (180m) + Heavy payload (15kg) + Urban confined
+CASE_CNF_028,CONFLICTING,AMBIGUOUS,HEXACOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: High speed (150km/h) + Sustained hover + Quadcopter preference
+CASE_CNF_029,CONFLICTING,AMBIGUOUS,FIXED_WING,FIXED_WING,N/A,True,1.0,0.92,Conflicting requirements: Long range (120km) + No runway + Conventional takeoff request
+CASE_CNF_030,CONFLICTING,AMBIGUOUS,QUADCOPTER,MULTIROTOR,N/A,True,0.8,0.9,Conflicting requirements: Small payload (0.1kg) + Short range (2km) + Mandatory Catapult
+CASE_INF_001,INFEASIBLE,INFEASIBLE,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Infeasible mission: Extreme payload (100kg)
+CASE_INF_002,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme range (2000km)
+CASE_INF_003,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme endurance (1000min)
+CASE_INF_004,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,"Infeasible mission: Extreme payload + Extreme range (50kg, 500km)"
+CASE_INF_005,INFEASIBLE,INFEASIBLE,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Infeasible mission: Extreme payload (100kg)
+CASE_INF_006,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme range (2000km)
+CASE_INF_007,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme endurance (1000min)
+CASE_INF_008,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,"Infeasible mission: Extreme payload + Extreme range (50kg, 500km)"
+CASE_INF_009,INFEASIBLE,INFEASIBLE,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Infeasible mission: Extreme payload (100kg)
+CASE_INF_010,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme range (2000km)
+CASE_INF_011,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme endurance (1000min)
+CASE_INF_012,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,"Infeasible mission: Extreme payload + Extreme range (50kg, 500km)"
+CASE_INF_013,INFEASIBLE,INFEASIBLE,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Infeasible mission: Extreme payload (100kg)
+CASE_INF_014,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme range (2000km)
+CASE_INF_015,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme endurance (1000min)
+CASE_INF_016,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,"Infeasible mission: Extreme payload + Extreme range (50kg, 500km)"
+CASE_INF_017,INFEASIBLE,INFEASIBLE,OCTOCOPTER,MULTIROTOR,N/A,True,0.9,0.88,Infeasible mission: Extreme payload (100kg)
+CASE_INF_018,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme range (2000km)
+CASE_INF_019,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,Infeasible mission: Extreme endurance (1000min)
+CASE_INF_020,INFEASIBLE,INFEASIBLE,VTOL,VTOL,N/A,True,0.95,0.9,"Infeasible mission: Extreme payload + Extreme range (50kg, 500km)"
+CASE_INV_001,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_002,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_003,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_004,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_005,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_006,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_007,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_008,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_009,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_010,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_011,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_012,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_013,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_014,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_015,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_016,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_017,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_018,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_019,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_020,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_021,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_022,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_023,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_024,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_025,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_026,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_027,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_028,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_029,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_030,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_031,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_032,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_033,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_034,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_035,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_036,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_037,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_038,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_039,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_040,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_041,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_042,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_043,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)
+CASE_INV_044,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero payload (0.0 kg)
+CASE_INV_045,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative range (-10.0 km)
+CASE_INV_046,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Zero flight time (0.0 min)
+CASE_INV_047,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative cruise speed (-40.0 km/h)
+CASE_INV_048,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative budget (-500.0 USD)
+CASE_INV_049,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative MTOW (-10.0 kg)
+CASE_INV_050,INVALID,INVALID,NONE,NONE,N/A,False,0.0,0.0,Invalid requirement parameters: Negative payload (-5.0 kg)

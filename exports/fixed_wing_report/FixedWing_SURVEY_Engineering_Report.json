@@ -1,0 +1,28 @@
+{
+  "title": "Fixed-Wing UAV Engineering Report \u2014 SURVEY Mission",
+  "author": "Torq Wings Design Studio",
+  "sections": {
+    "Executive Summary": "# Executive Summary\n\nThis engineering document describes the parametric sizing and configuration results for the Torq Wings fixed-wing UAV, optimized for 'SURVEY' operations.\n\nKey metrics for the prop...",
+    "Mission Overview": "# Mission Overview\n\nThe UAV design is governed by the following operational constraints:\n*   **Category**: SURVEY\n*   **Target Payload**: 2.00 kg\n*   **Flight Time Limit**: 60.0 minutes\n*   **Cruise S...",
+    "Configuration": "# Configuration Layout\n\nThe layout selection process identified the following optimal structural configuration:\n*   **Wing Placement**: High Wing\n*   **Propulsion Layout**: Tractor\n*   **Tail Assembly...",
+    "Wing Geometry": "# Geometry Sizing\n\n### Wing Dimensions\n*   **Wingspan**: 2.00 m\n*   **Root Chord**: 0.25 m\n*   **Tip Chord**: 0.15 m\n*   **Reference Area**: 0.40 m^2\n*   **Aspect Ratio**: 10.0\n*   **Dihedral**: 2.0 d...",
+    "Propulsion System": "# Propulsion Powertrain\n\nThe sized propulsion system has the following features:\n*   **Power Unit**: SunnySky X2820\n*   **Propeller**: 12x6 APC\n*   **Static Thrust**: 35.00 N\n*   **Thrust-to-Weight Ra...",
+    "Electrical System": "# Electrical & Power Distribution System\n\nThe onboard electrical power architecture is summarized below:\n*   **Battery Pack Mass**: 3.50 kg\n*   **Chemistry**: Lithium Polymer (LiPo)\n*   **Specific Ene...",
+    "Avionics Systems": "# Onboard Avionics Systems\n\nThe flight control configuration consists of the following modules:\n*   **Flight Controller Hardware**: Pixhawk 6C (firmware: ArduPilot)\n*   **GPS/GNSS Module**: Standard G...",
+    "Payload Integration": "# Payload Subsystem Integration\n\nThe sized cargo and sensor configurations include:\n*   **Selected Sensor**: Sony RX1R II (RGB)\n*   **Compartment Volume**: 200mm x 150mm x 150mm\n*   **Orientation & Ha...",
+    "Mass Properties & CG": "# Mass Properties & Weight Distribution\n\nThe aircraft weight breakdown is summarized below:\n*   **Empty Structure weight**: 2.00 kg\n*   **Battery weight**: 3.50 kg\n*   **Useful Payload weight**: 5.50 ...",
+    "Flight Performance": "# Flight Performance\n\nAerodynamic flight envelope parameters are detailed below:\n*   **Takeoff ground roll**: 25.0 meters\n*   **Stall Speed**: 56.9 km/h (landing configuration: 49.5 km/h)\n*   **Rate o...",
+    "Mission Verification": "# Mission Verification & Compliance Checklist\n\nThe design was verified against required bounds:\n*   **Compliance Score**: 90.0%\n*   **Qualitative Risk Level**: Medium\n*   **Risk Score**: 20.0\n*   **Ve...",
+    "Optimization Results": "# Optimization Results\n\nNo optimization pass was executed for this design iteration. The aircraft was sized using direct analytical methods only.\n...",
+    "CAD Output": "# CAD Model Outputs\n\nThe parametric 3D CAD model was generated with the following characteristics:\n*   **Generating Backend**: CadQuery\n*   **Bounding Box**: 1.50 m \u00d7 2.00 m \u00d7 0.40 m (length \u00d7 span \u00d7 ...",
+    "Manufacturing Package": "# Manufacturing Package\n\nThe production package was compiled with the following deliverables:\n*   **BOM Items**: 1 line items\n*   **Unit Cost Estimate**: 850.00 USD\n*   **Engineering Drawings**: 1 she...",
+    "Appendix": "# Appendices\n\n## A.1  Lift Equation Reference\n\nThe lift force at stall is given by:\n    L = 0.5 \u00d7 \u03c1 \u00d7 V\u00b2 \u00d7 S \u00d7 CL_max\n\nWhere:\n*   \u03c1 = air density (kg/m\u00b3)\n*   V = airspeed (m/s)\n*   S = reference wing ..."
+  },
+  "engineering_statistics": {
+    "wingspan_m": 2.0,
+    "aspect_ratio": 10.0,
+    "static_margin": 0.18,
+    "compliance_rating_pct": 90.0,
+    "manufacturing_cost_usd": 850.0
+  }
+}

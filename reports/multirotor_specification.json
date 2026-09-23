@@ -1,0 +1,33 @@
+{
+    "synthesis_summary": {
+        "takeoff_mass_kg": 1.804,
+        "empty_mass_kg": 0.874,
+        "flight_time_min": 17.8,
+        "range_km": 7.1,
+        "hover_throttle_pct": 23.502622946175634
+    },
+    "subsystems": {
+        "frame": {
+            "name": "DJI F450 FlameWheel",
+            "wheelbase_m": 0.45,
+            "arm_count": 4
+        },
+        "motor": {
+            "model": "F40 PRO IV-1950",
+            "kv": 1950.0
+        },
+        "propeller": {
+            "model": "10x4.7 MR",
+            "diameter_m": 0.254
+        },
+        "esc": {
+            "model": "Flame 60A Pro",
+            "continuous_current_a": 60.0
+        },
+        "battery": {
+            "model": "4200mAh 6S Li-Ion",
+            "capacity_mah": 4200.0,
+            "cell_count": 6
+        }
+    }
+}

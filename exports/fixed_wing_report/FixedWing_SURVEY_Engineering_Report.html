@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Torq Wings Engineering Report</title>
+<style>body{font-family:sans-serif;max-width:900px;margin:auto;padding:2em;}h1{color:#1a237e;}h2{color:#283593;}h3{color:#3949ab;}pre{background:#f5f5f5;padding:1em;border-radius:4px;}</style>
+</head>
+<body>
+<hr>
+<p>title: "Fixed-Wing UAV Engineering Report — SURVEY Mission"</p>
+<p>author: "Torq Wings Design Studio"</p>
+<p>date: "2026-09-21 16:30:15 UTC"</p>
+<hr>
+<h1>Executive Summary</h1>
+<p>This engineering document describes the parametric sizing and configuration results for the Torq Wings fixed-wing UAV, optimized for 'SURVEY' operations.</p>
+<p>Key metrics for the proposed design:</p>
+<li>**Wingspan**: 2.00 meters</li>
+<li>**Aspect Ratio**: 10.0</li>
+<li>**Takeoff Mass**: 5.50 kg</li>
+<li>**Production Cost Estimate**: 850.00 USD</li>
+<li>**Verification Rating**: 90.0%</li>
+<li>**Sizing Status**: Verified</li>
+<hr>
+<h1>Mission Overview</h1>
+<p>The UAV design is governed by the following operational constraints:</p>
+<li>**Category**: SURVEY</li>
+<li>**Target Payload**: 2.00 kg</li>
+<li>**Flight Time Limit**: 60.0 minutes</li>
+<li>**Cruise Speed Target**: 95.0 km/h</li>
+<li>**Stall Speed Boundary**: 45.0 km/h</li>
+<li>**Launch & Recovery**: CATAPULT launch and PARACHUTE recovery.</li>
+<hr>
+<h1>Configuration Layout</h1>
+<p>The layout selection process identified the following optimal structural configuration:</p>
+<li>**Wing Placement**: High Wing</li>
+<li>**Propulsion Layout**: Tractor</li>
+<li>**Tail Assembly**: Conventional</li>
+<li>**Landing Gear**: Tricycle</li>
+<p>**Engineering Rationale**:</p>
+<p>Rationale</p>
+<hr>
+<h1>Geometry Sizing</h1>
+<h3>Wing Dimensions</h3>
+<li>**Wingspan**: 2.00 m</li>
+<li>**Root Chord**: 0.25 m</li>
+<li>**Tip Chord**: 0.15 m</li>
+<li>**Reference Area**: 0.40 m^2</li>
+<li>**Aspect Ratio**: 10.0</li>
+<li>**Dihedral**: 2.0 deg</li>
+<h3>Fuselage Outer Envelope</h3>
+<li>**Total Length**: 1.50 m</li>
+<li>**Maximum Width**: 0.20 m</li>
+<li>**Maximum Height**: 0.40 m</li>
+<h3>Tail Stabilizers</h3>
+<li>**Configuration**: Conventional</li>
+<li>**Horizontal stabilizer span**: 0.50 m</li>
+<li>**Vertical fin height**: 0.40 m</li>
+<hr>
+<h1>Propulsion Powertrain</h1>
+<p>The sized propulsion system has the following features:</p>
+<li>**Power Unit**: SunnySky X2820</li>
+<li>**Propeller**: 12x6 APC</li>
+<li>**Static Thrust**: 35.00 N</li>
+<li>**Thrust-to-Weight Ratio (T/W)**: 0.55</li>
+<li>**Required Cruise Thrust**: 10.00 N</li>
+<li>**Required Cruise Power**: 200.0 W</li>
+<li>**Maximum Power**: 600.0 W</li>
+<li>**Takeoff Acceleration Force**: 15.0 N</li>
+<li>**Cruise Current Draw**: 15.0 A</li>
+<li>**Estimated Cruise Throttle**: 50.0%</li>
+<hr>
+<h1>Electrical & Power Distribution System</h1>
+<p>The onboard electrical power architecture is summarized below:</p>
+<li>**Battery Pack Mass**: 3.50 kg</li>
+<li>**Chemistry**: Lithium Polymer (LiPo)</li>
+<li>**Specific Energy**: 200.0 Wh/kg</li>
+<li>**Regulated Avionics Bus Voltage**: 5.0 V via continuous UBEC</li>
+<li>**Power telemetry monitoring**: Sized airspeed & continuous BEC current links</li>
+<hr>
+<h1>Onboard Avionics Systems</h1>
+<p>The flight control configuration consists of the following modules:</p>
+<li>**Flight Controller Hardware**: Pixhawk 6C (firmware: ArduPilot)</li>
+<li>**GPS/GNSS Module**: Standard GNSS</li>
+<li>**RC Control Receiver**: ELRS</li>
+<li>**Telemetry Data Link**: Sik Modem</li>
+<li>**Continuous power BEC draw**: 8.0 W</li>
+<hr>
+<h1>Payload Subsystem Integration</h1>
+<p>The sized cargo and sensor configurations include:</p>
+<li>**Selected Sensor**: Sony RX1R II (RGB)</li>
+<li>**Compartment Volume**: 200mm x 150mm x 150mm</li>
+<li>**Orientation & Hatch**: Nadir Downward orientation via Bottom hatch.</li>
+<li>**Mount Type**: Rigid floor plate with vibration damping via Grommets.</li>
+<hr>
+<h1>Mass Properties & Weight Distribution</h1>
+<p>The aircraft weight breakdown is summarized below:</p>
+<li>**Empty Structure weight**: 2.00 kg</li>
+<li>**Battery weight**: 3.50 kg</li>
+<li>**Useful Payload weight**: 5.50 kg</li>
+<li>**Takeoff Mass (MTOW)**: 11.00 kg</li>
+<h3>Center of Gravity & Inertia</h3>
+<li>**Center of Gravity (CG)**: X=0.576 m, Y=0.000 m, Z=-0.020 m (relative to nose)</li>
+<li>**Moments of Inertia**: Ixx=0.200 kg*m^2, Iyy=0.180 kg*m^2, Izz=0.350 kg*m^2</li>
+<li>**Static Pitch Stability Margin**: 18.0%</li>
+<hr>
+<h1>Flight Performance</h1>
+<p>Aerodynamic flight envelope parameters are detailed below:</p>
+<li>**Takeoff ground roll**: 25.0 meters</li>
+<li>**Stall Speed**: 56.9 km/h (landing configuration: 49.5 km/h)</li>
+<li>**Rate of Climb (ROC)**: 3.5 m/s</li>
+<li>**Max Range**: 251.0 km</li>
+<li>**Max Endurance**: 188.0 minutes</li>
+<li>**Service Ceiling**: 2900 meters</li>
+<li>**Maximum Turn G-Load**: 1.15 G</li>
+<hr>
+<h1>Mission Verification & Compliance Checklist</h1>
+<p>The design was verified against required bounds:</p>
+<li>**Compliance Score**: 90.0%</li>
+<li>**Qualitative Risk Level**: Medium</li>
+<li>**Risk Score**: 20.0</li>
+<li>**Verification Status**: Verified</li>
+<h3>Active Warnings / Mitigations:</h3>
+<li>No active verification warnings.</li>
+<hr>
+<h1>Optimization Results</h1>
+<p>No optimization pass was executed for this design iteration. The aircraft was sized using direct analytical methods only.</p>
+<hr>
+<h1>CAD Model Outputs</h1>
+<p>The parametric 3D CAD model was generated with the following characteristics:</p>
+<li>**Generating Backend**: CadQuery</li>
+<li>**Bounding Box**: 1.50 m × 2.00 m × 0.40 m (length × span × height)</li>
+<li>**Total Solid Volume**: 0.15000 m³</li>
+<li>**Assembly Components**: 3 parts positioned</li>
+<li>**Generation Time**: 120.0 ms</li>
+<h3>Exported File Formats</h3>
+<li>No CAD files were exported.</li>
+<hr>
+<h1>Manufacturing Package</h1>
+<p>The production package was compiled with the following deliverables:</p>
+<li>**BOM Items**: 1 line items</li>
+<li>**Unit Cost Estimate**: 850.00 USD</li>
+<li>**Engineering Drawings**: 1 sheets</li>
+<li>**Assembly Guides**: 1 documents</li>
+<li>**Fabrication Files**: 1 exports (3D Printing)</li>
+<li>**QA Checklist Items**: 2</li>
+<hr>
+<h1>Appendices</h1>
+<h2>A.1  Lift Equation Reference</h2>
+<p>The lift force at stall is given by:</p>
+<p>L = 0.5 × ρ × V² × S × CL_max</p>
+<p>Where:</p>
+<li>ρ = air density (kg/m³)</li>
+<li>V = airspeed (m/s)</li>
+<li>S = reference wing area (m²)</li>
+<li>CL_max = maximum lift coefficient</li>
+<h2>A.2  Drag Polar</h2>
+<p>CD = CD0 + K × CL²</p>
+<p>Where K = 1 / (π × AR × e) is the induced drag factor.</p>
+<h2>A.3  Design Parameters Summary</h2>
+<li>Wing Reference Area S = 0.400 m²</li>
+<li>Aspect Ratio AR = 10.0</li>
+<li>Mean Aerodynamic Chord MAC = 0.220 m</li>
+<hr>
+</body>
+</html>

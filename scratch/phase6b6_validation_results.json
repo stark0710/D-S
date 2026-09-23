@@ -1,0 +1,365 @@
+{
+  "baseline_comparison": {
+    "Survey 0.5kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 3.655,
+      "baseline_mtow_kg": 3.655,
+      "delta_mtow": 0.0,
+      "endurance_min": 66.53,
+      "baseline_endurance_min": 66.5,
+      "range_km": 77.62,
+      "baseline_range_km": 77.6,
+      "baseline_preserved": true,
+      "runtime_s": 15.093
+    },
+    "Survey 1.0kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 4.617,
+      "baseline_mtow_kg": 4.617,
+      "delta_mtow": 0.0,
+      "endurance_min": 75.68,
+      "baseline_endurance_min": 75.7,
+      "range_km": 94.6,
+      "baseline_range_km": 94.6,
+      "baseline_preserved": true,
+      "runtime_s": 10.583
+    },
+    "Agriculture 2.0kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 5.071,
+      "baseline_mtow_kg": 5.071,
+      "delta_mtow": 0.0,
+      "endurance_min": 48.68,
+      "baseline_endurance_min": 48.7,
+      "range_km": 52.73,
+      "baseline_range_km": 52.7,
+      "baseline_preserved": true,
+      "runtime_s": 8.18
+    },
+    "Delivery 1.0kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 4.053,
+      "baseline_mtow_kg": 4.053,
+      "delta_mtow": 0.0,
+      "endurance_min": 60.02,
+      "baseline_endurance_min": 60.0,
+      "range_km": 70.02,
+      "baseline_range_km": 70.0,
+      "baseline_preserved": true,
+      "runtime_s": 10.22
+    },
+    "Security 0.5kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 3.527,
+      "baseline_mtow_kg": 3.527,
+      "delta_mtow": 0.0,
+      "endurance_min": 80.32,
+      "baseline_endurance_min": 80.3,
+      "range_km": 93.71,
+      "baseline_range_km": 93.7,
+      "baseline_preserved": true,
+      "runtime_s": 10.788
+    },
+    "Inspection 0.5kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 3.209,
+      "baseline_mtow_kg": 3.209,
+      "delta_mtow": 0.0,
+      "endurance_min": 63.26,
+      "baseline_endurance_min": 63.3,
+      "range_km": 63.26,
+      "baseline_range_km": 63.3,
+      "baseline_preserved": true,
+      "runtime_s": 8.471
+    },
+    "Military 1.5kg": {
+      "success": true,
+      "pareto_front_is_none": true,
+      "mtow_kg": 7.047,
+      "baseline_mtow_kg": 7.047,
+      "delta_mtow": 0.0,
+      "endurance_min": 105.87,
+      "baseline_endurance_min": 105.9,
+      "range_km": 149.98,
+      "baseline_range_km": 150.0,
+      "baseline_preserved": true,
+      "runtime_s": 15.347
+    }
+  },
+  "pareto_results": {
+    "Survey 0.5kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 2,
+      "deduplicated_count": 3,
+      "front_size": 2,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 3.311,
+          "endurance_min": 59.18,
+          "range_km": 69.04,
+          "payload_kg": 0.51,
+          "efficiency_ld": 15.68,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "Li-Ion",
+          "esc_a": 4.4
+        },
+        {
+          "candidate_id": "candidate_maximum_endurance",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 3.645,
+          "endurance_min": 66.65,
+          "range_km": 77.76,
+          "payload_kg": 0.51,
+          "efficiency_ld": 15.68,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "LiHV",
+          "esc_a": 4.5
+        }
+      ],
+      "runtime_s": 81.304
+    },
+    "Survey 1.0kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 3,
+      "deduplicated_count": 3,
+      "front_size": 1,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 4.603,
+          "endurance_min": 75.75,
+          "range_km": 94.69,
+          "payload_kg": 1.0,
+          "efficiency_ld": 14.94,
+          "motor": "11x7 APC",
+          "battery": 8000.0,
+          "battery_chem": "Li-Ion",
+          "esc_a": 6.8
+        }
+      ],
+      "runtime_s": 78.308
+    },
+    "Agriculture 2.0kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 3,
+      "deduplicated_count": 2,
+      "front_size": 2,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 4.857,
+          "endurance_min": 36.72,
+          "range_km": 39.78,
+          "payload_kg": 2.0,
+          "efficiency_ld": 14.92,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "Li-Ion",
+          "esc_a": 6.3
+        },
+        {
+          "candidate_id": "candidate_maximum_endurance",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 5.052,
+          "endurance_min": 48.8,
+          "range_km": 52.87,
+          "payload_kg": 2.0,
+          "efficiency_ld": 14.92,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "LiHV",
+          "esc_a": 6.2
+        }
+      ],
+      "runtime_s": 59.313
+    },
+    "Delivery 1.0kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 2,
+      "deduplicated_count": 3,
+      "front_size": 2,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_cost",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 3.957,
+          "endurance_min": 53.55,
+          "range_km": 62.48,
+          "payload_kg": 1.0,
+          "efficiency_ld": 14.54,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "Li-Ion",
+          "esc_a": 5.6
+        },
+        {
+          "candidate_id": "candidate_maximum_endurance",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 4.04,
+          "endurance_min": 60.12,
+          "range_km": 70.14,
+          "payload_kg": 1.0,
+          "efficiency_ld": 14.54,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "LiHV",
+          "esc_a": 5.5
+        }
+      ],
+      "runtime_s": 361.708
+    },
+    "Security 0.5kg": {
+      "success": true,
+      "candidate_count": 6,
+      "feasible_candidate_count": 6,
+      "dominated_candidate_count": 2,
+      "deduplicated_count": 3,
+      "front_size": 1,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 3.511,
+          "endurance_min": 80.33,
+          "range_km": 93.71,
+          "payload_kg": 0.51,
+          "efficiency_ld": 15.16,
+          "motor": "11x7 APC",
+          "battery": 5000.0,
+          "battery_chem": "Li-Ion",
+          "esc_a": 4.8
+        }
+      ],
+      "runtime_s": 84.646
+    },
+    "Inspection 0.5kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 3,
+      "deduplicated_count": 3,
+      "front_size": 1,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 3.199,
+          "endurance_min": 63.34,
+          "range_km": 63.34,
+          "payload_kg": 0.51,
+          "efficiency_ld": 15.87,
+          "motor": "11x7 APC",
+          "battery": 3300.0,
+          "battery_chem": "LiHV",
+          "esc_a": 3.4
+        }
+      ],
+      "runtime_s": 64.19
+    },
+    "Military 1.5kg": {
+      "success": true,
+      "candidate_count": 7,
+      "feasible_candidate_count": 7,
+      "dominated_candidate_count": 3,
+      "deduplicated_count": 3,
+      "front_size": 1,
+      "self_check_passed": true,
+      "self_check_errors": [],
+      "front": [
+        {
+          "candidate_id": "candidate_lowest_weight",
+          "is_selected_design": false,
+          "pareto_rank": 1,
+          "mtow_kg": 7.01,
+          "endurance_min": 105.9,
+          "range_km": 150.02,
+          "payload_kg": 1.5,
+          "efficiency_ld": 12.91,
+          "motor": "11x7 APC",
+          "battery": 3300.0,
+          "battery_chem": "LiHV",
+          "esc_a": 12.9
+        }
+      ],
+      "runtime_s": 698.88
+    }
+  },
+  "runtime_metrics": {
+    "Survey 0.5kg": {
+      "baseline_runtime_s": 15.093,
+      "pareto_runtime_s": 81.304,
+      "overhead_ratio": 5.39
+    },
+    "Survey 1.0kg": {
+      "baseline_runtime_s": 10.583,
+      "pareto_runtime_s": 78.308,
+      "overhead_ratio": 7.4
+    },
+    "Agriculture 2.0kg": {
+      "baseline_runtime_s": 8.18,
+      "pareto_runtime_s": 59.313,
+      "overhead_ratio": 7.25
+    },
+    "Delivery 1.0kg": {
+      "baseline_runtime_s": 10.22,
+      "pareto_runtime_s": 361.708,
+      "overhead_ratio": 35.39
+    },
+    "Security 0.5kg": {
+      "baseline_runtime_s": 10.788,
+      "pareto_runtime_s": 84.646,
+      "overhead_ratio": 7.85
+    },
+    "Inspection 0.5kg": {
+      "baseline_runtime_s": 8.471,
+      "pareto_runtime_s": 64.19,
+      "overhead_ratio": 7.58
+    },
+    "Military 1.5kg": {
+      "baseline_runtime_s": 15.347,
+      "pareto_runtime_s": 698.88,
+      "overhead_ratio": 45.54
+    }
+  }
+}

@@ -1,0 +1,1189 @@
+{
+    "mtow_kg": 8.07,
+    "empty_weight_kg": 4.914,
+    "payload_weight_kg": 3.25,
+    "endurance_min": 222.8,
+    "range_km": 371.41,
+    "configuration_type": "Twin Boom VTOL",
+    "subsystems": {
+        "wing": {
+            "span_m": 1.871,
+            "area_m2": 0.2694
+        },
+        "lift_system": {
+            "name": "T-Motor MN6007",
+            "kv": 320.0,
+            "max_thrust_n": 42.0,
+            "mass_kg": 0.18,
+            "max_current_a": 25.0,
+            "price_usd": 190.0,
+            "description": "Medium lift high efficiency motor for mapping drones."
+        },
+        "forward_propulsion": {
+            "name": "T-Motor MN5008",
+            "kv": 400.0,
+            "max_power_w": 1200.0,
+            "mass_kg": 0.14,
+            "max_current_a": 20.0,
+            "price_usd": 130.0,
+            "description": "Excellent power density motor."
+        },
+        "battery": {
+            "chemistry": "LiHV",
+            "series_count": 6,
+            "parallel_count": 6
+        },
+        "electrical": {
+            "sizing_mass_kg": 8.0815,
+            "aircraft_weight_n": 79.253,
+            "lift_motor_count": 4,
+            "ledger": {
+                "segments": [
+                    {
+                        "phase": "GROUND_PREFLIGHT",
+                        "duration_s": 60.0,
+                        "average_power_w": 30.0,
+                        "peak_power_w": 30.0,
+                        "energy_wh": 0.5,
+                        "propulsion_power_w": 0.0,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "AVIONICS_SUBSYSTEM_ANALYSIS",
+                        "load_type": "AVIONICS_ONLY",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Preflight avionics and ground check; propulsion systems OFF."
+                        ]
+                    },
+                    {
+                        "phase": "VTOL_TAKEOFF",
+                        "duration_s": 15.0,
+                        "average_power_w": 2198.24,
+                        "peak_power_w": 2306.65,
+                        "energy_wh": 9.159,
+                        "propulsion_power_w": 2168.24,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_2_HOVER_MODEL",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Vertical liftoff to ground effect boundary."
+                        ]
+                    },
+                    {
+                        "phase": "HOVER_CLIMB",
+                        "duration_s": 150.0,
+                        "average_power_w": 2198.24,
+                        "peak_power_w": 2198.24,
+                        "energy_wh": 91.593,
+                        "propulsion_power_w": 2168.24,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_2_HOVER_MODEL",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Vertical climbout to transition conversion altitude."
+                        ]
+                    },
+                    {
+                        "phase": "TRANSITION_TO_CRUISE",
+                        "duration_s": 18.0,
+                        "average_power_w": 816.71,
+                        "peak_power_w": 1142.52,
+                        "energy_wh": 4.084,
+                        "propulsion_power_w": 786.71,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_3_TRANSITION_MODEL",
+                        "load_type": "DUAL_BUS_BLENDED",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Integrated trapezoidal energy from Phase 3 transition flight corridor."
+                        ]
+                    },
+                    {
+                        "phase": "FIXED_WING_CRUISE",
+                        "duration_s": 1050.0,
+                        "average_power_w": 262.0,
+                        "peak_power_w": 262.0,
+                        "energy_wh": 76.417,
+                        "propulsion_power_w": 232.0,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "FIXED_WING_ADAPTER",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Level wing-borne forward cruise (lift rotors locked and off)."
+                        ]
+                    },
+                    {
+                        "phase": "MISSION_LOITER",
+                        "duration_s": 450.0,
+                        "average_power_w": 262.0,
+                        "peak_power_w": 262.0,
+                        "energy_wh": 32.75,
+                        "propulsion_power_w": 232.0,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "FIXED_WING_ADAPTER_LOITER_ASSUMPTION",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "On-station observation or surveillance loiter sweep."
+                        ]
+                    },
+                    {
+                        "phase": "TRANSITION_TO_VTOL",
+                        "duration_s": 18.0,
+                        "average_power_w": 816.71,
+                        "peak_power_w": 1142.52,
+                        "energy_wh": 4.084,
+                        "propulsion_power_w": 786.71,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_3_TRANSITION_MODEL",
+                        "load_type": "DUAL_BUS_BLENDED",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Deceleration and wing-unloading handover to vertical lift rotors."
+                        ]
+                    },
+                    {
+                        "phase": "HOVER_DESCENT",
+                        "duration_s": 150.0,
+                        "average_power_w": 2198.24,
+                        "peak_power_w": 2198.24,
+                        "energy_wh": 91.593,
+                        "propulsion_power_w": 2168.24,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_2_HOVER_MODEL",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Controlled vertical descent over recovery pad."
+                        ]
+                    },
+                    {
+                        "phase": "VTOL_LANDING",
+                        "duration_s": 15.0,
+                        "average_power_w": 2198.24,
+                        "peak_power_w": 2198.24,
+                        "energy_wh": 9.159,
+                        "propulsion_power_w": 2168.24,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "PHASE_2_HOVER_MODEL",
+                        "load_type": "PROPULSION_AND_AVIONICS",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Touchdown, ground contact detection, and rotor spin-down."
+                        ]
+                    },
+                    {
+                        "phase": "GROUND_POSTFLIGHT",
+                        "duration_s": 30.0,
+                        "average_power_w": 30.0,
+                        "peak_power_w": 30.0,
+                        "energy_wh": 0.25,
+                        "propulsion_power_w": 0.0,
+                        "avionics_power_w": 15.0,
+                        "payload_power_w": 15.0,
+                        "power_source": "BATTERY",
+                        "calculation_source": "AVIONICS_SUBSYSTEM_ANALYSIS",
+                        "load_type": "AVIONICS_ONLY",
+                        "status": "IMPLEMENTED",
+                        "notes": [
+                            "Postflight telemetry flush, log writing, and safe disarm."
+                        ]
+                    }
+                ],
+                "total_mission_duration_s": 1956.0,
+                "total_propulsion_energy_wh": 303.289,
+                "total_avionics_energy_wh": 8.15,
+                "total_payload_energy_wh": 8.15,
+                "total_mission_energy_wh": 319.589,
+                "is_complete": true,
+                "has_double_counting": false,
+                "status": "IMPLEMENTED",
+                "validation_messages": []
+            },
+            "battery_sizing": {
+                "mission_energy_wh": 319.589,
+                "reserve_fraction": 0.2,
+                "reserve_energy_wh": 63.918,
+                "required_usable_energy_wh": 383.506,
+                "usable_fraction": 0.85,
+                "required_nominal_battery_energy_wh": 451.184,
+                "nominal_voltage_v": 22.8,
+                "required_usable_capacity_ah": 16.82,
+                "required_nominal_capacity_ah": 19.789,
+                "specific_energy_wh_kg": 200.0,
+                "estimated_battery_mass_kg": 2.256,
+                "battery_mass_status": "ESTIMATED_FROM_SPECIFIC_ENERGY",
+                "status": "IMPLEMENTED",
+                "engineering_assumptions": [
+                    "Avionics electrical load set to 15.0 W (Provenance: DERIVED, source: AVIONICS_SUBSYSTEM_ANALYSIS).",
+                    "Payload electrical load set to 15.0 W (Provenance: DERIVED, source: PAYLOAD_SUBSYSTEM_ANALYSIS).",
+                    "Reserve energy fraction set to 20.0% (Provenance: PROJECT_REQUIREMENT, source: electrical_constraints.min_reserve_energy_fraction).",
+                    "Maximum usable DoD fraction set to 85.0% (Provenance: CONFIGURABLE_ASSUMPTION: cell longevity heuristic).",
+                    "Reverse transition energy modeled using forward transition corridor profile.",
+                    "Mission loiter electrical power assumed equal to level cruise electrical power (no separate fixed-wing loiter polar supplied).",
+                    "Battery mass estimated using explicit specific energy 200.0 Wh/kg."
+                ],
+                "warnings": []
+            },
+            "envelope": {
+                "mission_average_power_w": 588.2,
+                "maximum_continuous_power_w": 2198.24,
+                "maximum_peak_power_w": 2306.65,
+                "continuous_current_a": 96.41,
+                "peak_current_a": 101.17,
+                "continuous_c_rate": 4.87,
+                "peak_c_rate": 5.11,
+                "c_rate_limit": 40.0,
+                "is_c_rate_compliant": true,
+                "lift_bus": {
+                    "bus_name": "Lift Propulsion High-Voltage Bus",
+                    "continuous_power_w": 2168.24,
+                    "peak_power_w": 2385.06,
+                    "continuous_current_a": 95.1,
+                    "peak_current_a": 104.61,
+                    "motor_count": 4,
+                    "per_motor_current_a": 23.77,
+                    "subsystems_connected": [
+                        "4x Vertical Lift Motors",
+                        "4x Lift ESCs"
+                    ]
+                },
+                "cruise_bus": {
+                    "bus_name": "Cruise Propulsion High-Voltage Bus",
+                    "continuous_power_w": 232.0,
+                    "peak_power_w": 290.0,
+                    "continuous_current_a": 10.18,
+                    "peak_current_a": 12.72,
+                    "motor_count": 1,
+                    "per_motor_current_a": 10.18,
+                    "subsystems_connected": [
+                        "1x Forward Cruise Motor",
+                        "1x Forward ESC"
+                    ]
+                },
+                "avionics_bus": {
+                    "bus_name": "Avionics & Payload Low-Voltage Regulated Bus (BEC)",
+                    "continuous_power_w": 30.0,
+                    "peak_power_w": 45.0,
+                    "continuous_current_a": 6.0,
+                    "peak_current_a": 9.0,
+                    "motor_count": 0,
+                    "per_motor_current_a": null,
+                    "subsystems_connected": [
+                        "Autopilot Flight Controller",
+                        "Sensors & IMU Suite",
+                        "Radio & Telemetry",
+                        "Payload Bay"
+                    ]
+                },
+                "simultaneous_transition_power_w": 1142.52,
+                "simultaneous_transition_current_a": 50.11,
+                "status": "IMPLEMENTED"
+            },
+            "is_converged_mtow": false,
+            "mtow_status": "PRE_CONVERGENCE_SIZING",
+            "status": "IMPLEMENTED",
+            "engineering_assumptions": [
+                "Avionics electrical load set to 15.0 W (Provenance: DERIVED, source: AVIONICS_SUBSYSTEM_ANALYSIS).",
+                "Payload electrical load set to 15.0 W (Provenance: DERIVED, source: PAYLOAD_SUBSYSTEM_ANALYSIS).",
+                "Reserve energy fraction set to 20.0% (Provenance: PROJECT_REQUIREMENT, source: electrical_constraints.min_reserve_energy_fraction).",
+                "Maximum usable DoD fraction set to 85.0% (Provenance: CONFIGURABLE_ASSUMPTION: cell longevity heuristic).",
+                "Reverse transition energy modeled using forward transition corridor profile.",
+                "Mission loiter electrical power assumed equal to level cruise electrical power (no separate fixed-wing loiter polar supplied).",
+                "Battery mass estimated using explicit specific energy 200.0 Wh/kg."
+            ],
+            "parameter_provenance": {
+                "hover_electrical_power_w": {
+                    "value": 2168.24,
+                    "classification": "DERIVED",
+                    "provenance_source": "PHASE_2_HOVER_MODEL",
+                    "notes": "Phase 2 AuthoritativeHoverModel momentum theory & rotor disk area."
+                },
+                "transition_energy_wh": {
+                    "value": 3.934,
+                    "classification": "DERIVED",
+                    "provenance_source": "PHASE_3_TRANSITION_MODEL",
+                    "notes": "Phase 3 AuthoritativeTransitionModel flight corridor numerical integration."
+                },
+                "cruise_electrical_power_w": {
+                    "value": 232.0,
+                    "classification": "DERIVED",
+                    "provenance_source": "FIXED_WING_ADAPTER",
+                    "notes": "Fixed-Wing backend cruise propulsion shaft power / motor efficiency."
+                },
+                "avionics_power_w": {
+                    "value": 15.0,
+                    "classification": "DERIVED",
+                    "provenance_source": "AVIONICS_SUBSYSTEM_ANALYSIS",
+                    "notes": "Autopilot, telemetry, sensors, and BEC auxiliary load."
+                },
+                "payload_power_w": {
+                    "value": 15.0,
+                    "classification": "DERIVED",
+                    "provenance_source": "PAYLOAD_SUBSYSTEM_ANALYSIS",
+                    "notes": "Payload sensor and gimbal stabilization power draw."
+                },
+                "reserve_fraction": {
+                    "value": 0.2,
+                    "classification": "PROJECT_REQUIREMENT",
+                    "provenance_source": "USER_CONFIGURED_OVERRIDE",
+                    "notes": "Reserve battery energy buffer (Torq Wings project requirement: min 20%)."
+                },
+                "usable_dod_fraction": {
+                    "value": 0.85,
+                    "classification": "CONFIGURABLE_ASSUMPTION",
+                    "provenance_source": "DEFAULT_USABLE_DOD_FRACTION",
+                    "notes": "Maximum allowable depth of discharge to protect cell cycle longevity."
+                },
+                "specific_energy_wh_kg": {
+                    "value": 200.0,
+                    "classification": "CONFIGURABLE_ASSUMPTION",
+                    "provenance_source": "BATTERY_CHEMISTRY_TABLE",
+                    "notes": "Gravimetric energy density for preliminary battery mass sizing."
+                },
+                "battery_mass_convergence": {
+                    "value": null,
+                    "classification": "DEFERRED",
+                    "provenance_source": "DEFERRED_TO_PHASE5",
+                    "notes": "Multidisciplinary structural mass synthesis & closed-loop MTOW iteration."
+                }
+            },
+            "warnings": [],
+            "errors": [],
+            "metadata": {
+                "hover_source": "PHASE_2_HOVER_MODEL",
+                "transition_fwd_source": "PHASE_3_TRANSITION_MODEL",
+                "transition_rev_source": "PHASE_3_TRANSITION_MODEL",
+                "cruise_source": "FIXED_WING_ADAPTER",
+                "loiter_source": "FIXED_WING_ADAPTER_LOITER_ASSUMPTION",
+                "avionics_source": "AVIONICS_SUBSYSTEM_ANALYSIS",
+                "payload_source": "PAYLOAD_SUBSYSTEM_ANALYSIS"
+            }
+        },
+        "transition": {
+            "direction": "TRANSITION_TO_CRUISE",
+            "sizing_mass_kg": 8.0815,
+            "aircraft_weight_n": 79.253,
+            "wing_area_m2": 0.2694,
+            "lift_motor_count": 4,
+            "air_density_kg_m3": 1.2133,
+            "cl_transition": 0.98,
+            "cl_max": 1.4,
+            "stall_speed_kmh": 67.0,
+            "transition_speed_kmh": 80.4,
+            "transition_duration_s": 18.0,
+            "earliest_wing_supported_airspeed_kmh": 80.4,
+            "fixed_wing_entry_airspeed_kmh": 80.4,
+            "peak_forward_thrust_n": 13.38,
+            "peak_electrical_power_w": 1112.52,
+            "total_energy_kwh": 0.00393,
+            "is_converged_mtow": false,
+            "mtow_status": "PRE_CONVERGENCE_SIZING",
+            "status": "IMPLEMENTED",
+            "corridor_points": [
+                {
+                    "stage_name": "Hover Departure",
+                    "airspeed_kmh": 0.0,
+                    "airspeed_m_s": 0.0,
+                    "dynamic_pressure_pa": 0.0,
+                    "wing_lift_n": 0.0,
+                    "wing_lift_fraction": 0.0,
+                    "required_vertical_thrust_n": 79.25,
+                    "vertical_thrust_fraction": 1.0,
+                    "vertical_thrust_per_motor_n": 19.81,
+                    "aerodynamic_drag_n": 0.0,
+                    "forward_thrust_n": 10.03,
+                    "vertical_electrical_power_w": 1080.38,
+                    "forward_electrical_power_w": 32.14,
+                    "total_electrical_power_w": 1112.52,
+                    "is_wing_supported": false,
+                    "is_aerodynamically_feasible": true
+                },
+                {
+                    "stage_name": "Early Conversion",
+                    "airspeed_kmh": 20.1,
+                    "airspeed_m_s": 5.58,
+                    "dynamic_pressure_pa": 18.91,
+                    "wing_lift_n": 4.99,
+                    "wing_lift_fraction": 0.063,
+                    "required_vertical_thrust_n": 74.26,
+                    "vertical_thrust_fraction": 0.937,
+                    "vertical_thrust_per_motor_n": 18.56,
+                    "aerodynamic_drag_n": 0.42,
+                    "forward_thrust_n": 10.45,
+                    "vertical_electrical_power_w": 979.91,
+                    "forward_electrical_power_w": 74.81,
+                    "total_electrical_power_w": 1054.71,
+                    "is_wing_supported": false,
+                    "is_aerodynamically_feasible": true
+                },
+                {
+                    "stage_name": "Blended Mid-Transition",
+                    "airspeed_kmh": 40.2,
+                    "airspeed_m_s": 11.17,
+                    "dynamic_pressure_pa": 75.65,
+                    "wing_lift_n": 19.97,
+                    "wing_lift_fraction": 0.252,
+                    "required_vertical_thrust_n": 59.28,
+                    "vertical_thrust_fraction": 0.748,
+                    "vertical_thrust_per_motor_n": 14.82,
+                    "aerodynamic_drag_n": 1.62,
+                    "forward_thrust_n": 11.64,
+                    "vertical_electrical_power_w": 698.92,
+                    "forward_electrical_power_w": 166.7,
+                    "total_electrical_power_w": 865.62,
+                    "is_wing_supported": false,
+                    "is_aerodynamically_feasible": true
+                },
+                {
+                    "stage_name": "Wing-Supported Handover",
+                    "airspeed_kmh": 60.3,
+                    "airspeed_m_s": 16.75,
+                    "dynamic_pressure_pa": 170.21,
+                    "wing_lift_n": 44.94,
+                    "wing_lift_fraction": 0.567,
+                    "required_vertical_thrust_n": 34.32,
+                    "vertical_thrust_fraction": 0.433,
+                    "vertical_thrust_per_motor_n": 8.58,
+                    "aerodynamic_drag_n": 3.35,
+                    "forward_thrust_n": 13.38,
+                    "vertical_electrical_power_w": 307.83,
+                    "forward_electrical_power_w": 287.26,
+                    "total_electrical_power_w": 595.09,
+                    "is_wing_supported": false,
+                    "is_aerodynamically_feasible": true
+                },
+                {
+                    "stage_name": "Fixed-Wing Cruise Entry",
+                    "airspeed_kmh": 80.4,
+                    "airspeed_m_s": 22.33,
+                    "dynamic_pressure_pa": 302.59,
+                    "wing_lift_n": 79.25,
+                    "wing_lift_fraction": 1.0,
+                    "required_vertical_thrust_n": 0.0,
+                    "vertical_thrust_fraction": 0.0,
+                    "vertical_thrust_per_motor_n": 0.0,
+                    "aerodynamic_drag_n": 5.25,
+                    "forward_thrust_n": 5.25,
+                    "vertical_electrical_power_w": 0.0,
+                    "forward_electrical_power_w": 150.3,
+                    "total_electrical_power_w": 150.3,
+                    "is_wing_supported": true,
+                    "is_aerodynamically_feasible": true
+                }
+            ],
+            "engineering_assumptions": [
+                "Aircraft weight derived via W = mass * g (g = 9.80665 m/s\u00b2).",
+                "Stall speed derived via V_stall = sqrt(2*W / (rho*S*CL_max)) = 67.00 km/h (CL_max=1.40)."
+            ],
+            "warnings": [
+                "Preferred transition speed (65.0 km/h) is below stall speed (67.0 km/h). Clamped to minimum safe conversion speed (80.4 km/h)."
+            ],
+            "errors": [],
+            "metadata": {
+                "architecture_reference": "QuadPlane / Lift + Cruise",
+                "gravitational_acceleration_m_s2": 9.80665,
+                "corridor_checkpoints": 5
+            }
+        },
+        "mass_properties": {
+            "sizing_mass_kg": 8.0815,
+            "converged_mtow_kg": 8.0697,
+            "empty_weight_kg": 4.9138,
+            "payload_weight_kg": 0.9,
+            "battery_weight_kg": 2.2559,
+            "convergence_status": "CONVERGED",
+            "is_converged_mtow": true,
+            "convergence_iterations": 17,
+            "convergence_residual_kg": 0.0118,
+            "convergence_tolerance_kg": 0.015,
+            "relaxation_alpha": 0.7,
+            "status": "IMPLEMENTED",
+            "mass_ledger": {
+                "total_mass_kg": 8.0697,
+                "mass_conservation_residual": 0.0,
+                "is_conserved": true,
+                "has_duplicates": false,
+                "has_negative_mass": false,
+                "unresolved_components": [],
+                "category_breakdown": {
+                    "structure_mass_kg": 2.9318,
+                    "propulsion_mass_kg": 1.436,
+                    "electrical_mass_kg": 2.5609,
+                    "avionics_mass_kg": 0.241,
+                    "payload_mass_kg": 0.9,
+                    "other_mass_kg": 0,
+                    "battery_mass_kg": 2.2559,
+                    "empty_mass_kg": 4.9138,
+                    "total_mass_kg": 8.0697,
+                    "fractions": {
+                        "structure": 0.3633,
+                        "propulsion": 0.1779,
+                        "electrical": 0.3173,
+                        "avionics": 0.0299,
+                        "payload": 0.1115,
+                        "battery": 0.2796,
+                        "empty": 0.6089
+                    }
+                },
+                "component_count": 23,
+                "components": [
+                    {
+                        "name": "Wing Structure",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.818,
+                        "source": "WING_SUBSYSTEM_ANALYSIS",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.545,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.1,
+                        "moment_kg_m": 0.4458,
+                        "status": "SIZED",
+                        "notes": "Main wing panels, spar, ribs, and skins."
+                    },
+                    {
+                        "name": "Fuselage Structure",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.9698,
+                        "source": "ESTIMATED_FUSELAGE_FRACTION_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.729,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.707,
+                        "status": "ESTIMATED",
+                        "notes": "Composite fuselage monocoque shell and internal formers."
+                    },
+                    {
+                        "name": "Tail Structure",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.234,
+                        "source": "TAIL_SUBSYSTEM_ANALYSIS",
+                        "classification": "DERIVED",
+                        "position_x_m": 1.2,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.15,
+                        "moment_kg_m": 0.2808,
+                        "status": "SIZED",
+                        "notes": "Inverted V-tail or empennage surfaces, stabilizers, and control horns."
+                    },
+                    {
+                        "name": "Twin Booms Structure",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.45,
+                        "source": "TWIN_BOOM_STRUCTURAL_SIZING",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.6,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.05,
+                        "moment_kg_m": 0.27,
+                        "status": "SIZED",
+                        "notes": "Twin carbon fiber motor boom tubes and fuselage joint sleeves."
+                    },
+                    {
+                        "name": "Landing Gear Assembly",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.28,
+                        "source": "LANDING_GEAR_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.45,
+                        "position_y_m": 0.0,
+                        "position_z_m": -0.2,
+                        "moment_kg_m": 0.126,
+                        "status": "ESTIMATED",
+                        "notes": "Carbon fiber landing skids and shock-absorption brackets."
+                    },
+                    {
+                        "name": "Structural Hardware & Fasteners",
+                        "category": "STRUCTURE",
+                        "value_kg": 0.18,
+                        "source": "HARDWARE_WEIGHT_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.5,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.09,
+                        "status": "ESTIMATED",
+                        "notes": "Bonding adhesive, joiner pins, bolts, and wing attachment inserts."
+                    },
+                    {
+                        "name": "Lift Motors (4x)",
+                        "category": "PROPULSION",
+                        "value_kg": 0.72,
+                        "source": "LIFT_MOTOR_CATALOG_T-Motor MN6007",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.5,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.08,
+                        "moment_kg_m": 0.36,
+                        "status": "SIZED",
+                        "notes": "4 brushless outrunner vertical lift motors (180g each)."
+                    },
+                    {
+                        "name": "Lift ESCs (4x)",
+                        "category": "PROPULSION",
+                        "value_kg": 0.168,
+                        "source": "LIFT_ESC_SPECIFICATION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.5,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.05,
+                        "moment_kg_m": 0.084,
+                        "status": "ESTIMATED",
+                        "notes": "4 vertical motor electronic speed controllers with heat sinks."
+                    },
+                    {
+                        "name": "Lift Propellers (4x)",
+                        "category": "PROPULSION",
+                        "value_kg": 0.208,
+                        "source": "LIFT_PROPELLER_SELECTION",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.5,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.12,
+                        "moment_kg_m": 0.104,
+                        "status": "SIZED",
+                        "notes": "4 carbon fiber lift rotors."
+                    },
+                    {
+                        "name": "Forward Cruise Motor",
+                        "category": "PROPULSION",
+                        "value_kg": 0.14,
+                        "source": "CRUISE_MOTOR_CATALOG_T-Motor MN5008",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.9,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.02,
+                        "moment_kg_m": 0.126,
+                        "status": "SIZED",
+                        "notes": "Brushless pusher motor for forward flight cruise and loiter."
+                    },
+                    {
+                        "name": "Forward Cruise ESC",
+                        "category": "PROPULSION",
+                        "value_kg": 0.045,
+                        "source": "CRUISE_ESC_SPECIFICATION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.8,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.036,
+                        "status": "ESTIMATED",
+                        "notes": "Forward propulsion electronic speed controller."
+                    },
+                    {
+                        "name": "Forward Cruise Propeller",
+                        "category": "PROPULSION",
+                        "value_kg": 0.035,
+                        "source": "CRUISE_PROPELLER_SPECIFICATION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.95,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.02,
+                        "moment_kg_m": 0.0333,
+                        "status": "ESTIMATED",
+                        "notes": "Forward flight pusher propeller."
+                    },
+                    {
+                        "name": "Propulsion Mounts & Hardware",
+                        "category": "PROPULSION",
+                        "value_kg": 0.12,
+                        "source": "PROPULSION_HARDWARE_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.5,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.05,
+                        "moment_kg_m": 0.06,
+                        "status": "ESTIMATED",
+                        "notes": "Motor mount plates, CNC aluminum clamps, and prop adapters."
+                    },
+                    {
+                        "name": "Primary Flight Battery Pack",
+                        "category": "ELECTRICAL",
+                        "value_kg": 2.2559,
+                        "source": "PHASE_4_AUTHORITATIVE_ENERGY_COUPLING",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.45,
+                        "position_y_m": 0.0,
+                        "position_z_m": -0.04,
+                        "moment_kg_m": 1.0152,
+                        "status": "SIZED",
+                        "notes": "Coupled directly from Phase 4 required nominal energy & specific energy."
+                    },
+                    {
+                        "name": "Electrical Wiring Harness",
+                        "category": "ELECTRICAL",
+                        "value_kg": 0.22,
+                        "source": "WIRING_HARNESS_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.45,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.099,
+                        "status": "ESTIMATED",
+                        "notes": "Main high-current battery leads, motor wire extensions, and signal harnesses."
+                    },
+                    {
+                        "name": "Power Distribution Board & Regulators",
+                        "category": "ELECTRICAL",
+                        "value_kg": 0.085,
+                        "source": "PDB_BEC_ASSUMPTION",
+                        "classification": "CONFIGURABLE_ASSUMPTION",
+                        "position_x_m": 0.4,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.034,
+                        "status": "ESTIMATED",
+                        "notes": "Dual-bus power distribution board, current sensors, and 5V/12V BEC units."
+                    },
+                    {
+                        "name": "Primary Flight Controller",
+                        "category": "AVIONICS",
+                        "value_kg": 0.045,
+                        "source": "AVIONICS_FC_Pixhawk 6C",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.25,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.02,
+                        "moment_kg_m": 0.0112,
+                        "status": "SIZED",
+                        "notes": "Triple-redundant autopilot computer with internal IMUs."
+                    },
+                    {
+                        "name": "GNSS & Navigation Unit",
+                        "category": "AVIONICS",
+                        "value_kg": 0.065,
+                        "source": "AVIONICS_NAV_SUBSYSTEM",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.35,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.12,
+                        "moment_kg_m": 0.0227,
+                        "status": "SIZED",
+                        "notes": "High-precision GNSS receiver and external compass mast."
+                    },
+                    {
+                        "name": "Telemetry & RC Communication",
+                        "category": "AVIONICS",
+                        "value_kg": 0.05,
+                        "source": "AVIONICS_COMM_SUBSYSTEM",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.48,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.05,
+                        "moment_kg_m": 0.024,
+                        "status": "SIZED",
+                        "notes": "Air-to-ground telemetry modem and control link receivers."
+                    },
+                    {
+                        "name": "Pitot-Static & Air Data Sensors",
+                        "category": "AVIONICS",
+                        "value_kg": 0.035,
+                        "source": "AVIONICS_SENSORS_SUBSYSTEM",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.1,
+                        "position_y_m": 0.2,
+                        "position_z_m": 0.0,
+                        "moment_kg_m": 0.0035,
+                        "status": "SIZED",
+                        "notes": "Differential pressure pitot tube and barometric sensors."
+                    },
+                    {
+                        "name": "Companion Computer",
+                        "category": "AVIONICS",
+                        "value_kg": 0.046,
+                        "source": "AVIONICS_COMPANION_SUBSYSTEM",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.3,
+                        "position_y_m": 0.0,
+                        "position_z_m": 0.02,
+                        "moment_kg_m": 0.0138,
+                        "status": "SIZED",
+                        "notes": "Onboard SBC for mission autonomy and sensor processing."
+                    },
+                    {
+                        "name": "Primary Mission Payload",
+                        "category": "PAYLOAD",
+                        "value_kg": 0.65,
+                        "source": "PAYLOAD_SUBSYSTEM_Sony RX1R II",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.3,
+                        "position_y_m": 0.0,
+                        "position_z_m": -0.08,
+                        "moment_kg_m": 0.195,
+                        "status": "SIZED",
+                        "notes": "Mission sensor (camera, gimbal, or environmental sensor package)."
+                    },
+                    {
+                        "name": "Payload Mount & Dampener",
+                        "category": "PAYLOAD",
+                        "value_kg": 0.25,
+                        "source": "PAYLOAD_MOUNT_SUBSYSTEM",
+                        "classification": "DERIVED",
+                        "position_x_m": 0.28,
+                        "position_y_m": 0.0,
+                        "position_z_m": -0.04,
+                        "moment_kg_m": 0.07,
+                        "status": "SIZED",
+                        "notes": "Vibration isolation tray, quick-release plate, and wiring harness."
+                    }
+                ]
+            },
+            "center_of_gravity": {
+                "reference_datum": "FUSELAGE_NOSE",
+                "total_mass_kg": 8.0697,
+                "total_moment_kg_m": 4.2113,
+                "x_cg_m": 0.5219,
+                "y_cg_m": 0.0009,
+                "z_cg_m": 0.0054,
+                "mean_aerodynamic_chord_m": 0.4,
+                "x_lemac_m": 0.4,
+                "x_cg_pct_mac": 30.47,
+                "forward_cg_limit_m": 0.4747,
+                "aft_cg_limit_m": 0.525,
+                "forward_margin_m": 0.0472,
+                "aft_margin_m": 0.0031,
+                "cg_status": "DEFERRED_TO_PHASE_6"
+            },
+            "convergence_history": [],
+            "engineering_assumptions": [],
+            "warnings": [],
+            "errors": [],
+            "metadata": {}
+        },
+        "stability_and_control": {
+            "status": "IMPLEMENTED",
+            "verification_passed": true,
+            "longitudinal_stability": {
+                "reference_datum": "FUSELAGE_NOSE",
+                "wing_le_x_m": 0.46,
+                "wing_mac_m": 0.147,
+                "wing_ac_x_m": 0.4968,
+                "tail_ac_x_m": 0.8568,
+                "tail_arm_m": 0.36,
+                "horizontal_tail_volume": 0.5,
+                "wing_lift_curve_slope_per_rad": 5.1739,
+                "tail_lift_curve_slope_per_rad": 3.5343,
+                "downwash_gradient": 0.2534,
+                "tail_dynamic_pressure_ratio": 0.95,
+                "neutral_point_x_m": 0.5324,
+                "neutral_point_pct_mac": 49.23,
+                "cg_x_m": 0.5219,
+                "cg_pct_mac": 42.09,
+                "static_margin": 0.0714,
+                "static_margin_pct": 7.14,
+                "c_m_alpha_per_rad": -0.3695,
+                "c_m_alpha_per_deg": -0.006449,
+                "is_statically_stable": true
+            },
+            "directional_stability": {
+                "vertical_tail_volume": 0.04,
+                "weathercock_c_n_beta_per_rad": 0.1343,
+                "c_n_beta_per_deg": 0.001908,
+                "fuselage_destabilizing_c_n_beta_per_rad": -0.025,
+                "net_c_n_beta_per_rad": 0.1093,
+                "is_directionally_stable": true
+            },
+            "lateral_stability": {
+                "geometric_dihedral_deg": 1.5,
+                "wing_position_effect": "High Wing (Stabilizing)",
+                "c_l_beta_per_rad": -0.0524,
+                "c_l_beta_per_deg": -0.000915,
+                "roll_yaw_coupling_ratio": 0.48,
+                "is_laterally_stable": true
+            },
+            "vtail_panel_geometry": {
+                "panel_count": 2,
+                "dihedral_angle_deg": -45.3,
+                "panel_span_m": 0.4214,
+                "panel_root_chord_m": 0.1568,
+                "panel_tip_chord_m": 0.1066,
+                "panel_mean_chord_m": 0.1317,
+                "panel_aspect_ratio": 3.2,
+                "single_panel_area_m2": 0.0555,
+                "total_vtail_area_m2": 0.111,
+                "tail_arm_m": 0.36,
+                "tail_ac_x_m": 0.8568,
+                "hinge_line_fraction": 0.7
+            },
+            "vtail_projections": {
+                "horizontal_projected_area_m2": 0.0781,
+                "vertical_projected_area_m2": 0.0788,
+                "effective_horizontal_area_m2": 0.055,
+                "effective_vertical_area_m2": 0.056,
+                "dihedral_angle_deg": -45.26,
+                "projection_conservation_check": true
+            },
+            "ruddervator_geometry": {
+                "chord_ratio": 0.3,
+                "ruddervator_chord_m": 0.0395,
+                "ruddervator_span_m": 0.4214,
+                "single_ruddervator_area_m2": 0.0167,
+                "total_ruddervator_area_m2": 0.0333,
+                "control_surface_ratio": 0.3,
+                "control_effectiveness_tau": 0.657,
+                "max_deflection_deg": 25.0,
+                "mixer_convention": "delta_left = delta_e - delta_r; delta_right = delta_e + delta_r"
+            },
+            "aileron_geometry": {
+                "inboard_semispan_fraction": 0.65,
+                "outboard_semispan_fraction": 0.95,
+                "inboard_station_y_m": 0.6081,
+                "outboard_station_y_m": 0.8887,
+                "aileron_span_per_side_m": 0.2806,
+                "aileron_chord_m": 0.0396,
+                "aileron_chord_ratio": 0.22,
+                "single_aileron_area_m2": 0.0111,
+                "total_aileron_area_m2": 0.0222,
+                "aileron_to_wing_area_ratio": 0.0825,
+                "semispan_fraction_occupied": 0.3,
+                "control_effectiveness_tau_a": 0.563,
+                "max_deflection_deg": 20.0
+            },
+            "control_derivatives": {
+                "c_m_delta_e_per_rad": -1.1034,
+                "c_m_delta_e_per_deg": -0.019258,
+                "c_n_delta_r_per_rad": -0.0883,
+                "c_n_delta_r_per_deg": -0.001541,
+                "c_l_delta_a_per_rad": 0.3495,
+                "c_l_delta_a_per_deg": 0.006099
+            },
+            "trim_analysis": {
+                "overall_trim_status": "TRIM_FEASIBLE",
+                "reason": "All design conditions trim within maximum ruddervator deflection limits",
+                "trim_points": [
+                    {
+                        "condition_name": "CRUISE",
+                        "airspeed_m_s": 27.78,
+                        "dynamic_pressure_pa": 472.6,
+                        "lift_coefficient": 0.622,
+                        "angle_of_attack_deg": 6.88,
+                        "required_elevator_trim_deg": -4.9,
+                        "trim_margin_deg": 20.1,
+                        "status": "TRIM_FEASIBLE"
+                    },
+                    {
+                        "condition_name": "APPROACH",
+                        "airspeed_m_s": 24.01,
+                        "dynamic_pressure_pa": 353.1,
+                        "lift_coefficient": 0.832,
+                        "angle_of_attack_deg": 9.21,
+                        "required_elevator_trim_deg": -5.68,
+                        "trim_margin_deg": 19.32,
+                        "status": "TRIM_FEASIBLE"
+                    },
+                    {
+                        "condition_name": "TRANSITION_HANDOVER",
+                        "airspeed_m_s": 18.0,
+                        "dynamic_pressure_pa": 198.5,
+                        "lift_coefficient": 1.11,
+                        "angle_of_attack_deg": 12.29,
+                        "required_elevator_trim_deg": -6.71,
+                        "trim_margin_deg": 18.29,
+                        "status": "TRIM_FEASIBLE"
+                    }
+                ]
+            },
+            "cg_envelope": {
+                "forward_limit_x_m": 0.4747,
+                "forward_limit_pct_mac": 10.0,
+                "aft_limit_x_m": 0.525,
+                "aft_limit_pct_mac": 44.23,
+                "nominal_cg_x_m": 0.5219,
+                "nominal_cg_pct_mac": 42.09,
+                "forward_margin_m": 0.0472,
+                "aft_margin_m": 0.0031,
+                "envelope_width_m": 0.0503,
+                "envelope_width_pct_mac": 34.23,
+                "cg_envelope_status": "WITHIN_LIMITS"
+            },
+            "control_authority": {
+                "max_pitch_moment_nm": 9.01,
+                "max_yaw_moment_nm": 9.18,
+                "max_roll_moment_nm": 29.06,
+                "pitch_authority_status": "AUTHORITY_CALCULATED",
+                "yaw_authority_status": "AUTHORITY_CALCULATED",
+                "roll_authority_status": "AUTHORITY_CALCULATED",
+                "vtol_multirotor_authority_distinction": "Fixed-wing aerodynamic surfaces (ruddervators, ailerons) provide cruise control. Multirotor lift motors provide hover/low-speed pitch/roll/yaw via differential thrust."
+            },
+            "parameter_provenance": {
+                "wing_mac_m": {
+                    "value": 0.147,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "WING_PLANFORM_GEOMETRY",
+                    "notes": "Calculated via canonical trapezoidal integration formula"
+                },
+                "wing_le_x_m": {
+                    "value": 0.46,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "FUSELAGE_INTERNAL_LAYOUT",
+                    "notes": "Wing leading edge position on fuselage"
+                },
+                "wing_ac_x_m": {
+                    "value": 0.4968,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "AERODYNAMIC_CENTER_THEORY",
+                    "notes": "Subsonic wing aerodynamic center at quarter-chord of MAC"
+                },
+                "wing_lift_curve_slope": {
+                    "value": 5.1739,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "HELMBOLD_FINITE_WING_THEORY",
+                    "notes": "3D wing lift-curve slope for AR=13.0"
+                },
+                "total_vtail_area_m2": {
+                    "value": 0.111,
+                    "unit": "m^2",
+                    "classification": "DERIVED",
+                    "source": "INVERTED_V_TAIL_SIZING",
+                    "notes": "True sum of left and right tail panel planforms (zero double-counting)"
+                },
+                "v_tail_dihedral_deg": {
+                    "value": -45.3,
+                    "unit": "deg",
+                    "classification": "DERIVED",
+                    "source": "PROJECTION_MATCHING_THEORY",
+                    "notes": "Dihedral angle theta = -arctan(sqrt(Sv / Sh)) for inverted V-tail"
+                },
+                "total_ruddervator_area_m2": {
+                    "value": 0.0333,
+                    "unit": "m^2",
+                    "classification": "DERIVED",
+                    "source": "RUDDERVATOR_GEOMETRY",
+                    "notes": "Total movable control surface area on both inverted V-tail panels"
+                },
+                "total_aileron_area_m2": {
+                    "value": 0.0222,
+                    "unit": "m^2",
+                    "classification": "DERIVED",
+                    "source": "AILERON_SIZING_MODEL",
+                    "notes": "Both sides aileron area spanning 65% to 95% semispan"
+                },
+                "neutral_point_x_m": {
+                    "value": 0.5324,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "AERODYNAMIC_NEUTRAL_POINT_RELATION",
+                    "notes": "Calculated from wing AC, tail volume, lift-curve slopes, downwash, and dynamic pressure"
+                },
+                "static_margin": {
+                    "value": 0.0714,
+                    "unit": "fraction MAC",
+                    "classification": "DERIVED",
+                    "source": "STATIC_MARGIN_FORMULA",
+                    "notes": "SM = (x_NP - x_CG) / MAC"
+                },
+                "static_margin_target_min": {
+                    "value": 0.05,
+                    "unit": "fraction MAC",
+                    "classification": "CONFIGURABLE_ASSUMPTION",
+                    "source": "MASS_CONSTRAINTS_DEFAULT_AND_AEROSPACE_GUIDELINE",
+                    "notes": "Minimum static margin guideline from default mass constraints and aerospace literature (heuristic, not certified TorqWings requirement)"
+                },
+                "static_margin_target_max": {
+                    "value": 0.15,
+                    "unit": "fraction MAC",
+                    "classification": "CONFIGURABLE_ASSUMPTION",
+                    "source": "LEGACY_TAIL_ESTIMATE_AND_AEROSPACE_GUIDELINE",
+                    "notes": "Upper bound static margin guideline to avoid excessive trim drag and control heaviness (heuristic, not certified TorqWings requirement)"
+                },
+                "pitch_stiffness_c_m_alpha": {
+                    "value": -0.3695,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "PITCH_STIFFNESS_RELATION",
+                    "notes": "C_m_alpha = -C_L_alpha,w * Static_Margin (analytical potential flow derivative)"
+                },
+                "pitch_damping_c_mq": {
+                    "value": null,
+                    "unit": "1/rad",
+                    "classification": "DEFERRED",
+                    "source": "DEFERRED_TO_PHASE_7",
+                    "notes": "Dynamic pitch damping rate derivative deferred to Phase 7 6-DOF simulation (not silently replaced by zero)"
+                },
+                "directional_stability_c_n_beta": {
+                    "value": 0.1093,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "DIRECTIONAL_WEATHERCOCK_THEORY",
+                    "notes": "C_n_beta = V_v * C_L_alpha,v * eta_v + C_n_beta,fuse (fuselage term is CONFIGURABLE_ASSUMPTION)"
+                },
+                "lateral_stability_c_l_beta": {
+                    "value": -0.0524,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "DIHEDRAL_EFFECT_THEORY",
+                    "notes": "C_l_beta = C_l_beta,high_wing + C_l_beta,geom (high-wing term is CONFIGURABLE_ASSUMPTION)"
+                },
+                "control_derivative_c_m_delta_e": {
+                    "value": -1.1034,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "ELEVATOR_EFFECTIVENESS_THEORY",
+                    "notes": "C_m_delta_e = -V_H * C_L_alpha,t * tau_e * eta_t"
+                },
+                "control_derivative_c_n_delta_r": {
+                    "value": -0.0883,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "RUDDER_EFFECTIVENESS_THEORY",
+                    "notes": "C_n_delta_r = -V_v * C_L_alpha,v * tau_r * eta_v"
+                },
+                "control_derivative_c_l_delta_a": {
+                    "value": 0.3495,
+                    "unit": "1/rad",
+                    "classification": "DERIVED",
+                    "source": "AILERON_STRIP_THEORY",
+                    "notes": "C_l_delta_a strip integration from inboard to outboard stations"
+                },
+                "cg_forward_limit_x_m": {
+                    "value": 0.4747,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "PITCH_CONTROL_TRIM_BOUNDARY",
+                    "notes": "Forward CG limit for approach trim authority"
+                },
+                "cg_aft_limit_x_m": {
+                    "value": 0.525,
+                    "unit": "m",
+                    "classification": "DERIVED",
+                    "source": "MINIMUM_STATIC_MARGIN_BOUNDARY",
+                    "notes": "Aft CG limit providing at least 5.0% MAC static margin (derived from CONFIGURABLE_ASSUMPTION guideline; not a certified operational envelope)"
+                }
+            },
+            "engineering_assumptions": [
+                "Inverted V-tail dihedral angle derived from projected horizontal and vertical tail requirements.",
+                "Helmbold 3D lift-curve slope applied for rectangular/tapered wing planform.",
+                "Tail efficiency eta_t = 0.95 reflecting clean twin-boom pusher prop clearance.",
+                "Quasi-steady trim analysis evaluated at cruise, approach (1.25 V_stall), and transition handover.",
+                "Fixed-wing aerodynamic surface control is segregated from VTOL multirotor differential thrust."
+            ],
+            "warnings": [],
+            "errors": []
+        }
+    }
+}

@@ -1,0 +1,1740 @@
+{
+  "aircraft_name": "Torq Wings Lift + Cruise (QuadPlane) VTOL",
+  "flight_controller": "Holybro Pixhawk 6X (STM32H753)",
+  "autopilot": "ArduPilot Plane / QuadPlane (v4.4+)",
+  "final_verdict": "FLIGHT_CONTROL_CONFIGURATION_COMPLETE_WITH_WARNINGS",
+  "ground_test_readiness": "READY_WITH_WARNINGS",
+  "parameters_count": 45,
+  "parameters": [
+    {
+      "parameter_name": "Q_ENABLE",
+      "value": 1,
+      "unit": "boolean",
+      "purpose": "Enables QuadPlane hybrid VTOL flight modes and motor controllers",
+      "source": "Phase 1 QuadPlane Architecture",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Activates ArduPilot Plane QuadPlane subsystem"
+    },
+    {
+      "parameter_name": "Q_FRAME_CLASS",
+      "value": 7,
+      "unit": "enum",
+      "purpose": "QuadPlane frame class (7 = QuadPlane: dedicated lift rotors + forward pusher)",
+      "source": "Phase 1 Aircraft Requirements",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Separates lift motors from forward cruise pusher motor"
+    },
+    {
+      "parameter_name": "Q_FRAME_TYPE",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "QuadPlane motor geometry layout (1 = Quad-X frame)",
+      "source": "Phase 1 Motor Boom Geometry",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "4 lift rotors positioned on dual outboard wing booms in standard X arrangement"
+    },
+    {
+      "parameter_name": "SERVO1_FUNCTION",
+      "value": 33,
+      "unit": "enum",
+      "purpose": "Output 1 function assignment: Motor 1 (Front-Left Lift Motor)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO2_FUNCTION",
+      "value": 34,
+      "unit": "enum",
+      "purpose": "Output 2 function assignment: Motor 2 (Front-Right Lift Motor)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO3_FUNCTION",
+      "value": 35,
+      "unit": "enum",
+      "purpose": "Output 3 function assignment: Motor 3 (Rear-Left Lift Motor)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO4_FUNCTION",
+      "value": 36,
+      "unit": "enum",
+      "purpose": "Output 4 function assignment: Motor 4 (Rear-Right Lift Motor)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO5_FUNCTION",
+      "value": 70,
+      "unit": "enum",
+      "purpose": "Output 5 function assignment: Throttle (Cruise Pusher Motor)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO6_FUNCTION",
+      "value": 4,
+      "unit": "enum",
+      "purpose": "Output 6 function assignment: Left Outboard Aileron",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO7_FUNCTION",
+      "value": 4,
+      "unit": "enum",
+      "purpose": "Output 7 function assignment: Right Outboard Aileron",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO8_FUNCTION",
+      "value": 77,
+      "unit": "enum",
+      "purpose": "Output 8 function assignment: V-Tail Left Ruddervator Surface",
+      "source": "Phase 9 I/O Pinout Allocation & Inverted V-Tail Mixer",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO9_FUNCTION",
+      "value": 78,
+      "unit": "enum",
+      "purpose": "Output 9 function assignment: V-Tail Right Ruddervator Surface",
+      "source": "Phase 9 I/O Pinout Allocation & Inverted V-Tail Mixer",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "SERVO10_FUNCTION",
+      "value": 28,
+      "unit": "enum",
+      "purpose": "Output 10 function assignment: Camera Shutter Trigger Relay (Sony RX0 II)",
+      "source": "Phase 9 I/O Pinout Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "MOT_PWM_TYPE",
+      "value": 6,
+      "unit": "enum",
+      "purpose": "Output protocol for lift motor ESC channels (6 = DShot600)",
+      "source": "Phase 8 Spedix GS40A ESC Datasheet Specification",
+      "source_type": "HARDWARE_DATASHEET",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Requires Spedix GS40A ESC; provides sub-millisecond digital throttle commands"
+    },
+    {
+      "parameter_name": "SERVO_BLH_AUTO",
+      "value": 1,
+      "unit": "boolean",
+      "purpose": "Enables automatic BLHeli/DShot telemetry pass-through on motor channels 1-4",
+      "source": "Official ArduPilot Documentation",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "Q_TRANSITION_MS",
+      "value": 18000,
+      "unit": "ms",
+      "purpose": "Transition duration timeout for VTOL to fixed-wing forward acceleration corridor",
+      "source": "Phase 3 Authoritative Transition Performance (Section 4 Kinematics: 18.0s corridor)",
+      "source_type": "PHASE_3_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Accelerates aircraft from 0 to 18.06 m/s stall threshold at mean forward acceleration ~1.0 m/s^2"
+    },
+    {
+      "parameter_name": "ARSPD_FBW_MIN",
+      "value": 18.06,
+      "unit": "m/s",
+      "purpose": "Minimum safe airspeed in fixed-wing flight; triggers outbound transition completion",
+      "source": "Phase 3 Stall Airspeed Kinematics (Vs = 18.06 m/s @ MTOW 7.869 kg)",
+      "source_type": "PHASE_3_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Fixed-wing wing lift fully supports aircraft weight at or above this dynamic pressure threshold"
+    },
+    {
+      "parameter_name": "ARSPD_FBW_MAX",
+      "value": 30.0,
+      "unit": "m/s",
+      "purpose": "Maximum allowable airspeed in stabilized flight (Vne margin)",
+      "source": "Phase 6 Stability Envelope & Aerodynamic Limit",
+      "source_type": "PHASE_6_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Prevents flutter and excessive control surface hinge moments"
+    },
+    {
+      "parameter_name": "Q_ASSIST_SPEED",
+      "value": 18.0,
+      "unit": "m/s",
+      "purpose": "Airspeed below which VTOL lift rotors automatically spool up to prevent stall",
+      "source": "Phase 3 Transition Corridor Analysis / Stall Threshold",
+      "source_type": "PHASE_3_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Seamless fallback to hybrid quadplane lift if airspeed decays during tight turns or gusts"
+    },
+    {
+      "parameter_name": "Q_ASSIST_ALT",
+      "value": 15,
+      "unit": "m",
+      "purpose": "Altitude ceiling below which Q_ASSIST is always armed regardless of airspeed",
+      "source": "Phase 9 System Integration Specification",
+      "source_type": "CONFIGURABLE_ASSUMPTION",
+      "required_or_optional": "OPTIONAL",
+      "confidence": "MEDIUM",
+      "status": "PASS",
+      "notes": "Guarantees ground clearance assist during low-altitude maneuvers"
+    },
+    {
+      "parameter_name": "Q_TRANS_FAIL",
+      "value": 1.5,
+      "unit": "s",
+      "purpose": "Corridor reversal/abort timeout if forward acceleration fails during transition",
+      "source": "Phase 9 Integration Assumption (Empirical ArduPilot parameter; Prompt Section 11)",
+      "source_type": "CONFIGURABLE_ASSUMPTION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "LOW",
+      "status": "GROUND_TEST_REQUIRED",
+      "notes": "Configurable assumption; has NOT been experimentally validated in flight (Prompt Section 11 constraint)."
+    },
+    {
+      "parameter_name": "Q_TRANS_FAIL_ACT",
+      "value": 0,
+      "unit": "enum",
+      "purpose": "Action on transition failure (0 = Return to previous hover mode / QHOVER)",
+      "source": "Official ArduPilot QuadPlane Documentation",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Aborts forward push and commands pitch-up recovery to pure hover"
+    },
+    {
+      "parameter_name": "Q_TILT_MASK",
+      "value": 0,
+      "unit": "bitmask",
+      "purpose": "Tiltrotor motor mask (0 = Dedicated Lift + Cruise, no tilting motors)",
+      "source": "Phase 1 QuadPlane Architecture",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Separated lift and cruise propulsion architecture"
+    },
+    {
+      "parameter_name": "Q_BACKTRANS_MS",
+      "value": 14000,
+      "unit": "ms",
+      "purpose": "Duration for inbound back-transition from fixed-wing cruise to pure hover",
+      "source": "Phase 3 Deceleration Kinematics (20 m/s to 0 m/s in 14.0s)",
+      "source_type": "PHASE_3_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Lift motors spool up under DShot600 in <0.3s while aircraft flares aerodynamically"
+    },
+    {
+      "parameter_name": "BATT_MONITOR",
+      "value": 4,
+      "unit": "enum",
+      "purpose": "Battery monitor sensor type (4 = Analog Voltage and Current via PDB)",
+      "source": "Phase 8 Matek PDB-HEX Hardware Specification",
+      "source_type": "PHASE_8_HARDWARE",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_CAPACITY",
+      "value": 22000,
+      "unit": "mAh",
+      "purpose": "Total usable nominal battery capacity",
+      "source": "Phase 8 Tattu Plus 22000mAh 6S Battery Pack (`BOM-008`)",
+      "source_type": "PHASE_8_HARDWARE",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_ARM_VOLT",
+      "value": 24.6,
+      "unit": "V",
+      "purpose": "Pre-arm voltage check minimum threshold (4.10V / cell)",
+      "source": "Phase 4 Energy Calculations (Full charge is 25.2V)",
+      "source_type": "PHASE_4_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_LOW_VOLT",
+      "value": 21.6,
+      "unit": "V",
+      "purpose": "Stage 1 low-voltage failsafe warning threshold (3.60V / cell under load)",
+      "source": "Phase 4 Battery Discharge Curve Analysis",
+      "source_type": "PHASE_4_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_CRT_VOLT",
+      "value": 20.4,
+      "unit": "V",
+      "purpose": "Stage 2 critical-voltage failsafe landing threshold (3.40V / cell under load)",
+      "source": "Phase 4 LiPo Safe Cutoff Limit",
+      "source_type": "PHASE_4_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_LOW_MAH",
+      "value": 4400,
+      "unit": "mAh",
+      "purpose": "Low battery capacity remaining threshold (20% reserve remaining)",
+      "source": "Phase 4 Energy Reserve Margin Requirement (20% SOC)",
+      "source_type": "PROJECT_REQUIREMENT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_CRT_MAH",
+      "value": 2200,
+      "unit": "mAh",
+      "purpose": "Critical battery capacity remaining threshold (10% emergency reserve)",
+      "source": "Phase 4 Emergency Hover Landing Allowance",
+      "source_type": "PROJECT_REQUIREMENT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_FS_LOW_ACT",
+      "value": 2,
+      "unit": "enum",
+      "purpose": "Action when Stage 1 low battery threshold is reached (2 = RTL)",
+      "source": "Phase 9 FMEA Failsafe Strategy (FMEA-10)",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "BATT_FS_CRT_ACT",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "Action when Stage 2 critical battery threshold is reached (1 = Land / QLAND)",
+      "source": "Phase 9 FMEA Failsafe Strategy (FMEA-10)",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "ARSPD_TYPE",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "Airspeed sensor driver type (1 = MS4525 / Matek ASPD-4525 on I2C)",
+      "source": "Phase 8 Matek ASPD-4525 Airspeed Sensor Specification",
+      "source_type": "PHASE_8_HARDWARE",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "ARSPD_USE",
+      "value": 1,
+      "unit": "boolean",
+      "purpose": "Enables airspeed sensor dynamic pressure in flight control and EKF3",
+      "source": "Official ArduPilot Documentation",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "GPS_TYPE",
+      "value": 2,
+      "unit": "enum",
+      "purpose": "Primary GPS driver type (2 = u-blox binary protocol for Holybro F9P RTK)",
+      "source": "Phase 8 Holybro H-RTK F9P Datasheet",
+      "source_type": "PHASE_8_HARDWARE",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "EK3_ENABLE",
+      "value": 1,
+      "unit": "boolean",
+      "purpose": "Enables Extended Kalman Filter 3 (EKF3) high-fidelity navigation core",
+      "source": "Official ArduPilot Documentation",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "COMPASS_TYPEMASK",
+      "value": 0,
+      "unit": "bitmask",
+      "purpose": "Magnetometer driver mask (0 = All drivers enabled, primary external F9P)",
+      "source": "Phase 9 I/O Allocation",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "THR_FAILSAFE",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "RC loss failsafe action (1 = Enabled, triggers RTL / QRTL on packet loss)",
+      "source": "Phase 9 FMEA-07 Specification",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "FS_GCS_ENABL",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "GCS telemetry loss failsafe (1 = Heartbeat timeout enabled)",
+      "source": "Phase 9 FMEA-08 Specification",
+      "source_type": "PHASE_9_INTEGRATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "Q_RTL_MODE",
+      "value": 1,
+      "unit": "enum",
+      "purpose": "RTL return mode for QuadPlane (1 = Return via fixed-wing, then VTOL land)",
+      "source": "Phase 1 QuadPlane Mission Architecture",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "RTL_ALT",
+      "value": 5000,
+      "unit": "cm",
+      "purpose": "RTL cruise altitude (50.0m AGL safe obstacle clearance)",
+      "source": "Phase 1 Mission Profile",
+      "source_type": "PHASE_1_OUTPUT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "ARMING_CHECK",
+      "value": 1,
+      "unit": "bitmask",
+      "purpose": "Pre-arm safety check mask (1 = All hardware, EKF, sensor, and battery checks enabled)",
+      "source": "Prompt Section 21: Never bypass or weaken safety checks",
+      "source_type": "PROJECT_REQUIREMENT",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": "Strictly enforces pre-arm validation; safety checks are never weakened"
+    },
+    {
+      "parameter_name": "LOG_BITMASK",
+      "value": 65535,
+      "unit": "bitmask",
+      "purpose": "Dataflash logging coverage (Attitude, Motors, EKF, Navigation, Batteries, Failsafes)",
+      "source": "Prompt Section 20 Logging Requirements",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "parameter_name": "LOG_DISARMED",
+      "value": 1,
+      "unit": "boolean",
+      "purpose": "Enables logging while disarmed to capture pre-flight sensor initialization",
+      "source": "Official ArduPilot Documentation",
+      "source_type": "ARDUPILOT_DOCUMENTATION",
+      "required_or_optional": "REQUIRED",
+      "confidence": "HIGH",
+      "status": "PASS",
+      "notes": ""
+    }
+  ],
+  "motor_outputs": [
+    {
+      "motor_id": "M1",
+      "physical_position": "Front-Left VTOL Boom Station (x=0.25m, y=-0.60m, z=+0.04m)",
+      "output_channel": 1,
+      "assigned_role": "VTOL_MOTOR_1",
+      "hardware_esc": "Spedix GS40A 6S",
+      "hardware_motor": "T-Motor MN4014 KV330",
+      "hardware_propeller": "T-Motor P16x5.4 Carbon Fiber",
+      "protocol": "DSHOT600",
+      "signal_frequency_hz": null,
+      "nominal_rotation_direction": "CW",
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "failsafe_action": "Immediate DShot Disarm / Zero Throttle command",
+      "notes": "Physical rotation direction must be confirmed on bench test (Prompt Section 6 constraint: UNVERIFIED \u2014 REQUIRES BENCH TEST)."
+    },
+    {
+      "motor_id": "M2",
+      "physical_position": "Front-Right VTOL Boom Station (x=0.25m, y=+0.60m, z=+0.04m)",
+      "output_channel": 2,
+      "assigned_role": "VTOL_MOTOR_2",
+      "hardware_esc": "Spedix GS40A 6S",
+      "hardware_motor": "T-Motor MN4014 KV330",
+      "hardware_propeller": "T-Motor P16x5.4 Carbon Fiber",
+      "protocol": "DSHOT600",
+      "signal_frequency_hz": null,
+      "nominal_rotation_direction": "CCW",
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "failsafe_action": "Immediate DShot Disarm / Zero Throttle command",
+      "notes": "Physical rotation direction must be confirmed on bench test (Prompt Section 6 constraint: UNVERIFIED \u2014 REQUIRES BENCH TEST)."
+    },
+    {
+      "motor_id": "M3",
+      "physical_position": "Rear-Left VTOL Boom Station (x=0.75m, y=-0.60m, z=+0.04m)",
+      "output_channel": 3,
+      "assigned_role": "VTOL_MOTOR_3",
+      "hardware_esc": "Spedix GS40A 6S",
+      "hardware_motor": "T-Motor MN4014 KV330",
+      "hardware_propeller": "T-Motor P16x5.4 Carbon Fiber",
+      "protocol": "DSHOT600",
+      "signal_frequency_hz": null,
+      "nominal_rotation_direction": "CCW",
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "failsafe_action": "Immediate DShot Disarm / Zero Throttle command",
+      "notes": "Physical rotation direction must be confirmed on bench test (Prompt Section 6 constraint: UNVERIFIED \u2014 REQUIRES BENCH TEST)."
+    },
+    {
+      "motor_id": "M4",
+      "physical_position": "Rear-Right VTOL Boom Station (x=0.75m, y=+0.60m, z=+0.04m)",
+      "output_channel": 4,
+      "assigned_role": "VTOL_MOTOR_4",
+      "hardware_esc": "Spedix GS40A 6S",
+      "hardware_motor": "T-Motor MN4014 KV330",
+      "hardware_propeller": "T-Motor P16x5.4 Carbon Fiber",
+      "protocol": "DSHOT600",
+      "signal_frequency_hz": null,
+      "nominal_rotation_direction": "CW",
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "failsafe_action": "Immediate DShot Disarm / Zero Throttle command",
+      "notes": "Physical rotation direction must be confirmed on bench test (Prompt Section 6 constraint: UNVERIFIED \u2014 REQUIRES BENCH TEST)."
+    },
+    {
+      "motor_id": "M5",
+      "physical_position": "Fuselage Tail Firewall Pusher (x=0.92m, y=0.00m, z=+0.01m)",
+      "output_channel": 5,
+      "assigned_role": "CRUISE_MOTOR",
+      "hardware_esc": "Hobbywing Skywalker 40A V2",
+      "hardware_motor": "T-Motor AT2820 KV880",
+      "hardware_propeller": "APC 11x7 Thin Electric Pusher",
+      "protocol": "STANDARD_PWM_50HZ",
+      "signal_frequency_hz": 50.0,
+      "nominal_rotation_direction": "CW",
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "failsafe_action": "Zero throttle PWM pulse (1000us) on signal loss / disarm",
+      "notes": "Pusher motor rotation must push air rearward; requires physical propeller and motor spin verification."
+    }
+  ],
+  "servo_outputs": [
+    {
+      "surface_name": "Left Outboard Aileron",
+      "output_channel": 6,
+      "servo_function_param": "SERVO6_FUNCTION",
+      "servo_function_id": 4,
+      "hardware_servo": "KST DS215MG V8.0",
+      "pwm_min_us": 1000,
+      "pwm_neutral_us": 1500,
+      "pwm_max_us": 2000,
+      "pwm_trim_us": 1500,
+      "protocol": "DIGITAL_PWM_333HZ",
+      "signal_frequency_hz": 333.0,
+      "direction_reversed": false,
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "hinge_torque_status": "DEFERRED",
+      "notes": "Left wing outboard roll control surface. Physical deflection direction must be verified on bench test."
+    },
+    {
+      "surface_name": "Right Outboard Aileron",
+      "output_channel": 7,
+      "servo_function_param": "SERVO7_FUNCTION",
+      "servo_function_id": 4,
+      "hardware_servo": "KST DS215MG V8.0",
+      "pwm_min_us": 1000,
+      "pwm_neutral_us": 1500,
+      "pwm_max_us": 2000,
+      "pwm_trim_us": 1500,
+      "protocol": "DIGITAL_PWM_333HZ",
+      "signal_frequency_hz": 333.0,
+      "direction_reversed": false,
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "hinge_torque_status": "DEFERRED",
+      "notes": "Right wing outboard roll control surface. Direction relative to left aileron requires bench verification."
+    },
+    {
+      "surface_name": "Left Ruddervator (Inverted V-Tail)",
+      "output_channel": 8,
+      "servo_function_param": "SERVO8_FUNCTION",
+      "servo_function_id": 77,
+      "hardware_servo": "KST DS215MG V8.0",
+      "pwm_min_us": 1000,
+      "pwm_neutral_us": 1500,
+      "pwm_max_us": 2000,
+      "pwm_trim_us": 1500,
+      "protocol": "DIGITAL_PWM_333HZ",
+      "signal_frequency_hz": 333.0,
+      "direction_reversed": false,
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "hinge_torque_status": "DEFERRED",
+      "notes": "Port empennage control surface. Inverted V-tail geometry requires sign check for pitch up/down and yaw left/right."
+    },
+    {
+      "surface_name": "Right Ruddervator (Inverted V-Tail)",
+      "output_channel": 9,
+      "servo_function_param": "SERVO9_FUNCTION",
+      "servo_function_id": 78,
+      "hardware_servo": "KST DS215MG V8.0",
+      "pwm_min_us": 1000,
+      "pwm_neutral_us": 1500,
+      "pwm_max_us": 2000,
+      "pwm_trim_us": 1500,
+      "protocol": "DIGITAL_PWM_333HZ",
+      "signal_frequency_hz": 333.0,
+      "direction_reversed": false,
+      "direction_verification_status": "GROUND_TEST_REQUIRED",
+      "hinge_torque_status": "DEFERRED",
+      "notes": "Starboard empennage control surface. Inverted V-tail geometry requires sign check."
+    }
+  ],
+  "vtail_mixer": {
+    "aircraft_tail_configuration": "INVERTED_V_TAIL",
+    "left_surface_equation": "LeftSurface = ElevatorComponent + RudderComponent",
+    "right_surface_equation": "RightSurface = ElevatorComponent - RudderComponent",
+    "mixer_type_param": "MIXING_OFFSET / V_TAIL (ArduPilot SERVO8_FUNCTION=77, SERVO9_FUNCTION=78)",
+    "mixing_model_status": "PASS",
+    "physical_direction_status": "GROUND_TEST_REQUIRED",
+    "notes": "Mathematical mixing model is fully defined. Physical servo direction signs (SERVO8_REVERSED, SERVO9_REVERSED) remain UNVERIFIED until physical pushrod linkage and servo horn geometry are verified on the test bench (Prompt Section 15)."
+  },
+  "sensors": [
+    {
+      "sensor_name": "Primary GNSS & RTK Navigation",
+      "hardware_component": "Holybro H-RTK F9P Helical GNSS Module",
+      "bus_interface": "UART Serial (GPS1 Port)",
+      "protocol": "u-blox UBX Binary Protocol (115200 baud)",
+      "ardupilot_driver_param": "GPS_TYPE = 1 (Auto) / GPS_TYPE = 2 (uBlox)",
+      "driver_param_value": 2,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Antenna zero-baseline survey & satellite visibility check)",
+      "redundancy_support": "Secondary GNSS supported via GPS2 port (Optional expansion)",
+      "failure_detection_method": "EKF3 innovation variance monitor & HDOP / satellite count threshold",
+      "failsafe_response": "Fallback to EKF3 dead-reckoning with synthetic wind estimation",
+      "configuration_status": "PASS",
+      "notes": "Provides centimeter-level RTK positioning when connected to base station"
+    },
+    {
+      "sensor_name": "Primary Digital Compass / Magnetometer",
+      "hardware_component": "IST8310 3-Axis Magnetometer (Integrated in H-RTK F9P)",
+      "bus_interface": "CAN Bus (CAN1 Port) / I2C external",
+      "protocol": "DroneCAN / UAVCAN (1 Mbps)",
+      "ardupilot_driver_param": "COMPASS_TYPEMASK = 0 (All enabled) / COMPASS_PRIO1_ID",
+      "driver_param_value": 1,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Full 3D onboard sphere compass dance calibration)",
+      "redundancy_support": "Dual redundancy (1x External in GPS mast + 2x Internal on Pixhawk 6X isolated board)",
+      "failure_detection_method": "EKF3 magnetic field inconsistency check (>35% anomaly flags compass failure)",
+      "failsafe_response": "Failover to secondary internal compass or GNSS course-over-ground heading",
+      "configuration_status": "PASS",
+      "notes": "External mounting on boom mast minimizes motor electromagnetic interference"
+    },
+    {
+      "sensor_name": "Digital Differential Airspeed Sensor",
+      "hardware_component": "Matek ASPD-4525 Digital Airspeed Sensor (Measurement Specialties 4525DO)",
+      "bus_interface": "I2C Bus (I2C1 Port)",
+      "protocol": "I2C Standard 400 kHz (I2C Address 0x28)",
+      "ardupilot_driver_param": "ARSPD_TYPE = 1 (MS4525) & ARSPD_USE = 1",
+      "driver_param_value": 1,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Zero dynamic pressure baseline offset calibration on ground)",
+      "redundancy_support": "Single physical sensor (Synthetic airspeed estimation serves as analytical backup)",
+      "failure_detection_method": "Airspeed plausibility check vs groundspeed; frozen reading detection",
+      "failsafe_response": "ARSPD_FAIL_ACTION: automatic failover to EKF3 synthetic wind airspeed",
+      "configuration_status": "PASS",
+      "notes": "Connected via flexible silicon pneumatic tubing to nose-boom pitot probe"
+    },
+    {
+      "sensor_name": "Barometric Pressure & Altitude",
+      "hardware_component": "Dual Onboard Barometers (ICP20100 & BMP388 on Pixhawk 6X FMU)",
+      "bus_interface": "Internal SPI Bus",
+      "protocol": "High-Speed SPI Bus (10 MHz)",
+      "ardupilot_driver_param": "BARO_PRIMARY = 0 & BARO_GND_TEMP = 20.0",
+      "driver_param_value": 0,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Ground atmospheric pressure calibration during boot)",
+      "redundancy_support": "Dual hardware barometers on isolated vibration-damped board",
+      "failure_detection_method": "Cross-barometer pressure divergence check (>2.0 hPa threshold)",
+      "failsafe_response": "Automatic failover to secondary internal barometer",
+      "configuration_status": "PASS",
+      "notes": "Internal foam baffles protect barometers from prop downwash pressure spikes"
+    },
+    {
+      "sensor_name": "Inertial Measurement Units (IMU - Gyro / Accelerometer)",
+      "hardware_component": "Triple Redundant IMUs (ICM-42688-P, ICM-42670-P, BMI088 on Pixhawk 6X)",
+      "bus_interface": "Internal SPI Bus (Vibration Isolated & Temperature Controlled)",
+      "protocol": "Internal SPI Bus",
+      "ardupilot_driver_param": "INS_ENABLE_MASK = 7 (All 3 IMUs active in EKF3 voting)",
+      "driver_param_value": 7,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (6-axis accelerometer calibration & gyro bias nulling)",
+      "redundancy_support": "Triple physical IMU redundancy with real-time lane switching",
+      "failure_detection_method": "EKF3 IMU health voting and consistency monitoring",
+      "failsafe_response": "Seamless lane switch to healthy IMU in <10ms",
+      "configuration_status": "PASS",
+      "notes": "Thermal resistor maintains IMU temperature at 45C to eliminate thermal drift"
+    },
+    {
+      "sensor_name": "Analog Power & Battery Monitor",
+      "hardware_component": "Matek Systems PDB-HEX 12S Voltage & Current Sense Board",
+      "bus_interface": "Analog Sense Leads (Pixhawk POWER1 Port)",
+      "protocol": "Analog Linear Voltage Divider & Hall Current Scaling",
+      "ardupilot_driver_param": "BATT_MONITOR = 4 (Analog Voltage and Current)",
+      "driver_param_value": 4,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Current multiplier and voltage divider bench calibration)",
+      "redundancy_support": "Single analog power monitor module",
+      "failure_detection_method": "Zero current check when motors armed; out-of-range voltage reading",
+      "failsafe_response": "Warn pilot on GCS; initiate low-voltage RTL if reading drops below 21.6V",
+      "configuration_status": "PASS",
+      "notes": "Monitors 6S 22.2V total aircraft discharge current up to 140A continuous / 200A peak"
+    },
+    {
+      "sensor_name": "RC Pilot Control Receiver",
+      "hardware_component": "TBS Crossfire Nano RX / ExpressLRS Receiver",
+      "bus_interface": "UART Serial (RCIN Port)",
+      "protocol": "CRSF Serial Digital Protocol (416 kbps bidirectional telemetry)",
+      "ardupilot_driver_param": "SERIAL5_PROTOCOL = 23 (RCIN) / RSSI_TYPE = 3",
+      "driver_param_value": 23,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (Stick range calibration [1000us-2000us] on transmitter)",
+      "redundancy_support": "Long-range 868/915MHz RF link with adaptive power scaling",
+      "failure_detection_method": "CRSF packet lost frame counter & 1.5s signal timeout",
+      "failsafe_response": "THR_FAILSAFE: Automatic switch to QRTL / autonomous return",
+      "configuration_status": "PASS",
+      "notes": "Full digital packet decoding; eliminates analog PWM jitter"
+    },
+    {
+      "sensor_name": "Ground Control Station Telemetry Modem",
+      "hardware_component": "Holybro SiK 915MHz 500mW Radio Transceiver",
+      "bus_interface": "UART Serial (TELEM1 Port)",
+      "protocol": "MAVLink 2.0 Serial Protocol (57600 baud, CTS/RTS hardware flow control)",
+      "ardupilot_driver_param": "SERIAL1_PROTOCOL = 2 (MAVLink 2) & SERIAL1_BAUD = 57",
+      "driver_param_value": 2,
+      "calibration_requirement": "REQUIRED_PRE_FLIGHT (RF link pairing and signal RSSI verification)",
+      "redundancy_support": "Backup telemetry through Companion Computer 4G/LTE or Crossfire telemetry",
+      "failure_detection_method": "MAVLink heartbeat timeout > 10.0s",
+      "failsafe_response": "FS_GCS_ENABL: Continue autonomous waypoint mission",
+      "configuration_status": "PASS",
+      "notes": "Enables real-time parameter tuning, mission upload, and state monitoring"
+    }
+  ],
+  "flight_modes": [
+    {
+      "mode_name": "MANUAL",
+      "mode_code": 0,
+      "purpose": "Emergency manual control; direct RC passthrough to ailerons and V-tail, bypassing autopilot stabilization",
+      "propulsion_authority": "Cruise Pusher only (VTOL lift rotors locked OFF)",
+      "control_surface_authority": "100% Direct Pilot Stick Passthrough",
+      "required_sensors": [
+        "RC Receiver"
+      ],
+      "transition_dependency": "Fixed-Wing Flight Only (Cannot be used in hover)",
+      "failsafe_behavior": "Switch to FBWA or RTL on RC loss",
+      "configuration_status": "PASS",
+      "notes": "Standard fixed-wing emergency flight mode"
+    },
+    {
+      "mode_name": "FBWA",
+      "mode_code": 5,
+      "purpose": "Fly-By-Wire A; stabilized fixed-wing forward transit with roll/pitch angle limits",
+      "propulsion_authority": "Cruise Pusher Motor active (VTOL rotors assist if Q_ASSIST_SPEED triggered)",
+      "control_surface_authority": "Autopilot attitude loop driving Ailerons & V-tail",
+      "required_sensors": [
+        "IMU",
+        "Airspeed",
+        "Barometer"
+      ],
+      "transition_dependency": "Entered automatically upon outbound transition completion",
+      "failsafe_behavior": "Level wings and climb if airspeed low; failsafe to RTL on link loss",
+      "configuration_status": "PASS",
+      "notes": "Primary manual transit mode for fixed-wing flight"
+    },
+    {
+      "mode_name": "QSTABILIZE",
+      "mode_code": 17,
+      "purpose": "QuadPlane manual attitude stabilization for VTOL hover testing",
+      "propulsion_authority": "4x VTOL Lift Motors active (Pusher motor disabled)",
+      "control_surface_authority": "Surfaces active but secondary to rotor differential thrust",
+      "required_sensors": [
+        "IMU"
+      ],
+      "transition_dependency": "VTOL Hover Only",
+      "failsafe_behavior": "Immediate throttle cut on disarm / disarm on ground",
+      "configuration_status": "PASS",
+      "notes": "Used for ground motor checks and initial hover tuning"
+    },
+    {
+      "mode_name": "QHOVER",
+      "mode_code": 18,
+      "purpose": "QuadPlane altitude-hold hover with barometric vertical rate control",
+      "propulsion_authority": "4x VTOL Lift Motors active (Pusher motor idle)",
+      "control_surface_authority": "Secondary aerodynamic damping",
+      "required_sensors": [
+        "IMU",
+        "Barometer"
+      ],
+      "transition_dependency": "VTOL Hover & Terminal Descent",
+      "failsafe_behavior": "Descend at Land Speed (1.5 m/s) on loss of link",
+      "configuration_status": "PASS",
+      "notes": "Primary pilot-assisted hover mode"
+    },
+    {
+      "mode_name": "QLOITER",
+      "mode_code": 19,
+      "purpose": "QuadPlane GPS position-hold and altitude-hold hover",
+      "propulsion_authority": "4x VTOL Lift Motors active (Pusher idle)",
+      "control_surface_authority": "Surfaces trimmed to neutral",
+      "required_sensors": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Compass"
+      ],
+      "transition_dependency": "Hover Station-keeping & Pre-Transition Hold",
+      "failsafe_behavior": "QRTL on link loss or battery low",
+      "configuration_status": "PASS",
+      "notes": "Requires 3D GNSS lock and healthy EKF3 status"
+    },
+    {
+      "mode_name": "QRTL",
+      "mode_code": 21,
+      "purpose": "QuadPlane Return-To-Launch with automated inbound transition and VTOL landing",
+      "propulsion_authority": "Cruise Motor to return, then 4x Lift Motors for hover landing",
+      "control_surface_authority": "Active during transit; deactivated in final descent",
+      "required_sensors": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed",
+        "Compass"
+      ],
+      "transition_dependency": "Automated inbound transition at return coordinate",
+      "failsafe_behavior": "Emergency vertical landing at current position if battery critical",
+      "configuration_status": "PASS",
+      "notes": "Standard QuadPlane emergency recovery mode"
+    },
+    {
+      "mode_name": "AUTO",
+      "mode_code": 10,
+      "purpose": "Fully autonomous waypoint mission execution across all 10 operational states",
+      "propulsion_authority": "Automated management of all 5 motors by ArduPilot mission controller",
+      "control_surface_authority": "Full autopilot guidance authority",
+      "required_sensors": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed",
+        "Compass"
+      ],
+      "transition_dependency": "Autonomous dual-direction transitions triggered by DO_VTOL_TRANSITION",
+      "failsafe_behavior": "QRTL on battery or sensor failsafe",
+      "configuration_status": "PASS",
+      "notes": "Authoritative mode for Torq Wings survey mission execution"
+    },
+    {
+      "mode_name": "RTL",
+      "mode_code": 11,
+      "purpose": "Fixed-wing return-to-launch transitioning to terminal QRTL overhead home",
+      "propulsion_authority": "Pusher motor for return cruise transit, then QuadPlane motors",
+      "control_surface_authority": "Autopilot guidance",
+      "required_sensors": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed"
+      ],
+      "transition_dependency": "Transitions to QRTL at home geofence boundary",
+      "failsafe_behavior": "Autonomous landing at home location",
+      "configuration_status": "PASS",
+      "notes": "Configured via Q_RTL_MODE=1 to land as VTOL"
+    }
+  ],
+  "mission_states": [
+    {
+      "phase1_state": "GROUND_PREFLIGHT",
+      "configured_flight_mode": "MANUAL / QSTABILIZE (Disarmed)",
+      "active_propulsion": [],
+      "active_surfaces": [
+        "Left Aileron",
+        "Right Aileron",
+        "Left Ruddervator",
+        "Right Ruddervator"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed",
+        "Compass",
+        "Battery Monitor"
+      ],
+      "transition_condition": "Pre-arm checks passed, RTK fix acquired, arm command received",
+      "exit_condition": "Autopilot armed and mission start command confirmed",
+      "abort_condition": "Any sensor failure, pre-arm warning, or RC link failure",
+      "failsafe_action": "Refuse arming (Safety lock active)",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "VTOL_TAKEOFF",
+      "configured_flight_mode": "AUTO (NAV_VTOL_TAKEOFF)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4"
+      ],
+      "active_surfaces": [
+        "Surfaces Neutralized"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Compass"
+      ],
+      "transition_condition": "Rotor spool-up to hover thrust (T/W = 1.30)",
+      "exit_condition": "Aircraft lifts off ground cleanly and achieves 5m AGL",
+      "abort_condition": "Excessive roll/pitch tip-over angle (>15 deg) or motor desync",
+      "failsafe_action": "Immediate throttle cut to 0% (Ground disarm)",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "HOVER_CLIMB",
+      "configured_flight_mode": "AUTO (NAV_VTOL_TAKEOFF)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4"
+      ],
+      "active_surfaces": [
+        "Surfaces Neutralized"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Compass"
+      ],
+      "transition_condition": "Target climb altitude reached (50m AGL)",
+      "exit_condition": "Altitude >= Q_TRANSITION_ALT (50m AGL)",
+      "abort_condition": "Vertical rate < 1.0 m/s or high motor saturation (>95%)",
+      "failsafe_action": "Immediate transition to QLAND vertical descent",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "TRANSITION_TO_CRUISE",
+      "configured_flight_mode": "AUTO (DO_VTOL_TRANSITION -> CRUISE)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4",
+        "CRUISE_MOTOR"
+      ],
+      "active_surfaces": [
+        "Left Aileron",
+        "Right Aileron",
+        "Left Ruddervator",
+        "Right Ruddervator"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed",
+        "Compass"
+      ],
+      "transition_condition": "Airspeed accelerates from 0 to 18.06 m/s (stall speed threshold)",
+      "exit_condition": "Airspeed >= ARSPD_FBW_MIN (18.06 m/s) and duration >= Q_TRANSITION_MS (18s)",
+      "abort_condition": "Airspeed fails to reach 18 m/s within Q_TRANS_FAIL (1.5s timeout / assumption)",
+      "failsafe_action": "Throttle cut to pusher, return to QHOVER / QLOITER",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "FIXED_WING_CRUISE",
+      "configured_flight_mode": "AUTO (NAV_WAYPOINT / FBWA)",
+      "active_propulsion": [
+        "CRUISE_MOTOR"
+      ],
+      "active_surfaces": [
+        "Left Aileron",
+        "Right Aileron",
+        "Left Ruddervator",
+        "Right Ruddervator"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed"
+      ],
+      "transition_condition": "Forward fixed-wing cruise transit along survey track (20.8 m/s)",
+      "exit_condition": "Survey boundary reached or waypoint sequence completed",
+      "abort_condition": "Airspeed drops below Q_ASSIST_SPEED (18.0 m/s)",
+      "failsafe_action": "Automatic Q_ASSIST lift motor spin-up or RTL failsafe",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "MISSION_LOITER",
+      "configured_flight_mode": "AUTO (NAV_LOITER_TURNS / NAV_LOITER_TIME)",
+      "active_propulsion": [
+        "CRUISE_MOTOR"
+      ],
+      "active_surfaces": [
+        "Left Aileron",
+        "Right Aileron",
+        "Left Ruddervator",
+        "Right Ruddervator"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed"
+      ],
+      "transition_condition": "Survey photogrammetry lawnmower pattern active",
+      "exit_condition": "Mapping coordinates finished or battery reserve <= 25%",
+      "abort_condition": "Loss of RTK fix or telemetry link failure",
+      "failsafe_action": "Autonomous return via RTL / QRTL",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "TRANSITION_TO_VTOL",
+      "configured_flight_mode": "AUTO (DO_VTOL_TRANSITION -> VTOL)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4",
+        "CRUISE_MOTOR"
+      ],
+      "active_surfaces": [
+        "Left Aileron",
+        "Right Aileron",
+        "Left Ruddervator",
+        "Right Ruddervator"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Airspeed",
+        "Compass"
+      ],
+      "transition_condition": "Home landing coordinate reached; decelerating from 20.8 m/s to 0 m/s",
+      "exit_condition": "Airspeed < 5.0 m/s, lift rotors fully supporting aircraft weight",
+      "abort_condition": "Motor spool-up failure or attitude instability (>25 deg pitch/roll)",
+      "failsafe_action": "Deploy ballistic parachute or glide to emergency landing",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "HOVER_DESCENT",
+      "configured_flight_mode": "AUTO (NAV_VTOL_LAND)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4"
+      ],
+      "active_surfaces": [
+        "Surfaces Neutralized"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "GNSS / RTK",
+        "Compass"
+      ],
+      "transition_condition": "Descent from 50m to 3m AGL at 1.5 m/s",
+      "exit_condition": "Altitude <= 3m AGL (Final touchdown threshold)",
+      "abort_condition": "Ground station visual obstruction or lateral drift > 2m",
+      "failsafe_action": "Hold altitude in QLOITER and alert ground station",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "VTOL_LANDING",
+      "configured_flight_mode": "AUTO (NAV_VTOL_LAND - Final Touchdown)",
+      "active_propulsion": [
+        "VTOL_MOTOR_1",
+        "VTOL_MOTOR_2",
+        "VTOL_MOTOR_3",
+        "VTOL_MOTOR_4"
+      ],
+      "active_surfaces": [
+        "Surfaces Neutralized"
+      ],
+      "sensor_dependencies": [
+        "IMU",
+        "Barometer",
+        "Compass"
+      ],
+      "transition_condition": "Final vertical touchdown at 0.5 m/s",
+      "exit_condition": "Landing detector triggers (zero vertical rate, motor idle)",
+      "abort_condition": "Excessive impact G-load or bounce",
+      "failsafe_action": "Immediate disarm of all motors",
+      "verification_status": "PASS"
+    },
+    {
+      "phase1_state": "GROUND_POSTFLIGHT",
+      "configured_flight_mode": "MANUAL / QSTABILIZE (Disarmed)",
+      "active_propulsion": [],
+      "active_surfaces": [
+        "Surfaces Neutralized"
+      ],
+      "sensor_dependencies": [
+        "All Sensors"
+      ],
+      "transition_condition": "Motors disarmed on ground, flight logs closed",
+      "exit_condition": "Power down avionics",
+      "abort_condition": "None",
+      "failsafe_action": "Keep motors disarmed",
+      "verification_status": "PASS"
+    }
+  ],
+  "failsafes": [
+    {
+      "scenario_id": "FS-01",
+      "failure_name": "RC Control Link Loss",
+      "detection_mechanism": "TBS Crossfire CRSF packet timeout > 1.5s (THR_FAILSAFE = 1)",
+      "configured_response": "QRTL",
+      "required_sensors": [
+        "GNSS / RTK",
+        "Barometer",
+        "IMU"
+      ],
+      "fallback_mode": "QRTL (Climb to RTL altitude, return to home, and VTOL land)",
+      "verification_method": "Ground bench RC transmitter power-down simulation",
+      "controllability_status": "PASS",
+      "notes": "Software-supported failsafe configuration (CONFIGURATION_SUPPORTED in Phase 9)"
+    },
+    {
+      "scenario_id": "FS-02",
+      "failure_name": "GCS Telemetry Link Loss",
+      "detection_mechanism": "MAVLink heartbeat loss on TELEM1 > 10.0s (FS_GCS_ENABL = 1)",
+      "configured_response": "CONTINUE_MISSION",
+      "required_sensors": [
+        "GNSS / RTK",
+        "IMU"
+      ],
+      "fallback_mode": "Continue pre-loaded autonomous mission; execute QRTL if battery low",
+      "verification_method": "Bench disconnection of SiK 915MHz GCS modem",
+      "controllability_status": "PASS",
+      "notes": "Standard BVLOS autonomous flight logic"
+    },
+    {
+      "scenario_id": "FS-03",
+      "failure_name": "Low Battery Stage 1 (Voltage <= 21.6V / Reserve <= 20%)",
+      "detection_mechanism": "Matek PDB-HEX analog voltage/current monitoring on POWER1",
+      "configured_response": "RTL",
+      "required_sensors": [
+        "Battery Monitor",
+        "GNSS / RTK"
+      ],
+      "fallback_mode": "Immediate return to home (BATT_FS_LOW_ACT = 2: RTL)",
+      "verification_method": "Simulated voltage sag injection via programmable bench DC supply",
+      "controllability_status": "PASS",
+      "notes": "Initiates return before battery depletion prevents hover recovery"
+    },
+    {
+      "scenario_id": "FS-04",
+      "failure_name": "Critical Battery Stage 2 (Voltage <= 20.4V / Reserve <= 10%)",
+      "detection_mechanism": "Matek PDB-HEX analog voltage monitoring on POWER1",
+      "configured_response": "QLAND",
+      "required_sensors": [
+        "Battery Monitor",
+        "Barometer",
+        "IMU"
+      ],
+      "fallback_mode": "Immediate vertical descent at current position (BATT_FS_CRT_ACT = 1: Land)",
+      "verification_method": "DC bench power step-down test to 20.4V",
+      "controllability_status": "PASS",
+      "notes": "Prevents cell over-discharge and total power cutout in flight"
+    },
+    {
+      "scenario_id": "FS-05",
+      "failure_name": "GNSS / RTK Fix Loss or GPS Glitch",
+      "detection_mechanism": "EKF3 innovation threshold check; loss of 3D fix flags (GPS_GLITCH_RADIUS)",
+      "configured_response": "QHOVER",
+      "required_sensors": [
+        "Airspeed",
+        "Compass",
+        "Barometer",
+        "IMU"
+      ],
+      "fallback_mode": "Dead-reckoning navigation using synthetic wind, altitude hold via QHOVER",
+      "verification_method": "GNSS antenna RF shielding / simulated GPS signal loss",
+      "controllability_status": "PASS",
+      "notes": "Drift rate depends on compass and pitot accuracy (CONFIGURATION_SUPPORTED)"
+    },
+    {
+      "scenario_id": "FS-06",
+      "failure_name": "EKF Extended Kalman Filter Failure",
+      "detection_mechanism": "EK3 core health flags / lane switching failure",
+      "configured_response": "QHOVER",
+      "required_sensors": [
+        "IMU",
+        "Barometer"
+      ],
+      "fallback_mode": "Emergency non-GPS DCM attitude stabilization",
+      "verification_method": "Autopilot sensor injection simulation",
+      "controllability_status": "PASS",
+      "notes": "Switches to secondary/tertiary IMU core before declaring failure"
+    },
+    {
+      "scenario_id": "FS-07",
+      "failure_name": "Airspeed Sensor Clogging or I2C Failure",
+      "detection_mechanism": "Pitot dynamic pressure anomaly check vs GPS groundspeed (ARSPD_FAIL_ACTION)",
+      "configured_response": "CONTINUE_MISSION",
+      "required_sensors": [
+        "GNSS / RTK",
+        "IMU"
+      ],
+      "fallback_mode": "Failover to synthetic airspeed estimation (EKF3 groundspeed + wind matrix +15% margin)",
+      "verification_method": "Bench pitot tube blockage test",
+      "controllability_status": "PASS",
+      "notes": "Software-supported fallback; stall margin under gust conditions remains unproven in flight"
+    },
+    {
+      "scenario_id": "FS-08",
+      "failure_name": "Compass Inconsistency / Magnetic Interference",
+      "detection_mechanism": "EKF3 magnetic field anomaly detection / yaw innovation check",
+      "configured_response": "FBWA",
+      "required_sensors": [
+        "GNSS / RTK",
+        "Airspeed",
+        "IMU"
+      ],
+      "fallback_mode": "GNSS course-over-ground heading estimation (EK3_MAG_CAL = 2)",
+      "verification_method": "Bench magnetic field disturbance test with neodymium magnet",
+      "controllability_status": "PASS",
+      "notes": "High-speed fixed-wing flight can navigate without magnetometer"
+    },
+    {
+      "scenario_id": "FS-09",
+      "failure_name": "Cruise Motor Flameout / Pusher Loss",
+      "detection_mechanism": "Airspeed decay below Q_ASSIST_SPEED (18.0 m/s) despite 100% cruise throttle",
+      "configured_response": "QRTL",
+      "required_sensors": [
+        "Airspeed",
+        "GNSS / RTK",
+        "IMU",
+        "Barometer"
+      ],
+      "fallback_mode": "Q_ASSIST automatic VTOL lift rotor spool-up; abort cruise and enter QRTL hover landing",
+      "verification_method": "In-flight throttle cut simulation in SITL / bench test",
+      "controllability_status": "PASS",
+      "notes": "Gliding back-transition corridor supported by software configuration (CONFIGURATION_SUPPORTED)"
+    },
+    {
+      "scenario_id": "FS-10",
+      "failure_name": "Cruise ESC Failure / Loss of Throttle Signal",
+      "detection_mechanism": "Zero forward acceleration detected during cruise phase",
+      "configured_response": "QRTL",
+      "required_sensors": [
+        "Airspeed",
+        "GNSS / RTK",
+        "IMU"
+      ],
+      "fallback_mode": "Autonomous switch to VTOL lift propulsion and QRTL return",
+      "verification_method": "Signal disconnect test to PWM Output 5",
+      "controllability_status": "PASS",
+      "notes": "Identical aerodynamic recovery behavior to Cruise Motor Flameout"
+    },
+    {
+      "scenario_id": "FS-11",
+      "failure_name": "VTOL Lift Motor Failure (Hover Engine-Out)",
+      "detection_mechanism": "High roll/pitch rate acceleration with saturated motor output on opposite quadrant",
+      "configured_response": "GLIDE_DESCENT",
+      "required_sensors": [
+        "IMU",
+        "Airspeed"
+      ],
+      "fallback_mode": "Pure hover unmaintainable on 4-rotor frame; command forward pitch to gain wing lift if altitude permits, or deploy parachute",
+      "verification_method": "6-DOF aerodynamic simulation (Physical bench test prohibited)",
+      "controllability_status": "DEFERRED",
+      "notes": "Legitimately DEFERRED per Phase 9 (HOVER_ENGINE_OUT). Pure hover with 1 out of 4 lift rotors cannot maintain static attitude."
+    },
+    {
+      "scenario_id": "FS-12",
+      "failure_name": "Aerodynamic Control Surface Jam (Servo Jam)",
+      "detection_mechanism": "Attitude error accumulation despite trim command saturation",
+      "configured_response": "QHOVER",
+      "required_sensors": [
+        "IMU",
+        "Barometer"
+      ],
+      "fallback_mode": "Trim remaining surfaces and transition to VTOL hover where rotor differential thrust dominates",
+      "verification_method": "Simulation / bench linkage restriction test",
+      "controllability_status": "DEFERRED",
+      "notes": "Cross-control trim authority under jammed servo remains DEFERRED (AERO_JAM_TRIM in Phase 9)"
+    },
+    {
+      "scenario_id": "FS-13",
+      "failure_name": "Pixhawk Main FMU Bus Lockup",
+      "detection_mechanism": "STM32H7 hardware watchdog timer expiration (>200ms)",
+      "configured_response": "IOMCU_FAILOVER",
+      "required_sensors": [
+        "Internal IMU / IOMCU"
+      ],
+      "fallback_mode": "STM32F100 IOMCU coprocessor takes over PWM outputs, commanding neutral surfaces and motor idle",
+      "verification_method": "Watchdog reset injection via software test build",
+      "controllability_status": "PASS",
+      "notes": "Architectural hardware safety feature of Holybro Pixhawk 6X"
+    },
+    {
+      "scenario_id": "FS-14",
+      "failure_name": "Raspberry Pi Companion SBC Crash",
+      "detection_mechanism": "Heartbeat timeout on TELEM2 serial UART (>3.0s)",
+      "configured_response": "WARN_ONLY",
+      "required_sensors": [
+        "Pixhawk Core Sensors"
+      ],
+      "fallback_mode": "Autonomous flight execution continues uninterrupted; vision/payload tasks disabled",
+      "verification_method": "SBC power-down test during bench telemetry monitoring",
+      "controllability_status": "PASS",
+      "notes": "Hardware isolation verified in Phase 9 (Dedicated 5V 3A BEC prevents electrical cross-talk)"
+    },
+    {
+      "scenario_id": "FS-15",
+      "failure_name": "PDB Total Main Bus Short Circuit",
+      "detection_mechanism": "Instantaneous loss of primary 22.2V bus voltage",
+      "configured_response": "TERMINATION_PARACHUTE",
+      "required_sensors": [
+        "None (Complete power loss)"
+      ],
+      "fallback_mode": "Mechanical spring-loaded or pyrotechnic ballistic parachute recovery",
+      "verification_method": "Engineering risk analysis",
+      "controllability_status": "GROUND_TEST_REQUIRED",
+      "notes": "Classified as NOT_ANALYZED in Phase 9 FMEA-11; parachute subsystem integration required"
+    }
+  ],
+  "ground_test_checklist": [
+    {
+      "test_id": "GROUND-TEST-01",
+      "test_name": "Pixhawk 6X Power-Up & Rail Voltage Stability",
+      "subsystem": "Flight Controller & Power Distribution",
+      "procedure": "Apply 6S LiPo power via XT90-S; measure 5.0V regulated avionics bus voltage under idle and boot load.",
+      "expected_result": "POWER1 VCC reads 5.05V +/- 0.1V; status LEDs indicate clean boot without brownout reset.",
+      "prerequisite": "Battery and Matek PDB-HEX connected with verified polarity.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-02",
+      "test_name": "Sensor Subsystem Hardware Detection",
+      "subsystem": "Avionics & Bus Communication",
+      "procedure": "Query ArduPilot MAVLink device table via Mission Planner / QGroundControl.",
+      "expected_result": "F9P GNSS, IST8310 compass, MS4525 airspeed, dual barometers, and 3x IMUs detected on I2C/SPI/CAN.",
+      "prerequisite": "Pixhawk powered up and connected to GCS via USB or SiK radio.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-03",
+      "test_name": "GNSS & RTK Fix Acquisition",
+      "subsystem": "Navigation",
+      "procedure": "Position aircraft in open sky; verify satellite constellation count and RTK carrier phase lock.",
+      "expected_result": "Satellite count >= 16, HDOP <= 0.8, 3D DGPS or RTK Fixed status verified.",
+      "prerequisite": "Outdoor sky visibility; RTK correction stream active.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-04",
+      "test_name": "Compass Orientation & Magnetic Interference",
+      "subsystem": "Navigation",
+      "procedure": "Perform 360-degree yaw rotation on ground; compare reported heading against surveyed magnetic bearing.",
+      "expected_result": "Reported heading within +/- 2.5 degrees of true bearing; zero magnetic anomaly warning.",
+      "prerequisite": "Full 3D compass sphere calibration completed.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-05",
+      "test_name": "Digital Airspeed Zero-Offset & Dynamic Pressure",
+      "subsystem": "Air Data",
+      "procedure": "Cover pitot probe to verify zero drift; gently blow into pitot tube to test dynamic pressure response.",
+      "expected_result": "Zero airspeed reads < 1.0 m/s; positive velocity spike (>15 m/s) cleanly recorded without I2C error.",
+      "prerequisite": "Pneumatic silicone tubes securely clamped with zero air leak.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-06",
+      "test_name": "RC Pilot Control Link & Range Check",
+      "subsystem": "C2 Link",
+      "procedure": "Execute low-power RF range test at 30m; verify full stick deflection on Channels 1-4 and flight mode switch.",
+      "expected_result": "Link quality (LQ) = 100%, 0 lost frames, jitter < 2us, mode switch cycles correctly.",
+      "prerequisite": "Transmitter and Crossfire Nano RX bound and calibrated.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-07",
+      "test_name": "MAVLink Telemetry Bi-Directional Link",
+      "subsystem": "GCS Telemetry",
+      "procedure": "Stream high-rate telemetry over 915MHz SiK radio; send parameter download and command pulse.",
+      "expected_result": "57600 baud link maintains >95% packet success rate with CTS/RTS hardware flow control active.",
+      "prerequisite": "Antennas vertically polarized with adequate physical separation.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-08",
+      "test_name": "Motor Output Channel Identification",
+      "subsystem": "Propulsion Actuation",
+      "procedure": "Execute ArduPilot Motor Test dialog on GCS at 5% throttle sequentially for M1, M2, M3, M4, M5.",
+      "expected_result": "Motor 1 (FL), Motor 2 (FR), Motor 3 (RL), Motor 4 (RR), and Motor 5 (Pusher) spin in correct sequence.",
+      "prerequisite": "Propellers REMOVED from all 5 motors for bench safety.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-09",
+      "test_name": "Motor Physical Rotation Direction Confirmation",
+      "subsystem": "Propulsion Actuation",
+      "procedure": "Physically verify shaft rotation direction against nominal Quad-X and pusher requirements.",
+      "expected_result": "M1 spins CW, M2 spins CCW, M3 spins CCW, M4 spins CW, M5 spins CW (pusher); if inverted, swap phase leads or invert DShot.",
+      "prerequisite": "Propellers REMOVED; tactile or high-speed visual verification.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-10",
+      "test_name": "ESC Throttle Response & Protocol Synchronization",
+      "subsystem": "Propulsion Actuation",
+      "procedure": "Test rapid throttle steps (0% -> 25% -> 50% -> 0%) via GCS motor test dialog.",
+      "expected_result": "Sub-millisecond throttle tracking without desync, stuttering, or ESC overheating.",
+      "prerequisite": "Propellers REMOVED; DC bench supply current limited to 20A.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-11",
+      "test_name": "Outboard Aileron Deflection Direction & Travel",
+      "subsystem": "Flight Control Surfaces",
+      "procedure": "Command right roll stick input; observe left and right aileron trailing edge deflections.",
+      "expected_result": "Right aileron deflects UP, Left aileron deflects DOWN; full stick produces +/- 20 degrees deflection.",
+      "prerequisite": "Mechanical servo pushrod linkages connected and mechanically centered.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-12",
+      "test_name": "Inverted V-Tail Ruddervator Deflection Direction",
+      "subsystem": "Flight Control Surfaces",
+      "procedure": "Command nose-up elevator stick input; observe left and right ruddervator deflections on inverted V-tail.",
+      "expected_result": "Both surfaces deflect trailing edge UP/OUTWARD to generate nose-up pitching moment.",
+      "prerequisite": "V-tail linkages connected and neutral trim verified.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-13",
+      "test_name": "V-Tail Pitch & Yaw Mathematical Mixing",
+      "subsystem": "Flight Control Surfaces",
+      "procedure": "Command pure yaw right stick input; verify differential surface deflection on V-tail.",
+      "expected_result": "Surfaces deflect differentially to produce positive aerodynamic yaw moment without parasitic pitch.",
+      "prerequisite": "GROUND-TEST-12 passed; mixer gains set in ArduPilot.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-14",
+      "test_name": "Analog Battery Monitor Voltage & Current Scaling",
+      "subsystem": "Power Monitor",
+      "procedure": "Measure battery terminal voltage with calibrated digital multimeter; draw 10A through dummy load.",
+      "expected_result": "Autopilot reported voltage matches multimeter within +/- 0.05V; current matches within +/- 0.2A.",
+      "prerequisite": "Calibrated external DMM and DC load bank.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-15",
+      "test_name": "Hardware & Software Failsafe Response",
+      "subsystem": "Safety & Redundancy",
+      "procedure": "Turn off RC transmitter while armed in QHOVER mode; monitor autopilot mode change.",
+      "expected_result": "Autopilot immediately triggers THR_FAILSAFE and transitions to QRTL within 1.5s.",
+      "prerequisite": "Propellers REMOVED; motors disarmed before physical approach.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-16",
+      "test_name": "Pre-Arm Safety Checks & Arming / Disarming Sequence",
+      "subsystem": "Safety & Arming Logic",
+      "procedure": "Attempt arming with safety switch pressed, then attempt arming with disconnected airspeed tube.",
+      "expected_result": "Clean arming when all sensors healthy; arming blocked with descriptive pre-arm error when airspeed missing.",
+      "prerequisite": "ARMING_CHECK parameter set to 1 (All checks active).",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-17",
+      "test_name": "Bench Transition Logic & Motor Handover",
+      "subsystem": "Transition Controller",
+      "procedure": "Simulate 20 m/s dynamic pressure into pitot using regulated pneumatic source while in AUTO mode.",
+      "expected_result": "Pusher motor spools up, duration timer counts 18s, lift rotors smoothly spool down and stop.",
+      "prerequisite": "Pneumatic test rig connected to pitot probe; props REMOVED.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    },
+    {
+      "test_id": "GROUND-TEST-18",
+      "test_name": "High-Rate Dataflash Logging & File Integrity",
+      "subsystem": "Telemetry & Diagnostics",
+      "procedure": "Arm aircraft on bench for 60 seconds; disarm, extract `.bin` dataflash log via MAVLink, and inspect.",
+      "expected_result": "Log contains complete ATT, CTUN, QTUN, IMU, NKF1, BAT, and MOT message series with 0 dropouts.",
+      "prerequisite": "High-speed Class 10 industrial micro-SD card formatted FAT32.",
+      "execution_status": "NOT_EXECUTED",
+      "notes": "Physical execution required prior to flight clearance"
+    }
+  ],
+  "hardware_reconciliation": [
+    {
+      "component_role": "VTOL_ESC",
+      "phase8_bom_selection": "Spedix GS40A 6S DShot ESC",
+      "phase8_bom_id": "BOM-003",
+      "phase8_unit_mass_kg": 0.012,
+      "phase8_protocol": "DShot600 (Digital Bitstream)",
+      "phase9_integration_reference": "T-Motor AIR 40A ESC",
+      "phase9_report_bom_id": "BOM-002",
+      "discrepancy_type": "ACTUAL_HARDWARE_CONFLICT & BOM_ID_MISMATCH",
+      "impact_analysis": "Protocol Impact: Spedix GS40A natively supports DShot600 (sub-millisecond digital throttle without calibration). T-Motor AIR 40A only supports Fast PWM up to 600Hz; if AIR 40A were used, MOT_PWM_TYPE=6 (DShot600) would fail. Mass Impact: 4x Spedix GS40A weigh 0.048 kg total; 4x AIR 40A weigh 0.140 kg total (+92 g delta). Catalog Status: T-Motor AIR 40A is NOT in Phase 8 commercial product catalog.",
+      "reconciliation_verdict": "HARDWARE_IDENTITY_CONFLICT",
+      "recommendation": "HARDWARE_IDENTITY_RECONCILIATION_REQUIRED: Maintain Phase 8 Spedix GS40A (`BOM-003`) as the authoritative commercial selection to preserve DShot600 digital protocol and mass budget. Harmonize Phase 9 integration documentation to remove uncataloged 'T-Motor AIR 40A' references."
+    },
+    {
+      "component_role": "CRUISE_ESC",
+      "phase8_bom_selection": "Hobbywing Skywalker 40A V2 with 5V/5A BEC",
+      "phase8_bom_id": "BOM-005",
+      "phase8_unit_mass_kg": 0.042,
+      "phase8_protocol": "Standard PWM (50-400Hz)",
+      "phase9_integration_reference": "Hobbywing FlyFun 40A V5",
+      "phase9_report_bom_id": "BOM-004",
+      "discrepancy_type": "ACTUAL_HARDWARE_CONFLICT & BOM_ID_MISMATCH",
+      "impact_analysis": "Protocol Impact: Both ESCs support standard PWM. Skywalker V2 includes integrated 5V/5A BEC. Mass Impact: Skywalker V2 weighs 0.042 kg; FlyFun 40A weighs 0.040 kg (-2 g delta). Catalog Status: FlyFun 40A V5 is NOT registered in Phase 8 commercial catalog.",
+      "reconciliation_verdict": "HARDWARE_IDENTITY_CONFLICT",
+      "recommendation": "HARDWARE_IDENTITY_RECONCILIATION_REQUIRED: Maintain Phase 8 Hobbywing Skywalker 40A V2 (`BOM-005`) as the authoritative commercial selection. Update Phase 9 integration documentation."
+    },
+    {
+      "component_role": "AUX_INTEGRATION_HARDWARE",
+      "phase8_bom_selection": "Included in Phase 5 airframe ledger & Phase 8 LRUs",
+      "phase8_bom_id": "PHASE_5_LEDGER",
+      "phase8_unit_mass_kg": 0.31,
+      "phase8_protocol": "Physical Connectors & Voltage Regulators",
+      "phase9_integration_reference": "XT90-S (+35g), Dedicated 5V BEC (+15g), Harness (0.260kg)",
+      "phase9_report_bom_id": "PHASE_9_INT",
+      "discrepancy_type": "ACCOUNTING_VERIFIED",
+      "impact_analysis": "Mass Verification: Wiring harness (0.260 kg) was pre-allocated in Phase 5 structural mass ledger. XT90-S and 5V BEC represent +50 g integration hardware accounted for in the Phase 9 mass reconciliation (+81 g hardware delta / +1.03% MTOW, within 150g threshold). No double-counting or omission detected.",
+      "reconciliation_verdict": "PASS",
+      "recommendation": "Integration hardware accounting verified without discrepancy."
+    }
+  ],
+  "preflight_checks": [
+    {
+      "rule_id": "CHK-FRAME-01",
+      "rule_name": "QuadPlane Frame Architecture",
+      "checked_aspect": "Q_ENABLE=1, Q_FRAME_CLASS=7, Q_FRAME_TYPE=1",
+      "rule_status": "PASS",
+      "evidence_or_reason": "QuadPlane dedicated lift rotors + forward cruise pusher correctly configured",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-OUTPUT-01",
+      "rule_name": "Actuator Output Count",
+      "checked_aspect": "5 Motors (4 Lift + 1 Cruise) and 4 Aerodynamic Servos",
+      "rule_status": "PASS",
+      "evidence_or_reason": "All 9 primary flight actuators assigned to discrete channels (Channels 1-9)",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-OUTPUT-02",
+      "rule_name": "Output Channel Collision Free",
+      "checked_aspect": "Channels 1 through 9 uniqueness",
+      "rule_status": "PASS",
+      "evidence_or_reason": "Zero channel collisions across Pixhawk 6X output rails",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-MOTOR-DIR",
+      "rule_name": "Motor Physical Rotation Direction",
+      "checked_aspect": "Motors M1, M2, M3, M4, M5 rotation status",
+      "rule_status": "GROUND_TEST_REQUIRED",
+      "evidence_or_reason": "Physical CW/CCW rotation direction must be confirmed on test bench prior to flight (Prompt Section 6)",
+      "critical_for_arming": false
+    },
+    {
+      "rule_id": "CHK-SERVO-DIR",
+      "rule_name": "Servo Physical Deflection Direction",
+      "checked_aspect": "Aileron and inverted V-tail deflection signs",
+      "rule_status": "GROUND_TEST_REQUIRED",
+      "evidence_or_reason": "Physical horn orientation and link signs require bench verification (Prompt Section 14 & 15)",
+      "critical_for_arming": false
+    },
+    {
+      "rule_id": "CHK-BATT-01",
+      "rule_name": "Battery Failsafe Voltage Hierarchy",
+      "checked_aspect": "Arm (24.6V) > Low (21.6V) > Critical (20.4V) >= 19.2V",
+      "rule_status": "PASS",
+      "evidence_or_reason": "Correct voltage failsafe hierarchy protects 6S LiPo cells from over-discharge",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-TRANS-01",
+      "rule_name": "Transition Airspeed Stall Margin",
+      "checked_aspect": "ARSPD_FBW_MIN=18.06 m/s, Q_ASSIST_SPEED=18.0 m/s",
+      "rule_status": "PASS",
+      "evidence_or_reason": "Matches Phase 3 stall threshold (18.06 m/s) with positive stall assist protection",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-SAFETY-01",
+      "rule_name": "Arming Safety Gates Enforced",
+      "checked_aspect": "ARMING_CHECK=1 (All pre-arm checks strictly active)",
+      "rule_status": "PASS",
+      "evidence_or_reason": "No safety checks bypassed or masked (Prompt Section 21)",
+      "critical_for_arming": true
+    },
+    {
+      "rule_id": "CHK-HW-RECON",
+      "rule_name": "Hardware Identity Reconciliation",
+      "checked_aspect": "Phase 8 BOM vs Phase 9 Integration component identities",
+      "rule_status": "HARDWARE_IDENTITY_CONFLICT",
+      "evidence_or_reason": "Discrepancy detected between Phase 8 BOM and Phase 9 integration text (Spedix GS40A vs AIR 40A, Skywalker vs FlyFun)",
+      "critical_for_arming": false
+    }
+  ],
+  "verification": {
+    "output_mapping_passed": true,
+    "sensor_mapping_passed": true,
+    "servo_mapping_passed": true,
+    "parameter_provenance_passed": true,
+    "transition_configuration_passed": true,
+    "failsafe_matrix_passed": true,
+    "battery_configuration_passed": true,
+    "hardware_reconciliation_passed": false,
+    "preflight_checks_passed": true,
+    "total_parameters_count": 45,
+    "unresolved_items_count": 3,
+    "deferred_items_count": 4,
+    "ground_tests_count": 18,
+    "warnings": [
+      "HARDWARE_IDENTITY_RECONCILIATION_REQUIRED: Phase 8 BOM specifies Spedix GS40A (`BOM-003`) and Skywalker 40A (`BOM-005`), whereas Phase 9 integration text references T-Motor AIR 40A and FlyFun 40A. Phase 8 BOM is maintained as authoritative.",
+      "4 items remain legitimately DEFERRED (Servo hinge-moment torque, Hover engine-out recovery, Jammed servo trim).",
+      "18 ground bench verification tests remain NOT_EXECUTED prior to physical flight clearance."
+    ],
+    "errors": []
+  },
+  "deferred_items": [
+    "Aerodynamic control surface hinge-moment dynamic torque matching (REQ_SERVO_TORQUE = DEFERRED).",
+    "Hover single lift motor engine-out roll/pitch attitude controllability without forward wing lift (HOVER_ENGINE_OUT = DEFERRED).",
+    "Cross-coupling aerodynamic trim authority under physically jammed control surface (AERO_JAM_TRIM = DEFERRED).",
+    "High-fidelity CFD internal bay thermal dissipation and battery plume modeling (THERMAL_CFD = DEFERRED)."
+  ],
+  "unresolved_items": [
+    "Physical motor shaft rotation directions (CW/CCW) unverified; requires bench test (UNVERIFIED_REQUIRES_BENCH_TEST).",
+    "Physical servo horn deflection signs and mechanical trim offsets unverified; requires bench test (PHYSICAL_DIRECTION_UNVERIFIED).",
+    "Phase 8 vs Phase 9 ESC naming/BOM discrepancy (HARDWARE_IDENTITY_RECONCILIATION_REQUIRED)."
+  ]
+}

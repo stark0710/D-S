@@ -1,0 +1,24 @@
+Created At: 2026-09-14T23:31:41+05:30
+Completed At: 2026-09-14T23:31:41+05:30
+File Path: `file:///c:/Users/acer/Documents/torqwings%20studio%20v2/backend/design/fixed_wing/mass_properties/optimization/candidate_evaluator.py`
+Total Lines: 382
+Total Bytes: 20496
+Showing lines 105 to 120
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+105:                 esc_mass = 0.080
+106:             # Sized battery mass: ensure it meets physical energy demand for mission endurance
+107:             cat_batt_mass = getattr(prop_spec, "battery_weight_g", 1200.0) / 1000.0
+108:             p_cruise = getattr(prop_spec, "cruise_power_w", 180.0)
+109:             m_prof = getattr(getattr(context.requirements, "mission_result", None), "mission_profile", None)
+110:             f_time = getattr(m_prof, "flight_time_min", 45.0) if m_prof else 45.0
+111:             p_cont = p_cruise + 25.0 + 15.0  # cruise + avionics + payload power
+112:             req_energy_wh = p_cont * (f_time / 60.0) / 0.85
+113:             phys_batt_mass = req_energy_wh / 200.0
+114:             batt_mass = max(cat_batt_mass if cat_batt_mass > 0.0 else 1.200, phys_batt_mass)
+115:         else:
+116:             motor_mass = 0.310
+117:             prop_mass = 0.065
+118:             esc_mass = 0.080
+119:             batt_mass = 1.200
+120: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

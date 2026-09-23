@@ -1,0 +1,16 @@
+{
+  "aircraft_class": "FIXED_WING",
+  "mission": {
+    "mission_type": "SURVEY",
+    "range_km": 35.0,
+    "endurance_min": 30.0,
+    "cruise_speed_kmh": 80.0,
+    "cruise_altitude_m": 150.0
+  },
+  "payload": {
+    "mass_kg": 0.8
+  },
+  "environment": "RURAL",
+  "takeoff_type": "RUNWAY",
+  "landing_type": "RUNWAY"
+}

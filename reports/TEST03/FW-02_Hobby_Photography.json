@@ -1,0 +1,462 @@
+{
+  "test_id": "FW-02",
+  "mission_name": "Hobby Photography",
+  "success": false,
+  "status": "COMPONENT_DATABASE_LIMITATION",
+  "failure_classification": "14. DATABASE LIMITATION (Payload Component Sizing)",
+  "failure_reason": "Database limitation: Lightest RGB camera in component catalog is 0.51 kg (Sony RX1R II). Requested mission payload (0.30 kg) cannot package an optical sensor from the catalog without violating structural payload limits.",
+  "mission_input": {
+    "test_id": "FW-02",
+    "mission_name": "Hobby Photography",
+    "mission_type": "PHOTOGRAPHY",
+    "payload_kg": 0.3,
+    "target_range_km": 20.0,
+    "target_flight_time_min": 20.0,
+    "cruise_speed_kmh": 65.0,
+    "takeoff_type": "TakeoffType.RUNWAY",
+    "landing_type": "LandingType.RUNWAY",
+    "environment": "OperatingEnvironment.RURAL"
+  },
+  "mission_interpretation": {
+    "interpreted_category": "Survey",
+    "limiting_requirements": [],
+    "assumptions": [
+      "Standard atmosphere at sea level",
+      "Nominal reserve energy: 15%"
+    ]
+  },
+  "construction_selection": {
+    "selected_id": "FOAM_CORE_COMPOSITE",
+    "name": "Foam-Core Composite Shell (C1)",
+    "description": "Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability.",
+    "advisor_score": 100.0,
+    "all_scores": {
+      "FOAM_CORE_COMPOSITE": 100.0,
+      "BALSA_SKELETON_COMPOSITE": 100.0,
+      "BALSA_CARBON_SKELETON_FILM": 100.0,
+      "FOAM_DEPRON_FILM": 75.0,
+      "FOLDED_FOAM_MONOCOQUE": 75.0,
+      "WOOD_SKELETON_FILM": 100.0
+    },
+    "ranked": [
+      {
+        "id": "FOAM_CORE_COMPOSITE",
+        "name": "Foam-Core Composite Shell (C1)",
+        "score": 100.0,
+        "justification": "Compatible with mission baseline"
+      },
+      {
+        "id": "BALSA_SKELETON_COMPOSITE",
+        "name": "Balsa Skeleton Composite D-Box (C2)",
+        "score": 100.0,
+        "justification": "Compatible with mission baseline"
+      },
+      {
+        "id": "BALSA_CARBON_SKELETON_FILM",
+        "name": "Balsa-Carbon Skeleton Film (C3)",
+        "score": 100.0,
+        "justification": "Compatible with mission baseline"
+      },
+      {
+        "id": "WOOD_SKELETON_FILM",
+        "name": "Traditional Wood Skeleton Film (C6)",
+        "score": 100.0,
+        "justification": "Compatible with mission baseline"
+      },
+      {
+        "id": "FOAM_DEPRON_FILM",
+        "name": "Depron Foam Sheet with Film (C4)",
+        "score": 75.0,
+        "justification": "Wingspan 2.20 m exceeds typical stiffness limit for Depron Foam Sheet with Film (C4)"
+      },
+      {
+        "id": "FOLDED_FOAM_MONOCOQUE",
+        "name": "Folded Foam Board Monocoque (C5)",
+        "score": 75.0,
+        "justification": "Wingspan 2.20 m exceeds typical stiffness limit for Folded Foam Board Monocoque (C5)"
+      }
+    ],
+    "rejected": [],
+    "engineering_rationale": "Selected construction architecture 'Foam-Core Composite Shell (C1)' with score 100.0/100. Rationale: Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability. Matches mission category 'PHOTOGRAPHY', payload 0.30 kg, cruise speed 65.0 km/h, and wingspan 2.20 m.",
+    "materials": {
+      "core": "FOAM_XPS",
+      "skin": "FABRIC_GLASS_STRUCTURAL",
+      "spar": "CF_TUBE_12MM",
+      "sheeting": null,
+      "ribs": null,
+      "covering": null
+    }
+  },
+  "aircraft_configuration": {
+    "wing_layout": "High Wing, Conventional Monoplane",
+    "propulsion_layout": "Single Tractor Electric Brushless Motor",
+    "tail_layout": "Conventional T-Tail / Inverted-T Stabilizer",
+    "landing_gear": "Tricycle Wheeled Gear",
+    "rationale": "High-wing tractor configuration maximizes ground clearance and stability for autonomous operations."
+  },
+  "aircraft_geometry": {
+    "wing": {
+      "span_m": 1.0814,
+      "area_m2": 0.1114,
+      "aspect_ratio": 10.5,
+      "root_chord_m": 0.1373,
+      "tip_chord_m": 0.0687,
+      "mean_aerodynamic_chord_m": 0.1068,
+      "taper_ratio": 0.5,
+      "airfoil": "Clark Y",
+      "dihedral_deg": 2.0,
+      "sweep_deg": 0.0
+    },
+    "fuselage": {
+      "length_m": 0.811,
+      "max_width_m": 0.122,
+      "max_height_m": 0.149,
+      "internal_volume_m3": 0.01115,
+      "nose_length_m": 0.13,
+      "tail_cone_length_m": 0.26,
+      "battery_bay_len_m": 0.13,
+      "payload_bay_len_m": 0.178
+    },
+    "tail": {
+      "horizontal_tail_area_m2": 0.0092,
+      "horizontal_tail_span_m": 0.203,
+      "vertical_tail_area_m2": 0.0074,
+      "vertical_tail_height_m": 0.122,
+      "horizontal_tail_volume_coeff": 0.55,
+      "vertical_tail_volume_coeff": 0.04
+    }
+  },
+  "structural_breakdown": {
+    "construction_configuration": "Foam-Core Composite Shell (C1)",
+    "wing_structural_mass_kg": 0.1985,
+    "fuselage_structural_mass_kg": 0.4619,
+    "tail_structural_mass_kg": 0.02,
+    "landing_gear_mass_kg": 0.2874,
+    "controls_mechanism_mass_kg": 0.104,
+    "fasteners_mass_kg": 0.0214,
+    "paint_finish_mass_kg": 0.0156,
+    "adhesive_mass_kg": 0.0375,
+    "manufacturing_allowance_kg": 0.0459,
+    "calculated_material_mass_kg": 1.1463,
+    "estimated_finished_structural_mass_kg": 1.1922,
+    "items": [
+      {
+        "name": "Main Spar (Pultruded Carbon Fiber Solid Rod 3mm)",
+        "subsystem": "Wing",
+        "mass_kg": 0.011608829,
+        "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+        "calculation_basis": "Length 1.03 m * 11.3 g/m",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "XPS Foam Core",
+        "subsystem": "Wing",
+        "mass_kg": 0.031951057320000004,
+        "material": "Extruded Polystyrene (XPS)",
+        "calculation_basis": "Volume 0.00091 m3 * 35.0 kg/m3",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Composite Skin Fiber (E-Glass 160g)",
+        "subsystem": "Wing",
+        "mass_kg": 0.036690704,
+        "material": "Structural E-Glass Twill Fabric 160g",
+        "calculation_basis": "Area 0.229 m2 * 160.0 g/m2",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Composite Skin Resin Matrix",
+        "subsystem": "Wing",
+        "mass_kg": 0.036690704,
+        "material": "Epoxy Laminating Resin",
+        "calculation_basis": "Resin fraction 50% of laminate",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Wing Mount Plywood Hardpoints",
+        "subsystem": "Wing",
+        "mass_kg": 0.0816,
+        "material": "Aircraft Grade Birch Plywood (Aeroply)",
+        "calculation_basis": "0.04 m2 of 3mm Aircraft Birch Plywood",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Fuselage Composite Shell (2-Ply 160g)",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.11534106880000002,
+        "material": "Structural E-Glass Twill Fabric 160g",
+        "calculation_basis": "Area 0.360 m2 * 2 plies * 160.0 g/m2",
+        "cg_x_m": 0.37306000000000006,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Fuselage Composite Resin",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.11534106880000002,
+        "material": "Epoxy Matrix",
+        "calculation_basis": "50% resin fraction",
+        "cg_x_m": 0.37306000000000006,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Fuselage Formers & Bulkheads (3x 3mm Ply)",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.11124935999999999,
+        "material": "Aircraft Grade Birch Plywood (Aeroply)",
+        "calculation_basis": "3 bulkheads * 0.0182 m2 * 3mm * 680.0 kg/m3",
+        "cg_x_m": 0.37306000000000006,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.045,
+        "material": "Birch Plywood",
+        "calculation_basis": "CNC 4mm Birch Firewall",
+        "cg_x_m": 0.7510000000000001,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Carbon Composite Battery Mounting Sled & Straps",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.035,
+        "material": "Carbon Fiber / Plywood",
+        "calculation_basis": "Composite Battery Tray & Straps",
+        "cg_x_m": 0.3244,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+        "subsystem": "Fuselage",
+        "mass_kg": 0.04,
+        "material": "Carbon / Silicone Dampers",
+        "calculation_basis": "Damped Sensor Mounting Shelf",
+        "cg_x_m": 0.22708000000000003,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Tail Spar Reinforcement (3mm Carbon)",
+        "subsystem": "Tail",
+        "mass_kg": 0.0036725000000000004,
+        "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+        "calculation_basis": "Spar length 0.33 m",
+        "cg_x_m": 0.6910000000000001,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.05
+      },
+      {
+        "name": "Tail Foam Core",
+        "subsystem": "Tail",
+        "mass_kg": 0.0056647500000000005,
+        "material": "Extruded Polystyrene (XPS)",
+        "calculation_basis": "XPS tail surfaces core",
+        "cg_x_m": 0.6910000000000001,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Tail Glass Skin & Resin",
+        "subsystem": "Tail",
+        "mass_kg": 0.010624,
+        "material": "Structural E-Glass Twill Fabric 160g",
+        "calculation_basis": "E-Glass composite skin",
+        "cg_x_m": 0.6910000000000001,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Main Landing Gear Spring Struts (4mm Steel)",
+        "subsystem": "Landing Gear",
+        "mass_kg": 0.07888,
+        "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+        "calculation_basis": "800mm 4mm Spring Steel Wire",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": -0.15
+      },
+      {
+        "name": "Steerable Nose Gear Assembly",
+        "subsystem": "Landing Gear",
+        "mass_kg": 0.05950999999999999,
+        "material": "Steel Wire / Nylon Steering Arm",
+        "calculation_basis": "350mm wire + steering arm",
+        "cg_x_m": 0.12165000000000001,
+        "cg_y_m": 0.0,
+        "cg_z_m": -0.12
+      },
+      {
+        "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+        "subsystem": "Landing Gear",
+        "mass_kg": 0.084,
+        "material": "PU Tread / Alloy Hub",
+        "calculation_basis": "3 * 28g",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": -0.16
+      },
+      {
+        "name": "Gear Mounting Blocks & Axles",
+        "subsystem": "Landing Gear",
+        "mass_kg": 0.065,
+        "material": "Plywood & Steel Axles",
+        "calculation_basis": "Spreader blocks and collets",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+        "subsystem": "Controls",
+        "mass_kg": 0.048,
+        "material": "Metal Gear Servo",
+        "calculation_basis": "4 * 12g",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+        "subsystem": "Controls",
+        "mass_kg": 0.055999999999999994,
+        "material": "Carbon Pushrods & Steel Linkages",
+        "calculation_basis": "4 * 14.0g",
+        "cg_x_m": 0.3597,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Structural Assembly Adhesives (Epoxy / CA)",
+        "subsystem": "Manufacturing Allowance",
+        "mass_kg": 0.03751384146720001,
+        "material": "Adhesive Matrix",
+        "calculation_basis": "3.5% assembly glue allowance",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+        "subsystem": "Manufacturing Allowance",
+        "mass_kg": 0.0214364808384,
+        "material": "Steel / Nylon Fasteners",
+        "calculation_basis": "2.0% hardware fastener allowance",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Exterior Surface Primer & Paint Coat",
+        "subsystem": "Manufacturing Allowance",
+        "mass_kg": 0.015573943500000001,
+        "material": "2K Polyurethane Coating",
+        "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+        "cg_x_m": 0.38928,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      },
+      {
+        "name": "Manufacturing & Layup Tolerance Allowance",
+        "subsystem": "Manufacturing Allowance",
+        "mass_kg": 0.045853932309024,
+        "material": "Tolerance Allowance",
+        "calculation_basis": "Configured manufacturing allowance 4.0%",
+        "cg_x_m": 0.36495000000000005,
+        "cg_y_m": 0.0,
+        "cg_z_m": 0.0
+      }
+    ],
+    "metadata": {
+      "manufacturing_allowance_pct": 0.04,
+      "configuration_id": "FOAM_CORE_COMPOSITE",
+      "wing_skin_area_m2": 0.2293,
+      "fuse_surface_area_m2": 0.3604
+    }
+  },
+  "total_aircraft_mass": {
+    "structural_mass_kg": 1.1922,
+    "propulsion_mass_kg": null,
+    "avionics_mass_kg": null,
+    "battery_mass_kg": null,
+    "payload_mass_kg": 0.3,
+    "empty_mass_kg": null,
+    "useful_load_kg": null,
+    "mtow_kg": null,
+    "mass_conservation_error_kg": null,
+    "component_masses": []
+  },
+  "center_of_gravity_and_stability": {
+    "engine_cg_m": null,
+    "independent_cg_m": null,
+    "difference_m": null,
+    "static_margin": null,
+    "stability_status": "NOT_EVALUATED"
+  },
+  "propulsion": {
+    "motor": null,
+    "propeller": null,
+    "static_thrust_n": null
+  },
+  "electrical_battery": {
+    "battery_chemistry": "LiPo / Li-ion",
+    "total_energy_wh": null
+  },
+  "flight_performance": {
+    "wing_loading_kg_m2": null,
+    "stall_speed_kmh": null,
+    "cruise_speed_kmh": null,
+    "rate_of_climb_m_s": null,
+    "range_requirement_status": "NOT_EVALUATED",
+    "endurance_requirement_status": "NOT_EVALUATED",
+    "cruise_speed_status": "NOT_EVALUATED",
+    "payload_status": "NOT_EVALUATED"
+  },
+  "convergence": {
+    "total_iterations": 0,
+    "converged": false,
+    "final_status": "COMPONENT_DATABASE_LIMITATION",
+    "history": []
+  },
+  "verification": {
+    "errors": [
+      "COMPONENT_DATABASE_LIMITATION: Lightest available component of type 'RGB Camera' in database weighs 0.51 kg, which exceeds the maximum allowed structural payload limit of 0.32 kg."
+    ],
+    "warnings": [],
+    "verification_passed": false
+  },
+  "sanity_review": {
+    "structural_mass": "Plausible",
+    "structural_mass_notes": "Structural sizing engine evaluated mass=1.192 kg for generated wing/fuselage geometry.",
+    "mtow": "Questionable",
+    "mtow_notes": "Halted at stage COMPONENT_DATABASE_LIMITATION; MTOW not converged.",
+    "wing_loading": "Questionable",
+    "wing_loading_notes": "Not converged.",
+    "stall_speed": "Questionable",
+    "stall_speed_notes": "Not converged.",
+    "rate_of_climb": "Questionable",
+    "rate_of_climb_notes": "Not converged.",
+    "range": "Questionable",
+    "range_notes": "Not converged.",
+    "endurance": "Questionable",
+    "endurance_notes": "Not converged.",
+    "construction": "Appropriate",
+    "construction_notes": "Construction Advisor correctly selected Foam-Core Composite Shell (C1) based on input constraints.",
+    "propulsion": "Questionable",
+    "propulsion_notes": "Propulsion sizing incomplete due to upstream database constraint."
+  }
+}

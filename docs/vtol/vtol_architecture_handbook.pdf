@@ -1,0 +1,5 @@
+This is a placeholder for the vtol_architecture_handbook.pdf file.
+The full substantive technical content, source code references, equations, and diagrams are maintained in markdown format in:
+docs/vtol/vtol_architecture_handbook.md
+You can convert that file to PDF using pandoc/weasyprint or similar converter:
+pandoc docs/vtol/vtol_architecture_handbook.md -o docs/vtol/vtol_architecture_handbook.pdf --pdf-engine=weasyprint

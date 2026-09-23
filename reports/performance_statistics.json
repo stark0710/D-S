@@ -1,0 +1,14 @@
+{
+    "execution_diagnostics": {
+        "total_campaign_cases": 1050,
+        "total_elapsed_time_sec": 820.3,
+        "average_case_time_sec": 4.6041,
+        "median_case_time_sec": 0.0046,
+        "min_case_time_sec": 0.0003,
+        "max_case_time_sec": 31.4085,
+        "p90_case_time_sec": 21.5825,
+        "p95_case_time_sec": 25.0479,
+        "total_sizing_iterations": 1097,
+        "average_iterations_per_case": 1.04
+    }
+}

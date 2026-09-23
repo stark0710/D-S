@@ -1,0 +1,90 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-09-14T21:07:14.499037",
+    "script": "scripts/run_fixed_wing_pipeline.py",
+    "runner_version": "2.2.0",
+    "pipeline_target": "FixedWingDesignPipeline",
+    "success": false,
+    "status": "INVALID_REQUIREMENTS",
+    "converged": false,
+    "iterations": 0
+  },
+  "requirements": {
+    "mission_type": "AGRICULTURE",
+    "payload_weight_kg": 2.0,
+    "target_flight_time_min": 60.0,
+    "target_range_km": 40.0,
+    "cruise_speed_kmh": 65.0,
+    "aircraft_type": null,
+    "maximum_takeoff_weight_kg": 1.0,
+    "budget": null,
+    "takeoff_type": "RUNWAY",
+    "landing_type": "RUNWAY",
+    "environment": "RURAL",
+    "optimization_priority": "BALANCED",
+    "design_mode": "ENGINEERING_ADVISOR",
+    "metadata": {}
+  },
+  "convergence_data": {
+    "converged": false,
+    "iterations": 0,
+    "message": "Did not converge",
+    "iteration_history": [],
+    "tolerances": null,
+    "final_differences": null
+  },
+  "verification_summary": {
+    "pipeline_success": false,
+    "status": "INVALID_REQUIREMENTS",
+    "subsystem_verification": "N/A",
+    "certification_status": "N/A"
+  },
+  "mass_accounting_audit": {
+    "is_consistent": false,
+    "structural_mass_kg": 0.0,
+    "propulsion_mass_kg": 0.0,
+    "avionics_mass_kg": 0.0,
+    "battery_mass_kg": 0.0,
+    "payload_mass_kg": 0.0,
+    "summed_mass_kg": 0.0,
+    "reported_mtow_kg": 0.0,
+    "delta_kg": 0.0,
+    "relative_error_pct": 0.0,
+    "notes": [
+      "No MassPropertiesResult available."
+    ]
+  },
+  "result": {
+    "success": false,
+    "status": "INVALID_REQUIREMENTS",
+    "iterations": 0,
+    "converged": false,
+    "convergence_history": [],
+    "mission_result": null,
+    "configuration_result": null,
+    "construction_result": null,
+    "wing_result": null,
+    "airfoil_result": null,
+    "tail_result": null,
+    "fuselage_result": null,
+    "propulsion_result": null,
+    "avionics_result": null,
+    "payload_result": null,
+    "mass_properties_result": null,
+    "performance_result": null,
+    "verification_result": null,
+    "electrical_result": null,
+    "cg_result": null,
+    "final_specification": null,
+    "certification_report": null,
+    "convergence_result": null,
+    "warnings": [],
+    "errors": [
+      "Maximum takeoff weight limit (1.0 kg) must be greater than payload weight (2.0 kg)"
+    ]
+  },
+  "warnings": [],
+  "errors": [
+    "Maximum takeoff weight limit (1.0 kg) must be greater than payload weight (2.0 kg)"
+  ]
+}
