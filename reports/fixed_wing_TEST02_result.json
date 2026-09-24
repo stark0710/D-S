@@ -1,0 +1,1885 @@
+{
+  "advisor_selection": {
+    "selected": "FOAM_CORE_COMPOSITE",
+    "scores": {
+      "FOAM_CORE_COMPOSITE": 100.0,
+      "BALSA_SKELETON_COMPOSITE": 100.0,
+      "BALSA_CARBON_SKELETON_FILM": 70.0,
+      "FOAM_DEPRON_FILM": 66.0,
+      "FOLDED_FOAM_MONOCOQUE": 37.0,
+      "WOOD_SKELETON_FILM": 70.0
+    },
+    "ranking": [
+      [
+        "FOAM_CORE_COMPOSITE",
+        100.0,
+        "High structural stiffness ideal for optical photogrammetry overlap (+15 pts)"
+      ],
+      [
+        "BALSA_SKELETON_COMPOSITE",
+        100.0,
+        "High structural stiffness ideal for optical photogrammetry overlap (+15 pts)"
+      ],
+      [
+        "BALSA_CARBON_SKELETON_FILM",
+        70.0,
+        "Insufficient stiffness for precise surveying optics (-30 pts)"
+      ],
+      [
+        "WOOD_SKELETON_FILM",
+        70.0,
+        "Insufficient stiffness for precise surveying optics (-30 pts)"
+      ],
+      [
+        "FOAM_DEPRON_FILM",
+        66.0,
+        "Speed exceeds recommended aero limit (-4.0 pts); Insufficient stiffness for precise surveying optics (-30 pts)"
+      ],
+      [
+        "FOLDED_FOAM_MONOCOQUE",
+        37.0,
+        "Speed exceeds recommended aero limit (-8.0 pts); Wingspan 1.95 m exceeds typical stiffness limit for Folded Foam Board Monocoque (C5); Insufficient stiffness for precise surveying optics (-30 pts)"
+      ]
+    ],
+    "rejected": [],
+    "rationale": "Selected construction architecture 'Foam-Core Composite Shell (C1)' with score 100.0/100. Rationale: Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability. Matches mission category 'SURVEY', payload 0.50 kg, cruise speed 80.0 km/h, and wingspan 1.95 m."
+  },
+  "manual_configurations": {
+    "C1": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 5.137,
+      "empty_weight_kg": 2.895,
+      "structural_mass_kg": 1.998,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.928,
+        0.0,
+        -0.029
+      ],
+      "static_margin": 0.155,
+      "wing": {
+        "span_m": 1.9529,
+        "area_m2": 0.3814,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.2893,
+        "tip_chord_m": 0.1013,
+        "mac_m": 0.2104
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0404,
+        "vertical_area_m2": 0.018
+      },
+      "performance": {
+        "stall_speed_kmh": 43.5,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 11.18,
+        "range_km": 103.58,
+        "endurance_min": 77.68,
+        "takeoff_distance_m": 32.23,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.71,
+        "cruise_power_w": 162.5,
+        "climb_power_w": 454.1,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Foam-Core Composite Shell (C1)",
+        "wing_structural_mass_kg": 0.6056,
+        "fuselage_structural_mass_kg": 0.7366,
+        "tail_structural_mass_kg": 0.0629,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0359,
+        "paint_finish_mass_kg": 0.043,
+        "adhesive_mass_kg": 0.0629,
+        "manufacturing_allowance_kg": 0.0775,
+        "calculated_material_mass_kg": 1.9383,
+        "estimated_finished_structural_mass_kg": 2.0158,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.065304976,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.86 m * 35.2 g/m",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "XPS Foam Core",
+            "subsystem": "Wing",
+            "mass_kg": 0.20741766973200004,
+            "material": "Extruded Polystyrene (XPS)",
+            "calculation_basis": "Volume 0.00593 m3 * 35.0 kg/m3",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Composite Skin Fiber (E-Glass 160g)",
+            "subsystem": "Wing",
+            "mass_kg": 0.125617904,
+            "material": "Structural E-Glass Twill Fabric 160g",
+            "calculation_basis": "Area 0.785 m2 * 160.0 g/m2",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Composite Skin Resin Matrix",
+            "subsystem": "Wing",
+            "mass_kg": 0.125617904,
+            "material": "Epoxy Laminating Resin",
+            "calculation_basis": "Resin fraction 50% of laminate",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Wing Mount Plywood Hardpoints",
+            "subsystem": "Wing",
+            "mass_kg": 0.0816,
+            "material": "Aircraft Grade Birch Plywood (Aeroply)",
+            "calculation_basis": "0.04 m2 of 3mm Aircraft Birch Plywood",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Composite Shell (2-Ply 160g)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.26239999999999997,
+            "material": "Structural E-Glass Twill Fabric 160g",
+            "calculation_basis": "Area 0.820 m2 * 2 plies * 160.0 g/m2",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Composite Resin",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.26239999999999997,
+            "material": "Epoxy Matrix",
+            "calculation_basis": "50% resin fraction",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Formers & Bulkheads (3x 3mm Ply)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.0918,
+            "material": "Aircraft Grade Birch Plywood (Aeroply)",
+            "calculation_basis": "3 bulkheads * 0.0150 m2 * 3mm * 680.0 kg/m3",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.0055935,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.49 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Foam Core",
+            "subsystem": "Tail",
+            "mass_kg": 0.019928999999999995,
+            "material": "Extruded Polystyrene (XPS)",
+            "calculation_basis": "XPS tail surfaces core",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Glass Skin & Resin",
+            "subsystem": "Tail",
+            "mass_kg": 0.037376,
+            "material": "Structural E-Glass Twill Fabric 160g",
+            "calculation_basis": "E-Glass composite skin",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8725999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.06287564338062002,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "3.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.03592893907464001,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.043047797500000005,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.07753197334749042,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "FOAM_CORE_COMPOSITE",
+          "wing_skin_area_m2": 0.7851,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=5.137, mtow_new=4.181, absolute_delta_kg=0.956, relative_delta=0.186101, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=4.181, mtow_new=4.994, absolute_delta_kg=0.813, relative_delta=0.194451, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=4.994, mtow_new=5.116, absolute_delta_kg=0.122, relative_delta=0.024429, converged=False)",
+        "IterationRecord(iteration=4, mtow_old=5.116, mtow_new=5.133, absolute_delta_kg=0.017, relative_delta=0.003323, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=5.133, mtow_new=5.136, absolute_delta_kg=0.003, relative_delta=0.000584, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=5.136, mtow_new=5.137, absolute_delta_kg=0.001, relative_delta=0.000195, converged=True)"
+      ]
+    },
+    "C2": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 4.737,
+      "empty_weight_kg": 2.495,
+      "structural_mass_kg": 1.598,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.924,
+        0.0,
+        -0.032
+      ],
+      "static_margin": 0.155,
+      "wing": {
+        "span_m": 1.8755,
+        "area_m2": 0.3517,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.2778,
+        "tip_chord_m": 0.0972,
+        "mac_m": 0.202
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0358,
+        "vertical_area_m2": 0.016
+      },
+      "performance": {
+        "stall_speed_kmh": 43.4,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 12.31,
+        "range_km": 110.49,
+        "endurance_min": 82.87,
+        "takeoff_distance_m": 29.71,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.77,
+        "cruise_power_w": 150.6,
+        "climb_power_w": 419.3,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Balsa Skeleton Composite D-Box (C2)",
+        "wing_structural_mass_kg": 0.2872,
+        "fuselage_structural_mass_kg": 0.7366,
+        "tail_structural_mass_kg": 0.0281,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0289,
+        "paint_finish_mass_kg": 0.0412,
+        "adhesive_mass_kg": 0.0361,
+        "manufacturing_allowance_kg": 0.062,
+        "calculated_material_mass_kg": 1.5494,
+        "estimated_finished_structural_mass_kg": 1.6114,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.06271671999999999,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.78 m * 35.2 g/m",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Balsa Ribs (20 ribs)",
+            "subsystem": "Wing",
+            "mass_kg": 0.014544562500000002,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "20 ribs * 0.0028 m2 * 2mm * 130.0 kg/m3",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "1.0mm Balsa Sheet Sheeting",
+            "subsystem": "Wing",
+            "mass_kg": 0.09411667850000001,
+            "material": "1.0mm Balsa Sheet",
+            "calculation_basis": "Area 0.724 m2 * 1mm * 130.0 kg/m3",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Light E-Glass Skin (80g)",
+            "subsystem": "Wing",
+            "mass_kg": 0.05791795600000001,
+            "material": "Light E-Glass Plain Weave Fabric 80g",
+            "calculation_basis": "Area 0.724 m2 * 80.0 g/m2",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Composite Skin Resin Matrix",
+            "subsystem": "Wing",
+            "mass_kg": 0.05791795600000001,
+            "material": "Epoxy Laminating Resin",
+            "calculation_basis": "50% resin fraction over balsa",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Composite Shell (2-Ply 160g)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.26239999999999997,
+            "material": "Structural E-Glass Twill Fabric 160g",
+            "calculation_basis": "Area 0.820 m2 * 2 plies * 160.0 g/m2",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Composite Resin",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.26239999999999997,
+            "material": "Epoxy Matrix",
+            "calculation_basis": "50% resin fraction",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Formers & Bulkheads (3x 3mm Ply)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.0918,
+            "material": "Aircraft Grade Birch Plywood (Aeroply)",
+            "calculation_basis": "3 bulkheads * 0.0150 m2 * 3mm * 680.0 kg/m3",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.005277100000000001,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.47 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Structure (Balsa / Foam)",
+            "subsystem": "Tail",
+            "mass_kg": 0.020202,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "Balsa stabilizer surfaces",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Covering Film",
+            "subsystem": "Tail",
+            "mass_kg": 0.0025900000000000003,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Heat-shrink film",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8704999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.036081824325000005,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "2.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.028865459460000006,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.04118936125,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.06197638472140001,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "BALSA_SKELETON_COMPOSITE",
+          "wing_skin_area_m2": 0.724,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=4.737, mtow_new=4.01, absolute_delta_kg=0.727, relative_delta=0.153473, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=4.01, mtow_new=4.685, absolute_delta_kg=0.675, relative_delta=0.168329, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=4.685, mtow_new=4.732, absolute_delta_kg=0.047, relative_delta=0.010032, converged=False)",
+        "IterationRecord(iteration=4, mtow_old=4.732, mtow_new=4.737, absolute_delta_kg=0.005, relative_delta=0.001057, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=4.737, mtow_new=4.737, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=4.737, mtow_new=4.737, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)"
+      ]
+    },
+    "C3": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 3.991,
+      "empty_weight_kg": 1.749,
+      "structural_mass_kg": 0.852,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.916,
+        0.0,
+        -0.036
+      ],
+      "static_margin": 0.153,
+      "wing": {
+        "span_m": 1.7215,
+        "area_m2": 0.2963,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.255,
+        "tip_chord_m": 0.0893,
+        "mac_m": 0.1854
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0277,
+        "vertical_area_m2": 0.0123
+      },
+      "performance": {
+        "stall_speed_kmh": 43.0,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 15.06,
+        "range_km": 126.35,
+        "endurance_min": 94.76,
+        "takeoff_distance_m": 25.03,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.91,
+        "cruise_power_w": 128.2,
+        "climb_power_w": 354.2,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Balsa-Carbon Skeleton Film (C3)",
+        "wing_structural_mass_kg": 0.0857,
+        "fuselage_structural_mass_kg": 0.2858,
+        "tail_structural_mass_kg": 0.0222,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0157,
+        "paint_finish_mass_kg": 0.0377,
+        "adhesive_mass_kg": 0.0196,
+        "manufacturing_allowance_kg": 0.0343,
+        "calculated_material_mass_kg": 0.8582,
+        "estimated_finished_structural_mass_kg": 0.8925,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.05756696,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.64 m * 35.2 g/m",
+            "cg_x_m": 0.8664,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Balsa Ribs (21 ribs)",
+            "subsystem": "Wing",
+            "mass_kg": 0.012873643288506003,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "21 ribs * 2mm balsa",
+            "cg_x_m": 0.8664,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Heat-Shrink Covering Film",
+            "subsystem": "Wing",
+            "mass_kg": 0.015248338750000002,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Area 0.610 m2 * 25.0 g/m2",
+            "cg_x_m": 0.8664,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Lite-Ply Formers (5x 3mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.07875,
+            "material": "Lite-Plywood (Poplar Core)",
+            "calculation_basis": "5 lite-ply formers",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Balsa Corner Longerons (4x 8x8mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.06656,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "4 corner longerons",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Covering Film",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.0205,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "0.820 m2 * 25.0 g/m2",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.0046217,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.41 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Structure (Balsa / Foam)",
+            "subsystem": "Tail",
+            "mass_kg": 0.015600000000000001,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "Balsa stabilizer surfaces",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Covering Film",
+            "subsystem": "Tail",
+            "mass_kg": 0.002,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Heat-shrink film",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8664,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8664,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.019627766050962656,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "2.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.015702212840770124,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.03774833875,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.03432755838720955,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "BALSA_CARBON_SKELETON_FILM",
+          "wing_skin_area_m2": 0.6099,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=3.991, mtow_new=3.578, absolute_delta_kg=0.413, relative_delta=0.103483, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=3.578, mtow_new=3.98, absolute_delta_kg=0.402, relative_delta=0.112353, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=3.98, mtow_new=3.991, absolute_delta_kg=0.011, relative_delta=0.002764, converged=True)",
+        "IterationRecord(iteration=4, mtow_old=3.991, mtow_new=3.991, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=3.991, mtow_new=3.991, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=3.991, mtow_new=3.991, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)"
+      ]
+    },
+    "C4": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 4.079,
+      "empty_weight_kg": 1.837,
+      "structural_mass_kg": 0.94,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.917,
+        0.0,
+        -0.035
+      ],
+      "static_margin": 0.151,
+      "wing": {
+        "span_m": 1.7403,
+        "area_m2": 0.3029,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.2578,
+        "tip_chord_m": 0.0902,
+        "mac_m": 0.1875
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0286,
+        "vertical_area_m2": 0.0128
+      },
+      "performance": {
+        "stall_speed_kmh": 43.1,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 14.67,
+        "range_km": 124.28,
+        "endurance_min": 93.21,
+        "takeoff_distance_m": 25.59,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.89,
+        "cruise_power_w": 130.8,
+        "climb_power_w": 362.0,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Depron Foam Sheet with Film (C4)",
+        "wing_structural_mass_kg": 0.1666,
+        "fuselage_structural_mass_kg": 0.2824,
+        "tail_structural_mass_kg": 0.0229,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0173,
+        "paint_finish_mass_kg": 0.0382,
+        "adhesive_mass_kg": 0.0216,
+        "manufacturing_allowance_kg": 0.0376,
+        "calculated_material_mass_kg": 0.9403,
+        "estimated_finished_structural_mass_kg": 0.9779,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.058195632,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.65 m * 35.2 g/m",
+            "cg_x_m": 0.8669,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Depron 6mm Formed Wing Panels",
+            "subsystem": "Wing",
+            "mass_kg": 0.09595872,
+            "material": "Depron Aero Closed-Cell Polystyrene Sheet",
+            "calculation_basis": "Area 0.303 m2 * 6mm * 33.0 kg/m3",
+            "cg_x_m": 0.8669,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Covering Tape & Skin Film",
+            "subsystem": "Wing",
+            "mass_kg": 0.012470393,
+            "material": "Reinforced Covering Film",
+            "calculation_basis": "20 g/m2 lightweight film",
+            "cg_x_m": 0.8669,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Foam Box Fuselage Shell",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.16236,
+            "material": "Depron Aero Closed-Cell Polystyrene Sheet",
+            "calculation_basis": "0.820 m2 * 6mm foam",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.0047121,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.42 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Structure (Balsa / Foam)",
+            "subsystem": "Tail",
+            "mass_kg": 0.016146,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "Balsa stabilizer surfaces",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Covering Film",
+            "subsystem": "Tail",
+            "mass_kg": 0.0020700000000000002,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Heat-shrink film",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8669,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8669,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.021582571125,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "2.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.0172660569,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.038157991249999995,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.037612378571,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "FOAM_DEPRON_FILM",
+          "wing_skin_area_m2": 0.6235,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=4.079, mtow_new=3.593, absolute_delta_kg=0.486, relative_delta=0.119147, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=3.593, mtow_new=4.056, absolute_delta_kg=0.463, relative_delta=0.128862, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=4.056, mtow_new=4.078, absolute_delta_kg=0.022, relative_delta=0.005424, converged=True)",
+        "IterationRecord(iteration=4, mtow_old=4.078, mtow_new=4.079, absolute_delta_kg=0.001, relative_delta=0.000245, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=4.079, mtow_new=4.079, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=4.079, mtow_new=4.079, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)"
+      ]
+    },
+    "C5": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 4.419,
+      "empty_weight_kg": 2.177,
+      "structural_mass_kg": 1.28,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.923,
+        0.0,
+        -0.033
+      ],
+      "static_margin": 0.144,
+      "wing": {
+        "span_m": 1.8114,
+        "area_m2": 0.3281,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.2683,
+        "tip_chord_m": 0.0939,
+        "mac_m": 0.1951
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0323,
+        "vertical_area_m2": 0.0144
+      },
+      "performance": {
+        "stall_speed_kmh": 43.3,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 13.35,
+        "range_km": 116.77,
+        "endurance_min": 87.58,
+        "takeoff_distance_m": 27.71,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.82,
+        "cruise_power_w": 141.0,
+        "climb_power_w": 391.6,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Folded Foam Board Monocoque (C5)",
+        "wing_structural_mass_kg": 0.319,
+        "fuselage_structural_mass_kg": 0.4275,
+        "tail_structural_mass_kg": 0.0255,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0233,
+        "paint_finish_mass_kg": 0.0397,
+        "adhesive_mass_kg": 0.0291,
+        "manufacturing_allowance_kg": 0.0502,
+        "calculated_material_mass_kg": 1.2555,
+        "estimated_finished_structural_mass_kg": 1.3057,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.060573216,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.72 m * 35.2 g/m",
+            "cg_x_m": 0.8687999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Folded 5mm Foam Board Wing Shell",
+            "subsystem": "Wing",
+            "mass_kg": 0.25837875000000005,
+            "material": "Paper-Faced Foam Board (Flite Test style)",
+            "calculation_basis": "Area 0.689 m2 * 5mm * 75.0 kg/m3",
+            "cg_x_m": 0.8687999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Foam Box Fuselage Shell",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.30749999999999994,
+            "material": "Paper-Faced Foam Board (Flite Test style)",
+            "calculation_basis": "0.820 m2 * 5mm foam",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.0049946,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.44 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Structure (Balsa / Foam)",
+            "subsystem": "Tail",
+            "mass_kg": 0.018213000000000003,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "Balsa stabilizer surfaces",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Covering Film",
+            "subsystem": "Tail",
+            "mass_kg": 0.0023350000000000003,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Heat-shrink film",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8687999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8687999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.029084614150000007,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "2.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.023267691320000002,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.039719846249999996,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.05021826870880001,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "FOLDED_FOAM_MONOCOQUE",
+          "wing_skin_area_m2": 0.6754,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=4.419, mtow_new=3.776, absolute_delta_kg=0.643, relative_delta=0.145508, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=3.776, mtow_new=4.365, absolute_delta_kg=0.589, relative_delta=0.155985, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=4.365, mtow_new=4.414, absolute_delta_kg=0.049, relative_delta=0.011226, converged=False)",
+        "IterationRecord(iteration=4, mtow_old=4.414, mtow_new=4.419, absolute_delta_kg=0.005, relative_delta=0.001133, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=4.419, mtow_new=4.419, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=4.419, mtow_new=4.419, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)"
+      ]
+    },
+    "C6": {
+      "success": true,
+      "status": "PipelineStatus.SUCCESS",
+      "iterations": 6,
+      "mtow_kg": 4.05,
+      "empty_weight_kg": 1.808,
+      "structural_mass_kg": 0.911,
+      "propulsion_weight_kg": 0.455,
+      "avionics_weight_kg": 0.442,
+      "payload_weight_kg": 1.01,
+      "battery_weight_kg": 1.232,
+      "useful_load_kg": 2.242,
+      "cg": [
+        0.918,
+        0.0,
+        -0.035
+      ],
+      "static_margin": 0.147,
+      "wing": {
+        "span_m": 1.7341,
+        "area_m2": 0.3007,
+        "aspect_ratio": 10.0,
+        "root_chord_m": 0.2569,
+        "tip_chord_m": 0.0899,
+        "mac_m": 0.1868
+      },
+      "fuselage": {
+        "length_m": 2.0,
+        "width_m": 0.15,
+        "height_m": 0.1
+      },
+      "tail": {
+        "horizontal_area_m2": 0.0283,
+        "vertical_area_m2": 0.0126
+      },
+      "performance": {
+        "stall_speed_kmh": 43.1,
+        "cruise_speed_kmh": 80.0,
+        "rate_of_climb_m_s": 14.79,
+        "range_km": 124.99,
+        "endurance_min": 93.74,
+        "takeoff_distance_m": 25.39,
+        "landing_distance_m": 8.49
+      },
+      "propulsion": {
+        "motor": "T-Motor AT3520",
+        "propeller": "11x7 APC",
+        "thrust_to_weight": 0.9,
+        "cruise_power_w": 129.9,
+        "climb_power_w": 359.3,
+        "max_power_w": 950.0
+      },
+      "breakdown": {
+        "construction_configuration": "Traditional Wood Skeleton Film (C6)",
+        "wing_structural_mass_kg": 0.1384,
+        "fuselage_structural_mass_kg": 0.2858,
+        "tail_structural_mass_kg": 0.0227,
+        "landing_gear_mass_kg": 0.2874,
+        "controls_mechanism_mass_kg": 0.104,
+        "fasteners_mass_kg": 0.0168,
+        "paint_finish_mass_kg": 0.038,
+        "adhesive_mass_kg": 0.021,
+        "manufacturing_allowance_kg": 0.0366,
+        "calculated_material_mass_kg": 0.914,
+        "estimated_finished_structural_mass_kg": 0.9506,
+        "items": [
+          {
+            "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+            "subsystem": "Wing",
+            "mass_kg": 0.057988304000000004,
+            "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+            "calculation_basis": "Length 1.65 m * 35.2 g/m",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Balsa Ribs (23 ribs)",
+            "subsystem": "Wing",
+            "mass_kg": 0.014305206940128002,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "23 balsa ribs",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Spruce Spar Caps (Upper & Lower)",
+            "subsystem": "Wing",
+            "mass_kg": 0.0506079744,
+            "material": "Sitka Spruce Spar Stock",
+            "calculation_basis": "2 * 1.65 m * 8x4mm * 480.0 kg/m3",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Heat-Shrink Polyester Film",
+            "subsystem": "Wing",
+            "mass_kg": 0.015474773750000002,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "0.619 m2 * 25.0 g/m2",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Lite-Ply Formers (5x 3mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.07875,
+            "material": "Lite-Plywood (Poplar Core)",
+            "calculation_basis": "5 lite-ply formers",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Balsa Corner Longerons (4x 8x8mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.06656,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "4 corner longerons",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Fuselage Covering Film",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.0205,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "0.820 m2 * 25.0 g/m2",
+            "cg_x_m": 0.92,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.045,
+            "material": "Birch Plywood",
+            "calculation_basis": "CNC 4mm Birch Firewall",
+            "cg_x_m": 1.94,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Carbon Composite Battery Mounting Sled & Straps",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.035,
+            "material": "Carbon Fiber / Plywood",
+            "calculation_basis": "Composite Battery Tray & Straps",
+            "cg_x_m": 0.8,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+            "subsystem": "Fuselage",
+            "mass_kg": 0.04,
+            "material": "Carbon / Silicone Dampers",
+            "calculation_basis": "Damped Sensor Mounting Shelf",
+            "cg_x_m": 0.56,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Spar Reinforcement (3mm Carbon)",
+            "subsystem": "Tail",
+            "mass_kg": 0.0046782,
+            "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+            "calculation_basis": "Spar length 0.41 m",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.05
+          },
+          {
+            "name": "Tail Structure (Balsa / Foam)",
+            "subsystem": "Tail",
+            "mass_kg": 0.015951,
+            "material": "Aero Grade Balsa Wood (Medium Density)",
+            "calculation_basis": "Balsa stabilizer surfaces",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Tail Covering Film",
+            "subsystem": "Tail",
+            "mass_kg": 0.002045,
+            "material": "Lightweight Heat-Shrink Polyester Covering Film (e.g. Oracover / Monokote)",
+            "calculation_basis": "Heat-shrink film",
+            "cg_x_m": 1.88,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Main Landing Gear Spring Struts (4mm Steel)",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.07888,
+            "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+            "calculation_basis": "800mm 4mm Spring Steel Wire",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.15
+          },
+          {
+            "name": "Steerable Nose Gear Assembly",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.05950999999999999,
+            "material": "Steel Wire / Nylon Steering Arm",
+            "calculation_basis": "350mm wire + steering arm",
+            "cg_x_m": 0.3,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.12
+          },
+          {
+            "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.084,
+            "material": "PU Tread / Alloy Hub",
+            "calculation_basis": "3 * 28g",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": -0.16
+          },
+          {
+            "name": "Gear Mounting Blocks & Axles",
+            "subsystem": "Landing Gear",
+            "mass_kg": 0.065,
+            "material": "Plywood & Steel Axles",
+            "calculation_basis": "Spreader blocks and collets",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+            "subsystem": "Controls",
+            "mass_kg": 0.048,
+            "material": "Metal Gear Servo",
+            "calculation_basis": "4 * 12g",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+            "subsystem": "Controls",
+            "mass_kg": 0.055999999999999994,
+            "material": "Carbon Pushrods & Steel Linkages",
+            "calculation_basis": "4 * 14.0g",
+            "cg_x_m": 0.8666999999999999,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Structural Assembly Adhesives (Epoxy / CA)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.020956261477253203,
+            "material": "Adhesive Matrix",
+            "calculation_basis": "2.5% assembly glue allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.016765009181802563,
+            "material": "Steel / Nylon Fasteners",
+            "calculation_basis": "2.0% hardware fastener allowance",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Exterior Surface Primer & Paint Coat",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.038019773750000006,
+            "material": "2K Polyurethane Coating",
+            "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+            "cg_x_m": 0.96,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          },
+          {
+            "name": "Manufacturing & Layup Tolerance Allowance",
+            "subsystem": "Manufacturing Allowance",
+            "mass_kg": 0.03655966013996735,
+            "material": "Tolerance Allowance",
+            "calculation_basis": "Configured manufacturing allowance 4.0%",
+            "cg_x_m": 0.9,
+            "cg_y_m": 0.0,
+            "cg_z_m": 0.0
+          }
+        ],
+        "metadata": {
+          "manufacturing_allowance_pct": 0.04,
+          "configuration_id": "WOOD_SKELETON_FILM",
+          "wing_skin_area_m2": 0.619,
+          "fuse_surface_area_m2": 0.82
+        }
+      },
+      "convergence_history": [
+        "IterationRecord(iteration=1, mtow_old=4.05, mtow_new=3.618, absolute_delta_kg=0.432, relative_delta=0.106667, converged=False)",
+        "IterationRecord(iteration=2, mtow_old=3.618, mtow_new=4.035, absolute_delta_kg=0.417, relative_delta=0.115257, converged=False)",
+        "IterationRecord(iteration=3, mtow_old=4.035, mtow_new=4.05, absolute_delta_kg=0.015, relative_delta=0.003717, converged=True)",
+        "IterationRecord(iteration=4, mtow_old=4.05, mtow_new=4.05, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=5, mtow_old=4.05, mtow_new=4.05, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)",
+        "IterationRecord(iteration=6, mtow_old=4.05, mtow_new=4.05, absolute_delta_kg=0.0, relative_delta=0.0, converged=True)"
+      ]
+    }
+  },
+  "sensitivities": {
+    "xps_vs_depron_core": [
+      0.6056,
+      0.6056
+    ],
+    "balsa_std_vs_light_ribs_sheeting": [
+      0.3096,
+      0.3096
+    ],
+    "carbon_120_vs_200_skin": [
+      0.6056,
+      0.6056
+    ],
+    "carbon_tube_8mm_vs_12mm_spar": [
+      0.1039,
+      0.1039
+    ]
+  }
+}

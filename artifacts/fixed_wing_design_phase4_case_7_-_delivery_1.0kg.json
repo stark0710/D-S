@@ -1,0 +1,2795 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-09-14T21:06:54.752221",
+    "script": "scripts/run_fixed_wing_pipeline.py",
+    "runner_version": "2.2.0",
+    "pipeline_target": "FixedWingDesignPipeline",
+    "success": true,
+    "status": "SUCCESS",
+    "converged": true,
+    "iterations": 5
+  },
+  "requirements": {
+    "mission_type": "DELIVERY",
+    "payload_weight_kg": 1.0,
+    "target_flight_time_min": 40.0,
+    "target_range_km": 30.0,
+    "cruise_speed_kmh": 70.0,
+    "aircraft_type": null,
+    "maximum_takeoff_weight_kg": null,
+    "budget": null,
+    "takeoff_type": "RUNWAY",
+    "landing_type": "RUNWAY",
+    "environment": "RURAL",
+    "optimization_priority": "BALANCED",
+    "design_mode": "ENGINEERING_ADVISOR",
+    "metadata": {}
+  },
+  "convergence_data": {
+    "converged": true,
+    "iterations": 5,
+    "message": "All variables stabilized below convergence tolerances at iteration 5.",
+    "iteration_history": [
+      {
+        "iteration": 1,
+        "mtow": 4.263,
+        "wing_area": 0.262,
+        "wing_loading": 13.4674,
+        "battery_mass": 0.9,
+        "empty_weight": 2.363,
+        "cg_x": 0.519,
+        "static_margin": 0.141,
+        "cruise_power": 84.6,
+        "endurance": 99.94,
+        "range": 116.6
+      },
+      {
+        "iteration": 2,
+        "mtow": 4.37,
+        "wing_area": 0.3165,
+        "wing_loading": 13.4674,
+        "battery_mass": 0.9,
+        "empty_weight": 2.47,
+        "cg_x": 0.526,
+        "static_margin": 0.157,
+        "cruise_power": 102.0,
+        "endurance": 86.08,
+        "range": 100.43
+      },
+      {
+        "iteration": 3,
+        "mtow": 4.384,
+        "wing_area": 0.3245,
+        "wing_loading": 13.4674,
+        "battery_mass": 0.9,
+        "empty_weight": 2.484,
+        "cg_x": 0.529,
+        "static_margin": 0.148,
+        "cruise_power": 106.9,
+        "endurance": 82.85,
+        "range": 96.66
+      },
+      {
+        "iteration": 4,
+        "mtow": 4.388,
+        "wing_area": 0.3255,
+        "wing_loading": 13.4674,
+        "battery_mass": 0.9,
+        "empty_weight": 2.488,
+        "cg_x": 0.529,
+        "static_margin": 0.148,
+        "cruise_power": 107.7,
+        "endurance": 82.34,
+        "range": 96.07
+      },
+      {
+        "iteration": 5,
+        "mtow": 4.388,
+        "wing_area": 0.3258,
+        "wing_loading": 13.4674,
+        "battery_mass": 0.9,
+        "empty_weight": 2.488,
+        "cg_x": 0.529,
+        "static_margin": 0.148,
+        "cruise_power": 107.8,
+        "endurance": 82.28,
+        "range": 95.99
+      }
+    ],
+    "tolerances": null,
+    "final_differences": null
+  },
+  "verification_summary": {
+    "pipeline_success": true,
+    "status": "SUCCESS",
+    "subsystem_verification": "VERIFIED",
+    "certification_status": "CERTIFIED"
+  },
+  "mass_accounting_audit": {
+    "is_consistent": true,
+    "structural_mass_kg": 1.591,
+    "propulsion_mass_kg": 0.455,
+    "avionics_mass_kg": 0.442,
+    "battery_mass_kg": 0.9,
+    "payload_mass_kg": 1.0,
+    "summed_mass_kg": 4.388,
+    "reported_mtow_kg": 4.388,
+    "delta_kg": 0.0,
+    "relative_error_pct": 0.0,
+    "notes": [
+      "Subsystem mass conservation strictly verified within 0.0000%."
+    ]
+  },
+  "result": {
+    "success": true,
+    "status": "SUCCESS",
+    "iterations": 5,
+    "converged": true,
+    "convergence_history": [
+      {
+        "iteration": 1,
+        "mtow_old": 4.388,
+        "mtow_new": 4.263,
+        "absolute_delta_kg": 0.125,
+        "relative_delta": 0.028487,
+        "converged": false
+      },
+      {
+        "iteration": 2,
+        "mtow_old": 4.263,
+        "mtow_new": 4.37,
+        "absolute_delta_kg": 0.107,
+        "relative_delta": 0.0251,
+        "converged": false
+      },
+      {
+        "iteration": 3,
+        "mtow_old": 4.37,
+        "mtow_new": 4.384,
+        "absolute_delta_kg": 0.014,
+        "relative_delta": 0.003204,
+        "converged": true
+      },
+      {
+        "iteration": 4,
+        "mtow_old": 4.384,
+        "mtow_new": 4.388,
+        "absolute_delta_kg": 0.004,
+        "relative_delta": 0.000912,
+        "converged": true
+      },
+      {
+        "iteration": 5,
+        "mtow_old": 4.388,
+        "mtow_new": 4.388,
+        "absolute_delta_kg": 0.0,
+        "relative_delta": 0.0,
+        "converged": true
+      }
+    ],
+    "mission_result": {
+      "mission_profile": {
+        "mission_category": "Cargo",
+        "payload_kg": 1.0,
+        "flight_time_min": 40.0,
+        "cruise_speed_kmh": 70.0,
+        "stall_speed_target_kmh": 45.0,
+        "maximum_takeoff_weight_limit_kg": null,
+        "operational_altitude_m": 150.0,
+        "mission_range_km": 30.0,
+        "launch_method": "Runway",
+        "landing_method": "Runway",
+        "budget": 15000.0,
+        "environment": "Rural",
+        "autonomy_level": "Fully Autonomous",
+        "air_density_kg_m3": 1.2075,
+        "energy_demand_kwh": 0.0708,
+        "cruise_emphasis": 0.3,
+        "payload_emphasis": 0.8,
+        "launch_recovery_complexity": 0.35,
+        "environmental_complexity": 0.2,
+        "operational_risk_score": 0.2,
+        "initial_mtow_seed_kg": 3.5,
+        "current_iteration_mtow_kg": 4.388,
+        "mission_summary": "Fixed-Wing Cargo Mission Profile. Payload: 1.0 kg, Endurance: 40.0 min, Speed: 70.0 km/h, Altitude: 150.0 m. Est. Energy: 0.07 kWh. Complexity: Medium.",
+        "metadata": {
+          "complexity_score": 26.47,
+          "complexity_category": "Medium"
+        }
+      },
+      "mission_category": "Cargo",
+      "mission_score": 86.77,
+      "complexity": "Medium",
+      "engineering_requirements": {
+        "payload_mass_kg": 1.0,
+        "flight_time_sec": 2400.0,
+        "cruise_speed_m_s": 19.444444444444443,
+        "stall_speed_target_m_s": 12.5,
+        "mission_range_m": 30000.0,
+        "operating_altitude_m": 150.0,
+        "environment": "Rural",
+        "launch_method": "Runway",
+        "landing_method": "Runway",
+        "autonomy_level": "Fully Autonomous"
+      },
+      "constraints": {
+        "minimum_payload_kg": 1.0,
+        "minimum_range_km": 30.0,
+        "minimum_endurance_min": 40.0,
+        "target_cruise_speed_kmh": 70.0,
+        "maximum_stall_speed_kmh": 45.0,
+        "maximum_takeoff_weight_kg": null,
+        "budget_limit": 15000.0,
+        "required_launch_method": "Runway",
+        "required_landing_method": "Runway",
+        "operating_environment": "Rural",
+        "required_autonomy_level": "Fully Autonomous"
+      },
+      "recommendations": [
+        "Design a structural center section with high wing spars to support heavy loads.",
+        "Use thick high-lift airfoils (e.g. NACA 4415 or Selig 1223) to increase lift capability.",
+        "Incorporate a dedicated internal cargo bay near the CG location to maintain stability regardless of load."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:37.167441",
+        "feasibility_score": 100.0,
+        "complexity_score": 26.47,
+        "source_category": "Cargo"
+      }
+    },
+    "configuration_result": {
+      "selected_configuration": {
+        "wing_position": "High Wing",
+        "propulsion_layout": "Twin Tractor",
+        "tail_configuration": "Conventional",
+        "landing_gear_configuration": "Tricycle",
+        "engine_count": "2",
+        "payload_arrangement": "Fuselage Cargo Compartment (CG)",
+        "architecture": "Twin-Engine High-Wing Cargo Transport"
+      },
+      "configuration_score": 85.0,
+      "wing_configuration": "High Wing",
+      "propulsion_configuration": "Twin Tractor",
+      "tail_configuration": "Conventional",
+      "landing_gear_configuration": "Tricycle",
+      "engineering_rationale": "A Twin-Engine High-Wing layout is the standard for cargo transport. High wings leave the fuselage low to the ground for easy loading and maintain wing clearance. Twin tractor engines distribute thrust and structural bending moments, while Tricycle gear ensures stability during heavy taxiing and runway operations.",
+      "alternative_configurations": [
+        {
+          "layout": {
+            "wing_position": "High Wing",
+            "propulsion_layout": "Tractor",
+            "tail_configuration": "Conventional",
+            "landing_gear_configuration": "Tricycle",
+            "engine_count": "1",
+            "payload_arrangement": "CG Bay (Internal)",
+            "architecture": "Conventional High-Wing Tractor (Utility)"
+          },
+          "score": 93.0,
+          "rationale": "Conventional High-Wing Tractor (Utility) offers simplicity=100.0 and aerodynamics=75.0.",
+          "comparison": {
+            "config_a_name": "Twin-Engine High-Wing Cargo Transport",
+            "config_b_name": "Conventional High-Wing Tractor (Utility)",
+            "comparison_matrix": {
+              "aerodynamics_delta": 0.0,
+              "simplicity_delta": -25.0,
+              "cost_delta": -30.0,
+              "winner": "B"
+            },
+            "trade_offs": [
+              "Propulsion layout: Twin Tractor affects camera visibility and thrust alignment differently than Tractor."
+            ],
+            "rationales": {
+              "aerodynamics": "Config A is 0.0 points better aerodynamically.",
+              "structural_simplicity": "Config A is 25.0 points more complex.",
+              "cost_impact": "Config A is 30.0 points more expensive."
+            }
+          }
+        },
+        {
+          "layout": {
+            "wing_position": "Low Wing",
+            "propulsion_layout": "Tractor",
+            "tail_configuration": "Conventional",
+            "landing_gear_configuration": "Taildragger",
+            "engine_count": "1",
+            "payload_arrangement": "CG Tank",
+            "architecture": "Low-Wing Tractor Sprayer"
+          },
+          "score": 85.2,
+          "rationale": "Low-Wing Tractor Sprayer offers simplicity=100.0 and aerodynamics=72.0.",
+          "comparison": {
+            "config_a_name": "Twin-Engine High-Wing Cargo Transport",
+            "config_b_name": "Low-Wing Tractor Sprayer",
+            "comparison_matrix": {
+              "aerodynamics_delta": 3.0,
+              "simplicity_delta": -25.0,
+              "cost_delta": -30.0,
+              "winner": "B"
+            },
+            "trade_offs": [
+              "Wing position: High Wing offers different roll stability and ground clearance characteristics compared to Low Wing.",
+              "Propulsion layout: Twin Tractor affects camera visibility and thrust alignment differently than Tractor.",
+              "Landing gear: Tricycle affects drag in flight and operational site flexibility relative to Taildragger."
+            ],
+            "rationales": {
+              "aerodynamics": "Config A is 3.0 points better aerodynamically.",
+              "structural_simplicity": "Config A is 25.0 points more complex.",
+              "cost_impact": "Config A is 30.0 points more expensive."
+            }
+          }
+        },
+        {
+          "layout": {
+            "wing_position": "High Wing",
+            "propulsion_layout": "Pusher",
+            "tail_configuration": "Conventional",
+            "landing_gear_configuration": "Belly Landing",
+            "engine_count": "1",
+            "payload_arrangement": "Nose Bay",
+            "architecture": "High-Wing Rear Pusher (Survey / Glider)"
+          },
+          "score": 84.2,
+          "rationale": "High-Wing Rear Pusher (Survey / Glider) offers simplicity=100.0 and aerodynamics=92.0.",
+          "comparison": {
+            "config_a_name": "Twin-Engine High-Wing Cargo Transport",
+            "config_b_name": "High-Wing Rear Pusher (Survey / Glider)",
+            "comparison_matrix": {
+              "aerodynamics_delta": -17.0,
+              "simplicity_delta": -25.0,
+              "cost_delta": -30.0,
+              "winner": "A"
+            },
+            "trade_offs": [
+              "Propulsion layout: Twin Tractor affects camera visibility and thrust alignment differently than Pusher.",
+              "Landing gear: Tricycle affects drag in flight and operational site flexibility relative to Belly Landing."
+            ],
+            "rationales": {
+              "aerodynamics": "Config A is 17.0 points worse aerodynamically.",
+              "structural_simplicity": "Config A is 25.0 points more complex.",
+              "cost_impact": "Config A is 30.0 points more expensive."
+            }
+          }
+        },
+        {
+          "layout": {
+            "wing_position": "High Wing",
+            "propulsion_layout": "Twin Boom Pusher",
+            "tail_configuration": "Twin Boom",
+            "landing_gear_configuration": "Skid",
+            "engine_count": "1",
+            "payload_arrangement": "CG Bay (Internal)",
+            "architecture": "Twin-Boom Pusher Monoplane"
+          },
+          "score": 81.0,
+          "rationale": "Twin-Boom Pusher Monoplane offers simplicity=70.0 and aerodynamics=75.0.",
+          "comparison": {
+            "config_a_name": "Twin-Engine High-Wing Cargo Transport",
+            "config_b_name": "Twin-Boom Pusher Monoplane",
+            "comparison_matrix": {
+              "aerodynamics_delta": 0.0,
+              "simplicity_delta": 5.0,
+              "cost_delta": 5.0,
+              "winner": "A"
+            },
+            "trade_offs": [
+              "Propulsion layout: Twin Tractor affects camera visibility and thrust alignment differently than Twin Boom Pusher.",
+              "Tail assembly: Conventional impacts stability derivatives and structural complexity compared to the Twin Boom layout.",
+              "Landing gear: Tricycle affects drag in flight and operational site flexibility relative to Skid."
+            ],
+            "rationales": {
+              "aerodynamics": "Config A is 0.0 points better aerodynamically.",
+              "structural_simplicity": "Config A is 5.0 points simpler.",
+              "cost_impact": "Config A is 5.0 points more cost-effective."
+            }
+          }
+        },
+        {
+          "layout": {
+            "wing_position": "Mid Wing",
+            "propulsion_layout": "Pusher",
+            "tail_configuration": "Tailless",
+            "landing_gear_configuration": "Belly Landing",
+            "engine_count": "1",
+            "payload_arrangement": "CG Bay (Internal)",
+            "architecture": "Tailless Flying Wing Pusher"
+          },
+          "score": 76.5,
+          "rationale": "Tailless Flying Wing Pusher offers simplicity=95.0 and aerodynamics=100.0.",
+          "comparison": {
+            "config_a_name": "Twin-Engine High-Wing Cargo Transport",
+            "config_b_name": "Tailless Flying Wing Pusher",
+            "comparison_matrix": {
+              "aerodynamics_delta": -25.0,
+              "simplicity_delta": -20.0,
+              "cost_delta": -30.0,
+              "winner": "A"
+            },
+            "trade_offs": [
+              "Wing position: High Wing offers different roll stability and ground clearance characteristics compared to Mid Wing.",
+              "Propulsion layout: Twin Tractor affects camera visibility and thrust alignment differently than Pusher.",
+              "Tail assembly: Conventional impacts stability derivatives and structural complexity compared to the Tailless layout.",
+              "Landing gear: Tricycle affects drag in flight and operational site flexibility relative to Belly Landing."
+            ],
+            "rationales": {
+              "aerodynamics": "Config A is 25.0 points worse aerodynamically.",
+              "structural_simplicity": "Config A is 20.0 points more complex.",
+              "cost_impact": "Config A is 30.0 points more expensive."
+            }
+          }
+        }
+      ],
+      "recommendations": [
+        "For High Wing layout, configure a dihedral angle of 1 to 3 degrees to improve roll damping without causing excessive spiral instability.",
+        "Twin propulsion systems should utilize counter-rotating propellers (CW and CCW) to cancel gyroscopic precession and torque roll effects.",
+        "Incorporate a rear-loading ramp or split-nose opening for cargo access.",
+        "Use dual spars across the wing center section to support heavy payload weight.",
+        "Employ twin engines to distribute thrust loads and provide engine-out flight safety margin."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:37.167974",
+        "strategy_applied": "Cargo",
+        "overall_score": 85.0,
+        "primary_candidate": "Twin-Engine High-Wing Cargo Transport",
+        "primary_rejection_reason": "",
+        "fallback_candidates_attempted": [],
+        "final_candidate_selected": "Twin-Engine High-Wing Cargo Transport",
+        "reason_final_candidate_won": "Primary candidate is valid"
+      }
+    },
+    "construction_result": {
+      "selected_configuration": {
+        "configuration_id": "FOAM_CORE_COMPOSITE",
+        "name": "Foam-Core Composite Shell (C1)",
+        "category": "Professional UAV",
+        "description": "Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability.",
+        "applicable_vehicle_types": [
+          "FIXED_WING",
+          "HYBRID_VTOL"
+        ],
+        "applicable_mission_types": [
+          "SURVEY",
+          "MAPPING",
+          "CARGO",
+          "DELIVERY",
+          "SECURITY",
+          "SURVEILLANCE"
+        ],
+        "recommended_payload_range_kg": [
+          0.4,
+          6.0
+        ],
+        "recommended_wingspan_range_m": [
+          1.5,
+          4.0
+        ],
+        "recommended_speed_range_kmh": [
+          65.0,
+          160.0
+        ],
+        "recommended_range_km": [
+          20.0,
+          150.0
+        ],
+        "recommended_endurance_min": [
+          25.0,
+          180.0
+        ],
+        "structural_stiffness_level": "VERY_HIGH",
+        "durability_level": "VERY_HIGH",
+        "manufacturing_complexity": "ADVANCED_COMPOSITE",
+        "repairability": "Shop Repairable (Composite patch & epoxy)",
+        "material_requirements": [
+          "XPS Foam Core (35 kg/m3)",
+          "Carbon Fiber Spar Tubes",
+          "Fiberglass / Carbon Composite Fabric",
+          "Laminating Epoxy Matrix",
+          "Aircraft Birch Plywood Hardpoints"
+        ],
+        "required_components": [
+          "Main Carbon Spar",
+          "XPS Foam Core",
+          "Composite Skin",
+          "Plywood Firewall / Mount Blocks",
+          "Aileron / Flap Linkages"
+        ],
+        "optional_components": [
+          "Secondary Carbon Spar",
+          "Kevlar Belly Skid Plate",
+          "Carbon Spar Joiner Sleeve"
+        ],
+        "default_spar_type": "CF_TUBE_12MM",
+        "default_skin_material": "FABRIC_GLASS_STRUCTURAL",
+        "default_core_material": "FOAM_XPS",
+        "default_rib_material": null,
+        "default_sheeting_material": null,
+        "default_covering_material": null,
+        "default_bulkhead_material": "WOOD_AIRCRAFT_PLY",
+        "default_longerons_material": "CF_STRIP_10X1",
+        "notes": "Gold standard for commercial surveying, photogrammetry, and long-range missions."
+      },
+      "ranked_configurations": [
+        [
+          null,
+          100.0,
+          "Compatible with mission baseline"
+        ],
+        [
+          {
+            "configuration_id": "BALSA_SKELETON_COMPOSITE",
+            "name": "Balsa Skeleton Composite D-Box (C2)",
+            "category": "Professional Lightweight UAV",
+            "description": "Internal skeleton formed by CNC/laser-cut balsa ribs and carbon spar tubes, sheeted with 1.0mm balsa wood, and overlaid with lightweight composite glass/carbon skin. Achieves exceptionally low structural weight while maintaining excellent aerodynamic contour accuracy and structural rigidity.",
+            "applicable_vehicle_types": [
+              "FIXED_WING"
+            ],
+            "applicable_mission_types": [
+              "SURVEY",
+              "MAPPING",
+              "RESEARCH",
+              "INSPECTION"
+            ],
+            "recommended_payload_range_kg": [
+              0.2,
+              2.5
+            ],
+            "recommended_wingspan_range_m": [
+              1.2,
+              3.2
+            ],
+            "recommended_speed_range_kmh": [
+              50.0,
+              120.0
+            ],
+            "recommended_range_km": [
+              15.0,
+              80.0
+            ],
+            "recommended_endurance_min": [
+              25.0,
+              120.0
+            ],
+            "structural_stiffness_level": "HIGH",
+            "durability_level": "HIGH",
+            "manufacturing_complexity": "ADVANCED_COMPOSITE",
+            "repairability": "Shop Repairable",
+            "material_requirements": [
+              "Balsa Rib Stock (130 kg/m3)",
+              "1.0mm Balsa Sheet Sheeting",
+              "Carbon Fiber Spar Tubes",
+              "Light E-Glass / Carbon Fabric (80g)",
+              "Epoxy Resin"
+            ],
+            "required_components": [
+              "Carbon Main Spar",
+              "Balsa Ribs",
+              "Balsa 1mm Skin",
+              "Composite Skin Over Balsa",
+              "Plywood Bulkheads"
+            ],
+            "optional_components": [
+              "Secondary Carbon Spar",
+              "Balsa Sub-Spars",
+              "Leading Edge Carbon Strip"
+            ],
+            "default_spar_type": "CF_TUBE_8MM",
+            "default_skin_material": "FABRIC_GLASS_LIGHT",
+            "default_core_material": null,
+            "default_rib_material": "WOOD_BALSA",
+            "default_sheeting_material": "WOOD_BALSA",
+            "default_covering_material": null,
+            "default_bulkhead_material": "WOOD_AIRCRAFT_PLY",
+            "default_longerons_material": "CF_STRIP_10X1",
+            "notes": "Optimal balance of minimum empty weight and high aerodynamic efficiency for high-aspect-ratio gliders and light survey UAVs."
+          },
+          85.0,
+          "Compatible with mission baseline"
+        ],
+        [
+          {
+            "configuration_id": "BALSA_CARBON_SKELETON_FILM",
+            "name": "Balsa-Carbon Skeleton Film (C3)",
+            "category": "Lightweight Professional / Advanced Hobby",
+            "description": "Lightweight skeleton of balsa ribs and carbon spar, covered with heat-shrink film. Eliminates composite skin and sheeting weight, providing the highest payload-to-empty-weight fraction for gentle weather and low-speed endurance flights.",
+            "applicable_vehicle_types": [
+              "FIXED_WING"
+            ],
+            "applicable_mission_types": [
+              "SECURITY",
+              "SURVEILLANCE",
+              "RESEARCH",
+              "INSPECTION"
+            ],
+            "recommended_payload_range_kg": [
+              0.1,
+              1.2
+            ],
+            "recommended_wingspan_range_m": [
+              1.0,
+              2.5
+            ],
+            "recommended_speed_range_kmh": [
+              40.0,
+              85.0
+            ],
+            "recommended_range_km": [
+              5.0,
+              40.0
+            ],
+            "recommended_endurance_min": [
+              20.0,
+              60.0
+            ],
+            "structural_stiffness_level": "MEDIUM",
+            "durability_level": "MEDIUM",
+            "manufacturing_complexity": "INTERMEDIATE",
+            "repairability": "Field Repairable (Film iron & CA glue)",
+            "material_requirements": [
+              "Balsa Ribs (100 - 130 kg/m3)",
+              "Carbon Tube Spar",
+              "Lightweight Heat-Shrink Covering Film (25 g/m2)",
+              "CA and Wood Adhesive",
+              "Lite-Ply Formers"
+            ],
+            "required_components": [
+              "Carbon Main Spar",
+              "Balsa Ribs",
+              "Heat-Shrink Film Covering",
+              "Lite-Ply Formers"
+            ],
+            "optional_components": [
+              "Balsa Leading Edge D-Box",
+              "Carbon Trailing Edge Strip"
+            ],
+            "default_spar_type": "CF_TUBE_8MM",
+            "default_skin_material": null,
+            "default_core_material": null,
+            "default_rib_material": "WOOD_BALSA",
+            "default_sheeting_material": null,
+            "default_covering_material": "FILM_HEAT_SHRINK",
+            "default_bulkhead_material": "WOOD_LITE_PLY",
+            "default_longerons_material": "WOOD_BALSA",
+            "notes": "Very low MTOW, high thermal endurance, easily field-repaired."
+          },
+          85.0,
+          "Compatible with mission baseline"
+        ],
+        [
+          {
+            "configuration_id": "WOOD_SKELETON_FILM",
+            "name": "Traditional Wood Skeleton Film (C6)",
+            "category": "Traditional RC / Hobby",
+            "description": "Classic laser-cut balsa ribs with spruce/balsa beam spars, lite-ply fuselage formers and balsa longerons, covered in heat-shrink polyester film. No composite resins or specialized vacuum equipment required.",
+            "applicable_vehicle_types": [
+              "FIXED_WING"
+            ],
+            "applicable_mission_types": [
+              "RESEARCH",
+              "SECURITY"
+            ],
+            "recommended_payload_range_kg": [
+              0.1,
+              1.5
+            ],
+            "recommended_wingspan_range_m": [
+              1.0,
+              2.4
+            ],
+            "recommended_speed_range_kmh": [
+              40.0,
+              90.0
+            ],
+            "recommended_range_km": [
+              3.0,
+              30.0
+            ],
+            "recommended_endurance_min": [
+              15.0,
+              50.0
+            ],
+            "structural_stiffness_level": "MEDIUM",
+            "durability_level": "MEDIUM",
+            "manufacturing_complexity": "INTERMEDIATE",
+            "repairability": "Shop Repairable (Wood splices & patch film)",
+            "material_requirements": [
+              "Balsa Wood (130 kg/m3)",
+              "Spruce or Basswood Spar Caps (480 kg/m3)",
+              "Lite-Ply / Birch Plywood (350 - 680 kg/m3)",
+              "Heat-Shrink Film (25 g/m2)",
+              "Aliphatic / PVA / CA Wood Glue"
+            ],
+            "required_components": [
+              "Wood Spars",
+              "Balsa Ribs",
+              "Heat-Shrink Film",
+              "Plywood Formers",
+              "Balsa Longerons"
+            ],
+            "optional_components": [
+              "Balsa Shear Webs",
+              "Balsa Nose Cone"
+            ],
+            "default_spar_type": "WOOD_SPRUCE",
+            "default_skin_material": null,
+            "default_core_material": null,
+            "default_rib_material": "WOOD_BALSA",
+            "default_sheeting_material": null,
+            "default_covering_material": "FILM_HEAT_SHRINK",
+            "default_bulkhead_material": "WOOD_LITE_PLY",
+            "default_longerons_material": "WOOD_BASSWOOD",
+            "notes": "Traditional aeromodelling craft construction with excellent aesthetic appeal and moderate weight."
+          },
+          85.0,
+          "Compatible with mission baseline"
+        ]
+      ],
+      "scores": {
+        "FOAM_CORE_COMPOSITE": 100.0,
+        "BALSA_SKELETON_COMPOSITE": 85.0,
+        "BALSA_CARBON_SKELETON_FILM": 85.0,
+        "FOAM_DEPRON_FILM": 60.0,
+        "FOLDED_FOAM_MONOCOQUE": 60.0,
+        "WOOD_SKELETON_FILM": 85.0
+      },
+      "rejected_configurations": [
+        [
+          {
+            "configuration_id": "FOAM_DEPRON_FILM",
+            "name": "Depron Foam Sheet with Film (C4)",
+            "category": "Hobby / Educational",
+            "description": "Depron closed-cell foam sheet airframe reinforced with carbon rod spars and covered with tape/film. Low-cost, rapid-build architecture suited for universities, flight training, and low-cost surveillance.",
+            "applicable_vehicle_types": [
+              "FIXED_WING"
+            ],
+            "applicable_mission_types": [
+              "RESEARCH",
+              "INSPECTION",
+              "AGRICULTURE"
+            ],
+            "recommended_payload_range_kg": [
+              0.05,
+              0.6
+            ],
+            "recommended_wingspan_range_m": [
+              0.8,
+              1.6
+            ],
+            "recommended_speed_range_kmh": [
+              35.0,
+              75.0
+            ],
+            "recommended_range_km": [
+              2.0,
+              20.0
+            ],
+            "recommended_endurance_min": [
+              15.0,
+              45.0
+            ],
+            "structural_stiffness_level": "LOW",
+            "durability_level": "MEDIUM",
+            "manufacturing_complexity": "SIMPLE_HOBBY",
+            "repairability": "Field Repairable (Hot glue / tape)",
+            "material_requirements": [
+              "Depron Foam Sheets (3mm / 6mm)",
+              "Carbon Fiber Rod 3mm",
+              "Covering Film or Reinforced Tape",
+              "UHU Por or Foam-Safe CA",
+              "Lite-Ply Motor Mount"
+            ],
+            "required_components": [
+              "Depron Wing Panels",
+              "Carbon Spar Rod",
+              "Film/Tape Skin",
+              "Foam Box Fuselage",
+              "Firewall Plate"
+            ],
+            "optional_components": [
+              "Bamboo Skid Skegs",
+              "Plywood Control Horns"
+            ],
+            "default_spar_type": "CF_ROD_3MM",
+            "default_skin_material": null,
+            "default_core_material": "FOAM_DEPRON",
+            "default_rib_material": null,
+            "default_sheeting_material": null,
+            "default_covering_material": "FILM_HEAT_SHRINK",
+            "default_bulkhead_material": "WOOD_LITE_PLY",
+            "default_longerons_material": null,
+            "notes": "Ultra low-cost and quick turnaround."
+          },
+          "Payload 1.00 kg severely exceeds structural envelope (0.6 kg max)."
+        ],
+        [
+          {
+            "configuration_id": "FOLDED_FOAM_MONOCOQUE",
+            "name": "Folded Foam Board Monocoque (C5)",
+            "category": "Hobby / Educational Rapid Prototype",
+            "description": "Paper-faced foam board scored and folded along camber lines to form a semi-monocoque wing and fuselage. The folded sheet material itself acts as the primary structure with minimal internal reinforcement. No traditional ribs or full-length composite spars required.",
+            "applicable_vehicle_types": [
+              "FIXED_WING"
+            ],
+            "applicable_mission_types": [
+              "RESEARCH",
+              "INSPECTION"
+            ],
+            "recommended_payload_range_kg": [
+              0.05,
+              0.5
+            ],
+            "recommended_wingspan_range_m": [
+              0.7,
+              1.4
+            ],
+            "recommended_speed_range_kmh": [
+              30.0,
+              70.0
+            ],
+            "recommended_range_km": [
+              1.0,
+              15.0
+            ],
+            "recommended_endurance_min": [
+              10.0,
+              35.0
+            ],
+            "structural_stiffness_level": "LOW",
+            "durability_level": "LOW",
+            "manufacturing_complexity": "SIMPLE_HOBBY",
+            "repairability": "Easily Replaced / Disposable",
+            "material_requirements": [
+              "Paper-Faced Foam Board (5mm)",
+              "Hot Melt Glue",
+              "Packing Tape Hinges",
+              "Plywood Motor Mount Plate"
+            ],
+            "required_components": [
+              "Folded Foam Board Shell",
+              "Folded Fuselage Box",
+              "Plywood Firewall",
+              "Steel Pushrods"
+            ],
+            "optional_components": [
+              "Single Wood / Bamboo Spar"
+            ],
+            "default_spar_type": "WOOD_BALSA",
+            "default_skin_material": null,
+            "default_core_material": "FOAM_BOARD",
+            "default_rib_material": null,
+            "default_sheeting_material": null,
+            "default_covering_material": null,
+            "default_bulkhead_material": "WOOD_LITE_PLY",
+            "default_longerons_material": null,
+            "notes": "Flite-Test style construction, ideal for classroom education and expendable testbeds."
+          },
+          "Payload 1.00 kg severely exceeds structural envelope (0.5 kg max)."
+        ]
+      ],
+      "engineering_rationale": "Selected construction architecture 'Foam-Core Composite Shell (C1)' with score 100.0/100. Rationale: Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability. Matches mission category 'DELIVERY', payload 1.00 kg, cruise speed 70.0 km/h, and wingspan 2.20 m.",
+      "warnings": [],
+      "mode": "ENGINEERING_ADVISOR",
+      "metadata": {
+        "payload_kg": 1.0,
+        "range_km": 30.0,
+        "speed_kmh": 70.0,
+        "span_m": 2.2,
+        "mission_category": "DELIVERY"
+      }
+    },
+    "wing_result": {
+      "wing_geometry": {
+        "span_m": 1.6145,
+        "area_m2": 0.3258,
+        "aspect_ratio": 8.0,
+        "wing_loading_kg_m2": 13.4674,
+        "root_chord_m": 0.299,
+        "tip_chord_m": 0.1046,
+        "taper_ratio": 0.35,
+        "sweep_angle_deg": 0.0,
+        "dihedral_angle_deg": 0.0,
+        "wing_incidence_deg": 2.0,
+        "mean_aerodynamic_chord_m": 0.2174,
+        "quarter_chord_x_m": 0.0544,
+        "reference_area_m2": 0.3258
+      },
+      "planform": "Trapezoidal",
+      "reference_area": 0.3258,
+      "aspect_ratio": 8.0,
+      "wing_loading": 13.4674,
+      "mean_aerodynamic_chord": 0.2174,
+      "quarter_chord_location": 0.0544,
+      "analysis": {
+        "wing_loading_rating": "Moderate (Survey/Utility class)",
+        "lift_coefficient_cruise": 0.5786,
+        "estimated_stall_speed_kmh": 46.7,
+        "aerodynamic_efficiency_score": 65.0,
+        "structural_efficiency_score": 88.0,
+        "manufacturability_score": 80.0,
+        "stall_characteristics_rating": "Good (Minor tip-stall risk, recommend washout twist)",
+        "cruise_suitability": 80.0,
+        "endurance_suitability": 70.0,
+        "payload_suitability": 70.0,
+        "analysis_details": {
+          "dynamic_pressure_pa": 228.27,
+          "structural_efficiency_ratio": 43.34
+        }
+      },
+      "engineering_notes": [
+        "Wing sizing complete. Aspect Ratio: 8.00, Wing Area: 0.3258 m2.",
+        "Estimated MTOW: 4.39 kg, Cruise Lift Coefficient: 0.579.",
+        "Estimated Stall Speed: 46.7 km/h.",
+        "Estimated Wing weight: 0.405 kg."
+      ],
+      "recommendations": [
+        "Select high-lift airfoils (e.g. Selig 1223 or Eppler 423) to generate maximum lift during takeoff.",
+        "Equip slotted flaps across 60% of trailing span to reduce landing runway requirements.",
+        "Construct dual shear web spars to handle high torsional moments from twin wing engines."
+      ],
+      "warnings": [
+        "Low wing loading (13.47 kg/m2) on Cargo mission results in excessively large wingspan and structural bending penalties."
+      ],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:50.920343",
+        "strategy_applied": "Cargo",
+        "design_load_factor": 4.0
+      }
+    },
+    "airfoil_result": {
+      "selected_root_airfoil": "Selig S1223",
+      "selected_tip_airfoil": "Clark Y",
+      "airfoil_distribution": "Lofted Ultra High-Lift Root to High-Lift Tip (maximum load lift)",
+      "polar_data": {
+        "airfoil_name": "Selig S1223",
+        "cruise_cl": 0.579,
+        "cruise_cd": 0.02181,
+        "cruise_l_d": 26.52,
+        "max_l_d": 57.26,
+        "max_l_d_cl": 1.38,
+        "max_lift_coeff": 1.738,
+        "stall_angle_deg": 15.4,
+        "pitching_moment_c_m0": -0.142,
+        "polar_curve": {
+          "alpha_deg": [
+            -8.1,
+            -7.92,
+            -7.74,
+            -7.55,
+            -7.37,
+            -7.19,
+            -7.01,
+            -6.82,
+            -6.64,
+            -6.46,
+            -6.28,
+            -6.09,
+            -5.91,
+            -5.73,
+            -5.55,
+            -5.36,
+            -5.18,
+            -5.0,
+            -4.82,
+            -4.63,
+            -4.45,
+            -4.27,
+            -4.09,
+            -3.91,
+            -3.72,
+            -3.54,
+            -3.36,
+            -3.18,
+            -2.99,
+            -2.81,
+            -2.63,
+            -2.45,
+            -2.26,
+            -2.08,
+            -1.9,
+            -1.72,
+            -1.53,
+            -1.35,
+            -1.17,
+            -0.99,
+            -0.8,
+            -0.62,
+            -0.44,
+            -0.26,
+            -0.08,
+            0.11,
+            0.29,
+            0.47,
+            0.65,
+            0.84,
+            1.02,
+            1.2,
+            1.38,
+            1.57,
+            1.75,
+            1.93,
+            2.11,
+            2.3,
+            2.48,
+            2.66,
+            2.84,
+            3.03,
+            3.21,
+            3.39,
+            3.57,
+            3.75,
+            3.94,
+            4.12,
+            4.3,
+            4.48,
+            4.67,
+            4.85,
+            5.03,
+            5.21,
+            5.4,
+            5.58,
+            5.76,
+            5.94,
+            6.13,
+            6.31
+          ],
+          "cl": [
+            0.0,
+            0.02,
+            0.04,
+            0.06,
+            0.08,
+            0.1,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2,
+            0.22,
+            0.24,
+            0.26,
+            0.28,
+            0.3,
+            0.32,
+            0.34,
+            0.36,
+            0.38,
+            0.4,
+            0.42,
+            0.44,
+            0.46,
+            0.48,
+            0.5,
+            0.52,
+            0.54,
+            0.56,
+            0.58,
+            0.6,
+            0.62,
+            0.64,
+            0.66,
+            0.68,
+            0.7,
+            0.72,
+            0.74,
+            0.76,
+            0.78,
+            0.8,
+            0.82,
+            0.84,
+            0.86,
+            0.88,
+            0.9,
+            0.92,
+            0.94,
+            0.96,
+            0.98,
+            1.0,
+            1.02,
+            1.04,
+            1.06,
+            1.08,
+            1.1,
+            1.12,
+            1.14,
+            1.16,
+            1.18,
+            1.2,
+            1.22,
+            1.24,
+            1.26,
+            1.28,
+            1.3,
+            1.32,
+            1.34,
+            1.36,
+            1.38,
+            1.4,
+            1.42,
+            1.44,
+            1.46,
+            1.48,
+            1.5,
+            1.52,
+            1.54,
+            1.56,
+            1.58
+          ],
+          "cd": [
+            0.03453,
+            0.03389,
+            0.03327,
+            0.03265,
+            0.03206,
+            0.03147,
+            0.0309,
+            0.03035,
+            0.02981,
+            0.02928,
+            0.02877,
+            0.02828,
+            0.02779,
+            0.02733,
+            0.02687,
+            0.02643,
+            0.02601,
+            0.0256,
+            0.0252,
+            0.02482,
+            0.02445,
+            0.0241,
+            0.02376,
+            0.02344,
+            0.02313,
+            0.02283,
+            0.02255,
+            0.02229,
+            0.02203,
+            0.0218,
+            0.02157,
+            0.02136,
+            0.02117,
+            0.02099,
+            0.02082,
+            0.02067,
+            0.02054,
+            0.02041,
+            0.02031,
+            0.02021,
+            0.02013,
+            0.02007,
+            0.02002,
+            0.01998,
+            0.01996,
+            0.01995,
+            0.01996,
+            0.01998,
+            0.02002,
+            0.02007,
+            0.02013,
+            0.02021,
+            0.02031,
+            0.02041,
+            0.02054,
+            0.02067,
+            0.02082,
+            0.02099,
+            0.02117,
+            0.02136,
+            0.02157,
+            0.0218,
+            0.02203,
+            0.02229,
+            0.02255,
+            0.02283,
+            0.02313,
+            0.02344,
+            0.02376,
+            0.0241,
+            0.02445,
+            0.02482,
+            0.0252,
+            0.0256,
+            0.02601,
+            0.02643,
+            0.02687,
+            0.02733,
+            0.02779,
+            0.02833
+          ]
+        }
+      },
+      "performance_map": {
+        "airfoil_name": "Selig S1223",
+        "reynolds_nodes": [
+          199275.0,
+          224131.0,
+          248987.0,
+          273843.0,
+          298699.0
+        ],
+        "cl_nodes": [
+          0.0,
+          0.24,
+          0.48,
+          0.72,
+          0.96,
+          1.2
+        ],
+        "drag_grid": [
+          [
+            0.03622,
+            0.02948,
+            0.02481,
+            0.02222,
+            0.0217,
+            0.02326
+          ],
+          [
+            0.03571,
+            0.02897,
+            0.02431,
+            0.02172,
+            0.0212,
+            0.02275
+          ],
+          [
+            0.03527,
+            0.02853,
+            0.02387,
+            0.02128,
+            0.02076,
+            0.02231
+          ],
+          [
+            0.03488,
+            0.02814,
+            0.02348,
+            0.02089,
+            0.02037,
+            0.02192
+          ],
+          [
+            0.03453,
+            0.02779,
+            0.02313,
+            0.02054,
+            0.02002,
+            0.02157
+          ]
+        ],
+        "l_d_grid": [
+          [
+            0.0,
+            8.14,
+            19.35,
+            32.4,
+            44.24,
+            51.59
+          ],
+          [
+            0.0,
+            8.28,
+            19.74,
+            33.15,
+            45.28,
+            52.75
+          ],
+          [
+            0.0,
+            8.41,
+            20.11,
+            33.83,
+            46.24,
+            53.79
+          ],
+          [
+            0.0,
+            8.53,
+            20.44,
+            34.47,
+            47.13,
+            54.74
+          ],
+          [
+            0.0,
+            8.64,
+            20.75,
+            35.05,
+            47.95,
+            55.63
+          ]
+        ]
+      },
+      "reynolds_analysis": {
+        "re_root_cruise": 298699.0,
+        "re_tip_cruise": 149349.5,
+        "re_mean_cruise": 232265.5,
+        "re_root_stall": 199274.9,
+        "re_tip_stall": 99637.4,
+        "recommended_re_range": "Reynolds range: 99,637 to 298,699",
+        "metadata": {
+          "air_viscosity_pa_s": 1.866e-05,
+          "air_density_kg_m3": 1.2075
+        }
+      },
+      "engineering_notes": [
+        "Root airfoil: Selig S1223 (High-Lift), Thickness: 12.1%, Camber: 8.1%.",
+        "Tip airfoil: Clark Y (Cambered), Thickness: 11.7%, Camber: 3.4%.",
+        "Distribution: Lofted Ultra High-Lift Root to High-Lift Tip (maximum load lift).",
+        "Cruise profile drag coefficient at root: Cd = 0.02181, L/D = 26.5.",
+        "Airfoil 'Selig S1223' evaluated. Cruise section efficiency: L/D = 26.5. Max lift coefficient: Cl_max = 1.74. Zero-lift moment: C_m0 = -0.142."
+      ],
+      "recommendations": [
+        "Maintain smooth wing surface finishes to minimize skin friction drag.",
+        "Verify section lift matching between root and tip to avoid excessive aerodynamic twist loads.",
+        "Selig S1223 has high camber and high negative pitching moment. Ensure the fuselage structure is stiff and can accept tail down-force loads without deflection.",
+        "Use large flap linkages to support the heavy loads generated by this airfoil at takeoff."
+      ],
+      "warnings": [
+        "Airfoil has a high negative pitching moment (C_m0 = -0.142). Requires a larger tail volume or longer tail boom to balance pitching loads, increasing trim drag."
+      ],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:37.169153",
+        "strategy_applied": "Cargo",
+        "airfoil_database": "Torq Wings Core library V1"
+      }
+    },
+    "tail_result": {
+      "tail_configuration": "Conventional",
+      "horizontal_tail": {
+        "area_m2": 0.0443,
+        "span_m": 0.365,
+        "chord_root_m": 0.187,
+        "chord_tip_m": 0.056,
+        "aspect_ratio": 3.0,
+        "sweep_angle_deg": 0.0,
+        "taper_ratio": 0.3,
+        "incidence_angle_deg": 0.0
+      },
+      "vertical_tail": {
+        "area_m2": 0.0158,
+        "height_m": 0.138,
+        "chord_root_m": 0.177,
+        "chord_tip_m": 0.053,
+        "aspect_ratio": 1.2,
+        "sweep_angle_deg": 0.0,
+        "taper_ratio": 0.3
+      },
+      "control_surfaces": {
+        "elevator_span_m": 0.365,
+        "elevator_chord_ratio": 0.35,
+        "elevator_area_m2": 0.0155,
+        "elevator_max_deflection_deg": 25.0,
+        "elevator_hinge_location_pct": 65.0,
+        "rudder_height_m": 0.138,
+        "rudder_chord_ratio": 0.35,
+        "rudder_area_m2": 0.0055,
+        "rudder_max_deflection_deg": 30.0,
+        "rudder_hinge_location_pct": 65.0
+      },
+      "tail_volume_coefficients": {
+        "horizontal_V_h": 0.625,
+        "vertical_V_v": 0.03
+      },
+      "tail_analysis": {
+        "horizontal_volume_coefficient": 0.625,
+        "vertical_volume_coefficient": 0.03,
+        "pitch_stability_rating": "Excellent (Highly stable, gentle stall recovery)",
+        "yaw_stability_rating": "Good (Standard directional tracking)",
+        "pitch_control_authority": 87.5,
+        "yaw_control_authority": 87.5,
+        "trim_capability": "Excellent (Minimal trim drag penalty)",
+        "structural_simplicity_score": 95.0,
+        "manufacturability_score": 95.0,
+        "mission_suitability": 85.0,
+        "analysis_details": {
+          "pitch_volume_coefficient": 0.6255,
+          "yaw_volume_coefficient": 0.03
+        }
+      },
+      "engineering_notes": [
+        "Tail configuration: Conventional.",
+        "Tail arm: 1.00 m.",
+        "Sized horizontal tail area: 0.0443 m2, V_h = 0.625.",
+        "Sized vertical tail area: 0.0158 m2, V_v = 0.030."
+      ],
+      "recommendations": [
+        "Use stiff hinge mechanisms to prevent control surface flutter at high speeds.",
+        "Verify trim authority under maximum payload and forward Center of Gravity limits.",
+        "Cargo loading causes significant CG movement. Confirm trim authority at both extreme forward and aft CG.",
+        "For Twin Boom tail styles, ensure horizontal tail spar handles high torsional loads under side-slip."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:52.045412",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "fuselage_result": {
+      "fuselage_geometry": {
+        "length_m": 1.3,
+        "width_m": 0.15,
+        "height_m": 0.1,
+        "nose_length_m": 0.234,
+        "tail_cone_length_m": 0.52,
+        "cross_section_type": "Circular",
+        "wing_attachment_x_m": 0.416,
+        "tail_attachment_x_m": 1.235,
+        "payload_bay_length_m": 0.286,
+        "payload_bay_width_m": 0.12,
+        "payload_bay_height_m": 0.075,
+        "payload_bay_volume_m3": 0.00257,
+        "battery_bay_length_m": 0.208,
+        "battery_bay_width_m": 0.12,
+        "battery_bay_height_m": 0.055,
+        "battery_bay_volume_m3": 0.00137,
+        "avionics_bay_length_m": 0.182,
+        "avionics_bay_width_m": 0.12,
+        "avionics_bay_height_m": 0.035,
+        "total_volume_m3": 0.01384
+      },
+      "internal_layout": {
+        "payload_placement_x_m": 0.516,
+        "battery_placement_x_m": 0.366,
+        "flight_controller_placement_x_m": 0.616,
+        "gps_placement_x_m": 0.636,
+        "receiver_placement_x_m": 0.656,
+        "telemetry_placement_x_m": 0.676,
+        "esc_placement_x_m": 0.316,
+        "power_distribution_location": "Fuselage mid-deck floor beneath battery bay",
+        "cable_routing_path": "Bilateral fuselage floor side channels (isolated from ESC power cables)",
+        "cooling_airflow_channel": "Nose cooling duct scoop to rear fuselage side vent exhausts",
+        "service_access_description": "Quick-release top avionics canopy hatch + removable wing saddle floor plate"
+      },
+      "component_placement": {
+        "calculated_cg_x_m": 0.466,
+        "target_cg_x_m": 0.466,
+        "static_margin_pct": 15.0,
+        "component_locations": {
+          "Payload": 0.516,
+          "Battery": 0.366,
+          "FlightController": 0.616,
+          "GPS": 0.636,
+          "Receiver": 0.656,
+          "Telemetry": 0.676,
+          "ESC": 0.316,
+          "Motor": 0.065
+        },
+        "component_masses": {
+          "Structure": 1.5,
+          "Payload": 1.0,
+          "Battery": 1.2,
+          "Motor": 0.4
+        }
+      },
+      "mounting_interfaces": {
+        "wing_mounting_style": "Saddle Mount with rubber dampers",
+        "wing_mounting_hardware": "4x M4 steel bolts with blind nuts",
+        "tail_mounting_style": "Dual CF boom sleeve mounts integrated in wing root bulkheads",
+        "propulsion_mount_type": "Front bulkhead firewall: 55x55mm 3.0mm carbon fiber panel",
+        "landing_gear_mount_type": "Tricycle retract mount plates",
+        "main_gear_attachment_x_m": 0.496,
+        "nose_gear_attachment_x_m": 0.117,
+        "access_panels_description": "1x Top main electronics hatch with spring latch, 1x bottom payload bay access hatch"
+      },
+      "fuselage_analysis": {
+        "packaging_efficiency_score": 90.0,
+        "payload_accommodation_score": 85.0,
+        "aerodynamic_efficiency_score": 80.0,
+        "manufacturability_score": 60.0,
+        "component_accessibility_score": 63.2,
+        "cooling_adequacy_score": 69.4,
+        "volume_utilization_ratio": 0.306,
+        "analysis_summary": "Fuselage analysis: Fineness ratio = 10.40 (Suboptimal). Volume utilization: 30.6%. Packaging score: 90.0/100."
+      },
+      "engineering_notes": [
+        "Fuselage type: Twin Boom.",
+        "Sized length: 1.30 m, Width: 0.15 m, Height: 0.10 m.",
+        "Total fuselage internal volume: 0.01384 m3, utilization ratio: 30.6%.",
+        "Balanced CG location: 0.466 m from nose, static margin stability: 15.0%."
+      ],
+      "recommendations": [
+        "Use vibration-damping gel pads under the Flight Controller to isolate high-frequency propeller vibration.",
+        "Route power wiring along the fuselage floor and signal wires along the roof to avoid EM interference.",
+        "Cargo loading causes significant CG movement. Install slide rails to easily lock cargo boxes at the CG center.",
+        "Install a quick-release rear hatch for loading cargo packages without removing the wing."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:51.769031",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "propulsion_result": {
+      "selected_motor_or_engine": "T-Motor AT3520",
+      "selected_propeller": "11x7 APC",
+      "propulsion_layout": "Single Tractor",
+      "thrust_analysis": {
+        "required_cruise_thrust_n": 2.96,
+        "required_takeoff_thrust_n": 15.06,
+        "estimated_static_thrust_n": 35.55,
+        "thrust_to_weight_ratio": 0.83,
+        "power_loading_w_kg": 216.52,
+        "metadata": {}
+      },
+      "power_analysis": {
+        "required_cruise_power_w": 107.8,
+        "required_climb_power_w": 376.1,
+        "maximum_power_w": 950.0,
+        "current_draw_cruise_a": 4.86,
+        "metadata": {
+          "voltage_v": 22.2,
+          "motor_weight_g": 210.0
+        }
+      },
+      "efficiency_analysis": {
+        "motor_efficiency": 0.82,
+        "propeller_efficiency": 0.65,
+        "total_system_efficiency": 0.533,
+        "energy_consumption_per_km_wh": 1.54,
+        "metadata": {}
+      },
+      "cruise_analysis": {
+        "cruise_speed_kmh": 70.0,
+        "required_cruise_thrust_n": 2.96,
+        "prop_rpm_cruise": 6562.0,
+        "throttle_setting_pct": 11.3,
+        "metadata": {}
+      },
+      "climb_analysis": {
+        "rate_of_climb_m_s": 10.61,
+        "climb_angle_deg": 39.0,
+        "excess_power_w": 456.5,
+        "time_to_altitude_min": 0.24,
+        "metadata": {}
+      },
+      "takeoff_analysis": {
+        "takeoff_distance_m": 24.54,
+        "takeoff_velocity_m_s": 15.57,
+        "acceleration_force_n": 32.59,
+        "takeoff_time_s": 2.1,
+        "metadata": {}
+      },
+      "engineering_notes": [
+        "Propulsion architecture: Electric.",
+        "Propulsion layout: Single Tractor.",
+        "Selected power unit: T-Motor AT3520 (max power: 950.0 W).",
+        "Sized propeller: 11x7 APC (diameter: 11.0 in, pitch: 7.0 in).",
+        "Estimated takeoff distance: 24.5 m, rate of climb: 10.61 m/s.",
+        "Energy consumption: 1.54 Wh/km."
+      ],
+      "recommendations": [
+        "Balance the propeller blade before flight to eliminate high-frequency motor mount vibration.",
+        "Verify ESC voltage matches nominal motor battery voltage to avoid overheating components.",
+        "For heavy lifters, use twin counter-rotating propellers to eliminate spiralling slipstream torque roll.",
+        "Verify engine firewall is secured with heavy aircraft bolts and locking nylon nuts."
+      ],
+      "warnings": [
+        "Low cruise throttle setting (11.3%). Propulsion system is oversized, causing excess weight and low cruise electrical efficiency."
+      ],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:53.299293",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "avionics_result": {
+      "selected_flight_controller": "Cube Orange+",
+      "selected_firmware": "ArduPilot",
+      "selected_navigation_system": "Dual GNSS",
+      "selected_receiver": "TBS Crossfire Nano RX",
+      "selected_telemetry": "RFDesign RFD900ux",
+      "selected_companion_computer": "None",
+      "selected_sensors": [
+        "Holybro Digital Airspeed Sensor",
+        "Matek CAN Compass",
+        "LightWare SF11/C Laser Altimeter"
+      ],
+      "navigation_analysis": {
+        "gnss_type": "Dual GNSS",
+        "redundancy_level": 2,
+        "waypoint_mission_support": true,
+        "visual_navigation_capable": false,
+        "estimated_cpu_load_pct": 21.0,
+        "metadata": {
+          "selected_gps": "Holybro M9N GNSS",
+          "autopilot_weight_g": 75
+        }
+      },
+      "communication_analysis": {
+        "max_range_km": 40.0,
+        "bandwidth_kbps": 224.0,
+        "redundancy_enabled": true,
+        "failsafe_trigger_delay_s": 5.0,
+        "metadata": {
+          "rc_receiver": "TBS Crossfire Nano RX",
+          "rc_link_range_km": 40.0
+        }
+      },
+      "power_analysis": {
+        "continuous_power_w": 4.95,
+        "peak_power_w": 6.45,
+        "backup_power_supported": true,
+        "current_draw_5v_a": 0.99,
+        "metadata": {
+          "autopilot_power_w": 3.6,
+          "companion_power_w": 0.0,
+          "sensors_power_w": 1.35
+        }
+      },
+      "engineering_notes": [
+        "Avionics strategy: Cargo.",
+        "Selected Autopilot: Cube Orange+ running ArduPilot.",
+        "GNSS configuration: Dual GNSS (Holybro M9N GNSS).",
+        "Companion Computer: None.",
+        "Telemetry link: RFDesign RFD900ux (max range: 40.0 km).",
+        "Total continuous power: 4.95 W, current draw: 0.99 A at 5V."
+      ],
+      "recommendations": [
+        "Use shielding tape around GPS wires to prevent electromagnetic noise from companion computers.",
+        "Install a dedicated airspeed sensor heater (pitot heat) if flying in freezing or humid clouds.",
+        "Install redundant dual BECs (Battery Eliminator Circuits) from separate battery packs to power the FC.",
+        "Set failsafe options to automatically land if RC connection is lost for more than 20 seconds."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:37.170275",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "payload_result": {
+      "selected_payloads": [
+        "Lightweight Modular Courier Package"
+      ],
+      "payload_layout": {
+        "placement_x_m": 0.3159,
+        "orientation": "Internal Centered",
+        "compartment_length_m": 0.286,
+        "compartment_width_m": 0.12,
+        "compartment_height_m": 0.075,
+        "accessibility_description": "Sliding undercarriage bay doors"
+      },
+      "payload_mounts": [
+        {
+          "mount_style": "Foam cargo cavity with quick-release lock brackets",
+          "vibration_isolation_type": "Alpha-gel compression dampers",
+          "isolation_frequency_hz": 20.0,
+          "mounting_hardware": "4x M3 carbon plate bolts",
+          "tilt_angle_limit_deg": 0.0
+        }
+      ],
+      "power_interfaces": [
+        {
+          "voltage_v": 5.0,
+          "max_current_a": 0.0,
+          "connector_type": "JST-GH",
+          "regulator_required": false,
+          "power_draw_w": 0.0
+        }
+      ],
+      "communication_interfaces": [
+        {
+          "interface_type": "USB-C",
+          "bandwidth_mbps": 0.0,
+          "geotagging_protocol": "None",
+          "datalogger_storage_gb": 0.0
+        }
+      ],
+      "cooling_requirements": {
+        "heat_dissipation_w": 0.0,
+        "cooling_type": "Passive heat-sink",
+        "required_intake_area_mm2": 0.0,
+        "operating_temp_max_c": 60.0
+      },
+      "payload_analysis": {
+        "payload_accommodation_score": 89.0,
+        "power_consumption_w": 0.0,
+        "required_bandwidth_mbps": 0.0,
+        "cg_shift_offset_m": -0.0043,
+        "static_margin_impact_pct": -2.32,
+        "thermal_dissipation_factor": 1.2,
+        "structural_safety_margin": 3.0,
+        "upgrade_potential_rating": "Excellent (Ample space for larger secondary cameras)",
+        "serviceability_score": 90.0,
+        "analysis_summary": "Payload integration: Sized weight = 1.00 kg, CG shift: -4.3 mm (Stable). Continuous power: 0.0 W."
+      },
+      "requested_payload_mass_kg": 1.0,
+      "installed_payload_mass_kg": 1.0,
+      "payload_design_margin_kg": 0.0,
+      "engineering_notes": [
+        "Payload strategy applied: Cargo.",
+        "Selected payloads: Lightweight Modular Courier Package.",
+        "compartment volume utilization: 11.0%.",
+        "CG displacement: -4.3 mm, static margin shift: -2.32%.",
+        "Continuous thermal load: 0.0 W, cooling style: Passive heat-sink."
+      ],
+      "recommendations": [
+        "Use rubber grommets to isolate high-frequency airframe engine vibration from camera lenses.",
+        "Verify all cargo weights are strapped securely to prevent longitudinal sliding during nose dives."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:37.169153",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "mass_properties_result": {
+      "weight_breakdown": {
+        "structural_weight_kg": 1.591,
+        "propulsion_weight_kg": 0.455,
+        "avionics_weight_kg": 0.442,
+        "payload_weight_kg": 1.0,
+        "battery_fuel_weight_kg": 0.9,
+        "useful_load_kg": 1.9,
+        "payload_fraction": 0.228,
+        "battery_fraction": 0.205
+      },
+      "component_masses": [
+        {
+          "name": "Wing Structure",
+          "mass_kg": 0.533,
+          "x_m": 0.47,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Fuselage Shell",
+          "mass_kg": 0.553,
+          "x_m": 0.598,
+          "y_m": 0.0,
+          "z_m": -0.02
+        },
+        {
+          "name": "Horizontal Tail",
+          "mass_kg": 0.048,
+          "x_m": 1.18,
+          "y_m": 0.0,
+          "z_m": 0.05
+        },
+        {
+          "name": "Vertical Tail",
+          "mass_kg": 0.017,
+          "x_m": 1.18,
+          "y_m": 0.0,
+          "z_m": 0.1
+        },
+        {
+          "name": "Landing Gear",
+          "mass_kg": 0.287,
+          "x_m": 0.585,
+          "y_m": 0.0,
+          "z_m": -0.15
+        },
+        {
+          "name": "Motor",
+          "mass_kg": 0.31,
+          "x_m": 0.06,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Propeller",
+          "mass_kg": 0.065,
+          "x_m": 0.08,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "ESC",
+          "mass_kg": 0.08,
+          "x_m": 0.01,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Energy Battery",
+          "mass_kg": 0.9,
+          "x_m": 0.698,
+          "y_m": 0.0,
+          "z_m": -0.04
+        },
+        {
+          "name": "Flight Controller",
+          "mass_kg": 0.08,
+          "x_m": 0.616,
+          "y_m": 0.0,
+          "z_m": 0.02
+        },
+        {
+          "name": "GPS",
+          "mass_kg": 0.05,
+          "x_m": 0.566,
+          "y_m": 0.0,
+          "z_m": 0.04
+        },
+        {
+          "name": "Receiver",
+          "mass_kg": 0.01,
+          "x_m": 0.666,
+          "y_m": 0.0,
+          "z_m": 0.01
+        },
+        {
+          "name": "Telemetry",
+          "mass_kg": 0.03,
+          "x_m": 0.696,
+          "y_m": 0.0,
+          "z_m": 0.03
+        },
+        {
+          "name": "Power Module",
+          "mass_kg": 0.025,
+          "x_m": 0.536,
+          "y_m": 0.0,
+          "z_m": -0.01
+        },
+        {
+          "name": "BEC",
+          "mass_kg": 0.015,
+          "x_m": 0.516,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Servos",
+          "mass_kg": 0.112,
+          "x_m": 0.47,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Payload",
+          "mass_kg": 1.0,
+          "x_m": 0.496,
+          "y_m": 0.0,
+          "z_m": -0.05
+        },
+        {
+          "name": "Fasteners",
+          "mass_kg": 0.035,
+          "x_m": 0.65,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Wiring",
+          "mass_kg": 0.12,
+          "x_m": 0.585,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Paint / Finish",
+          "mass_kg": 0.0,
+          "x_m": 0.65,
+          "y_m": 0.0,
+          "z_m": 0.0
+        },
+        {
+          "name": "Safety Margin",
+          "mass_kg": 0.118,
+          "x_m": 0.65,
+          "y_m": 0.0,
+          "z_m": 0.0
+        }
+      ],
+      "center_of_gravity": [
+        0.529,
+        0.0,
+        -0.03
+      ],
+      "moments_of_inertia": [
+        0.0071,
+        0.1744,
+        0.1673
+      ],
+      "loading_conditions": [],
+      "static_margin": 0.148,
+      "mass_analysis": {
+        "weight_distribution_score": 90.0,
+        "cg_envelope_suitability_score": 90.0,
+        "static_margin_suitability_score": 95.0,
+        "structural_load_index": 1.5,
+        "weight_efficiency_ratio": 0.4,
+        "analysis_summary": "Feasible weight build-up"
+      },
+      "engineering_notes": [
+        "Optimized via MassPropertiesOptimizer"
+      ],
+      "recommendations": [],
+      "warnings": [],
+      "metadata": {
+        "structural_breakdown": {
+          "construction_configuration": "Foam-Core Composite Shell (C1)",
+          "wing_structural_mass_kg": 0.5333,
+          "fuselage_structural_mass_kg": 0.5529,
+          "tail_structural_mass_kg": 0.0647,
+          "landing_gear_mass_kg": 0.2874,
+          "controls_mechanism_mass_kg": 0.104,
+          "fasteners_mass_kg": 0.0308,
+          "paint_finish_mass_kg": 0.0331,
+          "adhesive_mass_kg": 0.054,
+          "manufacturing_allowance_kg": 0.0664,
+          "calculated_material_mass_kg": 1.6602,
+          "estimated_finished_structural_mass_kg": 1.7266,
+          "items": [
+            {
+              "name": "Main Spar (Roll-Wrapped Carbon Fiber Tube 8x6mm)",
+              "subsystem": "Wing",
+              "mass_kg": 0.053988879999999996,
+              "material": "Roll-Wrapped Carbon Fiber Tube 8x6mm",
+              "calculation_basis": "Length 1.53 m * 35.2 g/m",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "XPS Foam Core",
+              "subsystem": "Wing",
+              "mass_kg": 0.18307753682399996,
+              "material": "Extruded Polystyrene (XPS)",
+              "calculation_basis": "Volume 0.00523 m3 * 35.0 kg/m3",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Composite Skin Fiber (E-Glass 160g)",
+              "subsystem": "Wing",
+              "mass_kg": 0.10730548799999999,
+              "material": "Structural E-Glass Twill Fabric 160g",
+              "calculation_basis": "Area 0.671 m2 * 160.0 g/m2",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Composite Skin Resin Matrix",
+              "subsystem": "Wing",
+              "mass_kg": 0.10730548799999999,
+              "material": "Epoxy Laminating Resin",
+              "calculation_basis": "Resin fraction 50% of laminate",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Wing Mount Plywood Hardpoints",
+              "subsystem": "Wing",
+              "mass_kg": 0.0816,
+              "material": "Aircraft Grade Birch Plywood (Aeroply)",
+              "calculation_basis": "0.04 m2 of 3mm Aircraft Birch Plywood",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Fuselage Composite Shell (2-Ply 160g)",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.17056000000000002,
+              "material": "Structural E-Glass Twill Fabric 160g",
+              "calculation_basis": "Area 0.533 m2 * 2 plies * 160.0 g/m2",
+              "cg_x_m": 0.5980000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Fuselage Composite Resin",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.17056000000000002,
+              "material": "Epoxy Matrix",
+              "calculation_basis": "50% resin fraction",
+              "cg_x_m": 0.5980000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Fuselage Formers & Bulkheads (3x 3mm Ply)",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.0918,
+              "material": "Aircraft Grade Birch Plywood (Aeroply)",
+              "calculation_basis": "3 bulkheads * 0.0150 m2 * 3mm * 680.0 kg/m3",
+              "cg_x_m": 0.5980000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "CNC Aircraft Birch Plywood Firewall (4mm)",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.045,
+              "material": "Birch Plywood",
+              "calculation_basis": "CNC 4mm Birch Firewall",
+              "cg_x_m": 1.24,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Carbon Composite Battery Mounting Sled & Straps",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.035,
+              "material": "Carbon Fiber / Plywood",
+              "calculation_basis": "Composite Battery Tray & Straps",
+              "cg_x_m": 0.52,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Vibration-Isolated Payload Bay Equipment Shelf",
+              "subsystem": "Fuselage",
+              "mass_kg": 0.04,
+              "material": "Carbon / Silicone Dampers",
+              "calculation_basis": "Damped Sensor Mounting Shelf",
+              "cg_x_m": 0.36400000000000005,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Tail Spar Reinforcement (3mm Carbon)",
+              "subsystem": "Tail",
+              "mass_kg": 0.0056839,
+              "material": "Pultruded Carbon Fiber Solid Rod 3mm",
+              "calculation_basis": "Spar length 0.50 m",
+              "cg_x_m": 1.1800000000000002,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.05
+            },
+            {
+              "name": "Tail Foam Core",
+              "subsystem": "Tail",
+              "mass_kg": 0.020509125,
+              "material": "Extruded Polystyrene (XPS)",
+              "calculation_basis": "XPS tail surfaces core",
+              "cg_x_m": 1.1800000000000002,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Tail Glass Skin & Resin",
+              "subsystem": "Tail",
+              "mass_kg": 0.038464,
+              "material": "Structural E-Glass Twill Fabric 160g",
+              "calculation_basis": "E-Glass composite skin",
+              "cg_x_m": 1.1800000000000002,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Main Landing Gear Spring Struts (4mm Steel)",
+              "subsystem": "Landing Gear",
+              "mass_kg": 0.07888,
+              "material": "Heavy Spring Steel Landing Gear Wire 4.0mm",
+              "calculation_basis": "800mm 4mm Spring Steel Wire",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": -0.15
+            },
+            {
+              "name": "Steerable Nose Gear Assembly",
+              "subsystem": "Landing Gear",
+              "mass_kg": 0.05950999999999999,
+              "material": "Steel Wire / Nylon Steering Arm",
+              "calculation_basis": "350mm wire + steering arm",
+              "cg_x_m": 0.195,
+              "cg_y_m": 0.0,
+              "cg_z_m": -0.12
+            },
+            {
+              "name": "Runway Wheels (3x PU Tread Alloy Hub Wheel 65mm (2.5 in))",
+              "subsystem": "Landing Gear",
+              "mass_kg": 0.084,
+              "material": "PU Tread / Alloy Hub",
+              "calculation_basis": "3 * 28g",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": -0.16
+            },
+            {
+              "name": "Gear Mounting Blocks & Axles",
+              "subsystem": "Landing Gear",
+              "mass_kg": 0.065,
+              "material": "Plywood & Steel Axles",
+              "calculation_basis": "Spreader blocks and collets",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Flight Control Servos (4x Micro Metal Gear 9g Servo (e.g. EMAX ES08MDII))",
+              "subsystem": "Controls",
+              "mass_kg": 0.048,
+              "material": "Metal Gear Servo",
+              "calculation_basis": "4 * 12g",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Control Linkages (4x Pushrod + Horn + Clevis)",
+              "subsystem": "Controls",
+              "mass_kg": 0.055999999999999994,
+              "material": "Carbon Pushrods & Steel Linkages",
+              "calculation_basis": "4 * 14.0g",
+              "cg_x_m": 0.4704,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Structural Assembly Adhesives (Epoxy / CA)",
+              "subsystem": "Manufacturing Allowance",
+              "mass_kg": 0.05397855462384001,
+              "material": "Adhesive Matrix",
+              "calculation_basis": "3.5% assembly glue allowance",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Hardware Fasteners (M3/M4 Bolts & Blind Nuts)",
+              "subsystem": "Manufacturing Allowance",
+              "mass_kg": 0.030844888356480006,
+              "material": "Steel / Nylon Fasteners",
+              "calculation_basis": "2.0% hardware fastener allowance",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Exterior Surface Primer & Paint Coat",
+              "subsystem": "Manufacturing Allowance",
+              "mass_kg": 0.0330964825,
+              "material": "2K Polyurethane Coating",
+              "calculation_basis": "Paint density 25 g/m2 over wetted areas",
+              "cg_x_m": 0.624,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            },
+            {
+              "name": "Manufacturing & Layup Tolerance Allowance",
+              "subsystem": "Manufacturing Allowance",
+              "mass_kg": 0.06640657373217282,
+              "material": "Tolerance Allowance",
+              "calculation_basis": "Configured manufacturing allowance 4.0%",
+              "cg_x_m": 0.5850000000000001,
+              "cg_y_m": 0.0,
+              "cg_z_m": 0.0
+            }
+          ],
+          "metadata": {
+            "manufacturing_allowance_pct": 0.04,
+            "configuration_id": "FOAM_CORE_COMPOSITE",
+            "wing_skin_area_m2": 0.6707,
+            "fuse_surface_area_m2": 0.533
+          }
+        },
+        "construction_specification": {
+          "configuration_id": "FOAM_CORE_COMPOSITE",
+          "name": "Foam-Core Composite Shell (C1)",
+          "category": "Professional UAV",
+          "description": "Hot-wire cut XPS internal foam core wrapped in structural fiberglass and/or carbon fiber composite skin, supported by pultruded or roll-wrapped carbon spar tubes with local plywood/carbon hardpoints. High torsional and bending stiffness, smooth aerodynamic surface finish, and weather-proof durability.",
+          "applicable_vehicle_types": null,
+          "applicable_mission_types": null,
+          "recommended_payload_range_kg": [
+            0.4,
+            6.0
+          ],
+          "recommended_wingspan_range_m": [
+            1.5,
+            4.0
+          ],
+          "recommended_speed_range_kmh": [
+            65.0,
+            160.0
+          ],
+          "recommended_range_km": [
+            20.0,
+            150.0
+          ],
+          "recommended_endurance_min": [
+            25.0,
+            180.0
+          ],
+          "structural_stiffness_level": "VERY_HIGH",
+          "durability_level": "VERY_HIGH",
+          "manufacturing_complexity": "ADVANCED_COMPOSITE",
+          "repairability": "Shop Repairable (Composite patch & epoxy)",
+          "material_requirements": null,
+          "required_components": null,
+          "optional_components": null,
+          "notes": "Gold standard for commercial surveying, photogrammetry, and long-range missions."
+        }
+      }
+    },
+    "performance_result": {
+      "aerodynamic_analysis": {
+        "cruise_lift_coefficient": 0.543,
+        "cruise_drag_coefficient": 0.0373,
+        "lift_to_drag_ratio": 14.55,
+        "zero_lift_drag_coefficient": 0.023,
+        "induced_drag_factor": 0.0485,
+        "metadata": {}
+      },
+      "performance_analysis": {
+        "maximum_speed_kmh": 179.3,
+        "cruise_speed_kmh": 70.0,
+        "minimum_controllable_speed_kmh": 45.0,
+        "best_glide_ratio": 14.97,
+        "max_rate_of_climb_m_s": 11.69,
+        "metadata": {}
+      },
+      "takeoff_analysis": {
+        "takeoff_distance_m": 19.42,
+        "rotation_speed_m_s": 13.58,
+        "ground_acceleration_m_s2": 7.71,
+        "takeoff_duration_s": 1.76,
+        "metadata": {}
+      },
+      "landing_analysis": {
+        "landing_distance_m": 6.41,
+        "approach_speed_m_s": 12.89,
+        "braking_deceleration_m_s2": 4.5,
+        "landing_duration_s": 2.86,
+        "metadata": {}
+      },
+      "climb_analysis": {
+        "rate_of_climb_m_s": 11.69,
+        "climb_angle_deg": 64.2,
+        "climb_speed_m_s": 12.49,
+        "time_to_altitude_min": 0.21,
+        "metadata": {}
+      },
+      "cruise_analysis": {
+        "cruise_speed_kmh": 70.0,
+        "thrust_required_n": 2.77,
+        "power_required_w": 107.8,
+        "throttle_setting_pct": 50.0,
+        "cruise_lift_coefficient": 0.543,
+        "metadata": {}
+      },
+      "descent_analysis": {
+        "rate_of_descent_m_s": 1.34,
+        "descent_angle_deg": 3.9,
+        "descent_speed_m_s": 19.44,
+        "metadata": {}
+      },
+      "stall_analysis": {
+        "stall_speed_clean_kmh": 39.1,
+        "stall_speed_landing_kmh": 35.7,
+        "stall_angle_of_attack_deg": 15.4,
+        "stall_characteristics_warning": "docile nose drop",
+        "metadata": {}
+      },
+      "glide_analysis": {
+        "glide_ratio": 14.97,
+        "minimum_glide_angle_deg": 3.8,
+        "sink_rate_min_m_s": 1.3,
+        "metadata": {}
+      },
+      "turn_analysis": {
+        "turn_radius_m": 66.78,
+        "load_factor": 1.15,
+        "bank_angle_deg": 30.0,
+        "turn_rate_deg_s": 16.68,
+        "metadata": {}
+      },
+      "range_analysis": {
+        "maximum_range_km": 95.99,
+        "cruise_range_km": 81.59,
+        "energy_consumption_rate_wh_km": 1.88,
+        "metadata": {}
+      },
+      "endurance_analysis": {
+        "maximum_endurance_min": 82.28,
+        "cruise_endurance_min": 69.94,
+        "average_power_draw_w": 131.3,
+        "metadata": {}
+      },
+      "ceiling_analysis": {
+        "absolute_ceiling_m": 15136.0,
+        "service_ceiling_m": 14836.0,
+        "density_altitude_limit_m": 15136.0,
+        "metadata": {}
+      },
+      "stability_analysis": {
+        "static_margin": 0.148,
+        "pitch_stability_level": "Stable",
+        "yaw_stability_level": "Stable",
+        "roll_stability_level": "Stable",
+        "neutral_point_x_m": 0.562,
+        "metadata": {}
+      },
+      "mission_performance": {
+        "mission_completion_probability": 95.0,
+        "critical_phase_suitability": "Fully Compliant",
+        "energy_margin_pct": 68.7,
+        "metadata": {}
+      },
+      "engineering_notes": [
+        "Flight strategy applied: Cargo.",
+        "takeoff distance: 19.4 m, landing braking distance: 6.4 m.",
+        "maximum range: 96.0 km, flight time endurance: 82.3 minutes.",
+        "maximum rate of climb: 11.69 m/s, best glide L/D: 15.0.",
+        "aerodynamic efficiency score: 14.6 L/D."
+      ],
+      "recommendations": [
+        "Perform pre-flight range checks on telemetry links to verify radio coverage margins.",
+        "Verify flap settings are correctly mapped in the ground control station to lower stall speeds.",
+        "Avoid bank angles exceeding 30 degrees when flying near MTOW to prevent structural stall acceleration."
+      ],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:54.673392",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "verification_result": {
+      "mission_status": "Ready",
+      "verification_status": "VERIFIED",
+      "requirement_results": {
+        "Mission": true,
+        "Performance": true,
+        "Stability": true,
+        "Safety": true,
+        "Component Clearance": true,
+        "Structural Constraints": true
+      },
+      "compliance_report": {
+        "compliance_score_pct": 100.0,
+        "is_fully_compliant": true,
+        "verified_categories": [
+          "Mission",
+          "Performance",
+          "Stability",
+          "Safety",
+          "Component Clearance",
+          "Structural Constraints"
+        ],
+        "failed_categories": [],
+        "compliance_details": {
+          "Mission": "Compliant",
+          "Performance": "Compliant",
+          "Stability": "Compliant",
+          "Safety": "Compliant",
+          "Component Clearance": "Compliant",
+          "Structural Constraints": "Compliant"
+        }
+      },
+      "risk_analysis": {
+        "overall_risk_score": 0.0,
+        "risk_level": "Low",
+        "identified_risks": [],
+        "mitigation_actions": [
+          "Adjust battery/payload longitudinal placements inside the fuselage to correct CG offsets.",
+          "Verify all autopilot parameters meet redundancy profiles.",
+          "Increase motor size or reduce payload capacity to achieve safe takeoff runway rolls."
+        ]
+      },
+      "constraint_violations": [],
+      "engineering_notes": [
+        "Mission category: Cargo.",
+        "Sized compliance score: 100.0%."
+      ],
+      "recommendations": [
+        "Verification status: VERIFIED, overall compliance: 100.0%.",
+        "Risk index: 0.0 (Low Risk level).",
+        "Verified 6 subsystem categories, flagged 0 deficiencies."
+      ],
+      "corrective_actions": [],
+      "warnings": [],
+      "metadata": {
+        "engine_version": "1.0.0",
+        "timestamp": "2026-09-14T15:36:54.721686",
+        "strategy_applied": "Cargo"
+      }
+    },
+    "electrical_result": {
+      "flight_controller_name": "Cube Orange+",
+      "gps_name": "Holybro Micro M8N",
+      "compass_name": "Matek CAN Compass",
+      "telemetry_name": "RFDesign RFD900ux",
+      "receiver_name": "TBS Crossfire Nano RX",
+      "servo_name": "KST DS125MG Wing Servo",
+      "servo_count": 4,
+      "power_module_name": "Holybro PM02 30A Module",
+      "bec_name": "Matek 6A BEC",
+      "power_distribution_layout": "Dual Redundant Bus",
+      "wire_gauge_awg": 18,
+      "connector_type": "XT30 Connector",
+      "mission_equipment_name": "GoPro Hero 11 FPV Camera",
+      "electrical_power_budget_w": 18.46,
+      "estimated_electrical_mass_g": 490.0,
+      "redundancy_level": 4,
+      "optimization_score": 0.8739128461538463,
+      "reasoning": "Selected optimal electrical system: Flight Controller=Cube Orange+, GPS=Holybro Micro M8N, Telemetry=RFDesign RFD900ux, Receiver=TBS Crossfire Nano RX, Actuators=4x KST DS125MG Wing Servo, BEC=Matek 6A BEC, Power Module=Holybro PM02 30A Module, layout=Dual Redundant Bus. Sized power budget: 18.5 W (peak: 29.3 W). Wiring: 18 AWG, Connector: XT30 Connector. Estimated mass: 490.0 g. Redundancy level: 4. Optimization Score: 0.8739."
+    },
+    "cg_result": {
+      "cg_position": null,
+      "neutral_point": 0.562,
+      "static_margin": 0.148,
+      "component_positions": {
+        "battery": [
+          0.698,
+          0.0,
+          -0.04
+        ],
+        "payload": [
+          0.496,
+          0.0,
+          -0.05
+        ],
+        "mission_equipment": [
+          0.496,
+          0.0,
+          -0.05
+        ],
+        "avionics_tray": [
+          0.616,
+          0.0,
+          0.02
+        ],
+        "gps": [
+          0.566,
+          0.0,
+          0.04
+        ],
+        "receiver": [
+          0.666,
+          0.0,
+          0.01
+        ],
+        "telemetry": [
+          0.696,
+          0.0,
+          0.03
+        ],
+        "power_module": [
+          0.536,
+          0.0,
+          -0.01
+        ],
+        "bec": [
+          0.516,
+          0.0,
+          0.0
+        ]
+      },
+      "moment_summary": {
+        "Wing Structure": 0.2505,
+        "Fuselage Shell": 0.3307,
+        "Horizontal Tail": 0.0566,
+        "Vertical Tail": 0.0201,
+        "Landing Gear": 0.1679,
+        "Motor": 0.0186,
+        "Propeller": 0.0052,
+        "ESC": 0.0008,
+        "Energy Battery": 0.6282,
+        "Flight Controller": 0.0493,
+        "GPS": 0.0283,
+        "Receiver": 0.0067,
+        "Telemetry": 0.0209,
+        "Power Module": 0.0134,
+        "BEC": 0.0077,
+        "Servos": 0.0526,
+        "Payload": 0.496,
+        "Fasteners": 0.0228,
+        "Wiring": 0.0702,
+        "Paint / Finish": 0.0,
+        "Safety Margin": 0.0767
+      },
+      "cg_envelope": {
+        "Empty Airframe": [
+          0.482,
+          0.0,
+          -0.018
+        ],
+        "Operational Empty": [
+          0.539,
+          0.0,
+          -0.024
+        ],
+        "Maximum Takeoff Weight": [
+          0.529,
+          0.0,
+          -0.03
+        ]
+      },
+      "optimization_score": 0.7294999999999999,
+      "reasoning": "Optimized packaging layout selected: CG coordinate X=0.529m, neutral point=0.562m, longitudinal static stability margin=14.8%. Packaging feasibility preserved, moments balanced. Optimization Score: 0.7295."
+    },
+    "final_specification": {},
+    "certification_report": {
+      "aircraft_summary": {
+        "layout": "N/A",
+        "mtow_kg": 0.0,
+        "empty_weight_kg": 0.0,
+        "payload_capacity_kg": 0.0
+      },
+      "mission_summary": {
+        "category": "N/A",
+        "required_payload_kg": 0.0,
+        "required_range_km": 0.0,
+        "required_endurance_min": 0.0
+      },
+      "results": [
+        {
+          "rule_id": "V_CG_STATIC_MARGIN",
+          "title": "Static Margin Stability Verification",
+          "category": "CG",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Static margin of 0.148 is in the stable safety envelope [0.05, 0.25].",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_CONVERGENCE",
+          "title": "Design Convergence Verification",
+          "category": "Certification",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Design converged in 5 iterations.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_ELEC_CURRENT_BUDGET",
+          "title": "Electrical Current Budget Compliance",
+          "category": "Electrical",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Electrical currents (0.0 A) are within component ratings (ESC: 0.0 A, Battery: 0.0 A).",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_FUSELAGE_GEOMETRY",
+          "title": "Fuselage Geometry Validity",
+          "category": "Fuselage",
+          "severity": "ERROR",
+          "status": "PASS",
+          "message": "Fuselage geometry valid (L=1.300 m, W=0.150 m, H=0.100 m, FR=8.00).",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_PROP_GROUND_CLEARANCE",
+          "title": "Propeller Ground Clearance Compliance",
+          "category": "Geometry",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Propeller diameter of 0.000 m satisfies ground clearance requirement.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_MANUFACTURING",
+          "title": "Manufacturability Feasibility",
+          "category": "Manufacturing",
+          "severity": "WARNING",
+          "status": "PASS",
+          "message": "Aircraft dimensions are within standard manufacturing tolerances.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_MASS_PROPERTIES",
+          "title": "Mass Model and MTOW Verification",
+          "category": "Mass",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Sized MTOW of 4.388 kg (empty=2.488 kg) is valid and within constraints.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_MISSION_PAYLOAD",
+          "title": "Mission Payload Requirement Compliance",
+          "category": "Mission",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Sized payload capacity (1.000 kg) satisfies the mission requirements (1.000 kg).",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_MISSION_PERFORMANCE",
+          "title": "Mission Performance Target Compliance",
+          "category": "Mission",
+          "severity": "ERROR",
+          "status": "PASS",
+          "message": "All range, endurance, and cruise speed targets are satisfied.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_PACKAGING",
+          "title": "Payload Packaging Integration Verification",
+          "category": "Geometry",
+          "severity": "ERROR",
+          "status": "PASS",
+          "message": "Payload packaging fits within fuselage cabin volume.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_PROP_COMPATIBILITY",
+          "title": "Propulsion System Compatibility",
+          "category": "Propulsion",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Propulsion system compatible (motor=T-Motor AT3520, prop=11x7 APC, thrust=35.5 N, V=21.6 V).",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_SAFETY_MARGINS",
+          "title": "Safety Margins Compliance",
+          "category": "Safety",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "All safety margins are within acceptable limits.",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_TAIL_GEOMETRY",
+          "title": "Tail Geometry and Volume Coefficient Validity",
+          "category": "Tail",
+          "severity": "ERROR",
+          "status": "PASS",
+          "message": "Tail geometry valid (V_h=0.625, V_v=0.030, arm=0.000 m).",
+          "recommendation": ""
+        },
+        {
+          "rule_id": "V_WING_GEOMETRY",
+          "title": "Wing Geometry Validity",
+          "category": "Wing",
+          "severity": "CRITICAL",
+          "status": "PASS",
+          "message": "Wing geometry valid (area=0.3258 m\u00b2, span=1.615 m, AR=8.00, taper=0.350).",
+          "recommendation": ""
+        }
+      ],
+      "feasible": true,
+      "passed_rules": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "failed_rules": [],
+      "warnings": [],
+      "critical_failures": [],
+      "certification_score": 100.0,
+      "overall_status": "CERTIFIED",
+      "subsystem_compliance": {
+        "CG": "Compliant",
+        "Certification": "Compliant",
+        "Electrical": "Compliant",
+        "Fuselage": "Compliant",
+        "Geometry": "Compliant",
+        "Manufacturing": "Compliant",
+        "Mass": "Compliant",
+        "Mission": "Compliant",
+        "Propulsion": "Compliant",
+        "Safety": "Compliant",
+        "Tail": "Compliant",
+        "Wing": "Compliant"
+      },
+      "recommendations": [
+        "No recommendations. Design is fully compliant."
+      ]
+    },
+    "convergence_result": {
+      "success": true,
+      "message": "All variables stabilized below convergence tolerances at iteration 5.",
+      "final_specification": {},
+      "diagnostics": {
+        "iterations_performed": 5,
+        "optimization_priority": "BALANCED",
+        "convergence_variables": [
+          "mtow",
+          "wing_area",
+          "wing_loading",
+          "battery_mass",
+          "empty_weight",
+          "cg_x",
+          "static_margin",
+          "cruise_power",
+          "endurance",
+          "range"
+        ],
+        "iteration_history": [
+          {
+            "iteration": 1,
+            "mtow": 4.263,
+            "wing_area": 0.262,
+            "wing_loading": 13.4674,
+            "battery_mass": 0.9,
+            "empty_weight": 2.363,
+            "cg_x": 0.519,
+            "static_margin": 0.141,
+            "cruise_power": 84.6,
+            "endurance": 99.94,
+            "range": 116.6
+          },
+          {
+            "iteration": 2,
+            "mtow": 4.37,
+            "wing_area": 0.3165,
+            "wing_loading": 13.4674,
+            "battery_mass": 0.9,
+            "empty_weight": 2.47,
+            "cg_x": 0.526,
+            "static_margin": 0.157,
+            "cruise_power": 102.0,
+            "endurance": 86.08,
+            "range": 100.43
+          },
+          {
+            "iteration": 3,
+            "mtow": 4.384,
+            "wing_area": 0.3245,
+            "wing_loading": 13.4674,
+            "battery_mass": 0.9,
+            "empty_weight": 2.484,
+            "cg_x": 0.529,
+            "static_margin": 0.148,
+            "cruise_power": 106.9,
+            "endurance": 82.85,
+            "range": 96.66
+          },
+          {
+            "iteration": 4,
+            "mtow": 4.388,
+            "wing_area": 0.3255,
+            "wing_loading": 13.4674,
+            "battery_mass": 0.9,
+            "empty_weight": 2.488,
+            "cg_x": 0.529,
+            "static_margin": 0.148,
+            "cruise_power": 107.7,
+            "endurance": 82.34,
+            "range": 96.07
+          },
+          {
+            "iteration": 5,
+            "mtow": 4.388,
+            "wing_area": 0.3258,
+            "wing_loading": 13.4674,
+            "battery_mass": 0.9,
+            "empty_weight": 2.488,
+            "cg_x": 0.529,
+            "static_margin": 0.148,
+            "cruise_power": 107.8,
+            "endurance": 82.28,
+            "range": 95.99
+          }
+        ],
+        "subsystem_updates": {
+          "wing": "WingPlanformSpecification",
+          "fuselage": "FuselageSpecification",
+          "payload": "PayloadPackagingSpecification",
+          "tail": "TailSpecification",
+          "propulsion": "PropulsionSpecification",
+          "electrical": "ElectricalSystemSpecification",
+          "mass": "MassPropertiesSpecification",
+          "cg": "CGSpecification",
+          "performance": "FlightPerformanceSpecification"
+        },
+        "execution_time_seconds": 17.5458,
+        "convergence_reason": "All variables stabilized below convergence tolerances at iteration 5."
+      }
+    },
+    "warnings": [],
+    "errors": []
+  },
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,34 @@
+============================================================
+AIRCRAFT WIRING & CONNECTIONS BUILD PACKAGE
+============================================================
+
+1. POWER HARNESS CONNECTIONS:
+   Battery (Molicel 4200mAh 6S Li-Ion)
+     ↓ (XT30 Connector)
+   Power Distribution Board (4-in-1 ESC bus)
+     ↓ (AWG 8 Wire Leads)
+   ESCs (Quantity 4 x T-Motor Flame 60A Pro)
+     ↓ (AWG 8 Phase Wires)
+   Motors (Quantity 4 x T-Motor F40 PRO IV-1950)
+
+2. CONTROL SIGNAL CONNECTIONS:
+   Flight Controller (Holybro Pixhawk 6C)
+     ↓ (PWM Signal Channels 1-4)
+   ESCs (Quantity 4 x T-Motor Flame 60A Pro)
+
+3. AVIONICS ACCESSORIES CONNECTIONS:
+   GPS Receiver (Here3 GPS) ── (I2C/Serial Port) ──> Flight Controller (Holybro Pixhawk 6C)
+   Telemetry Radio (Holybro 915MHz Telemetry) ── (Telemetry Port 1) ──> Flight Controller (Holybro Pixhawk 6C)
+   RC Receiver (FrSky Archer RS) ── (RCIN Port) ──> Flight Controller (Holybro Pixhawk 6C)
+
+4. PAYLOAD INTEGRATION:
+   Payload ── (12V BEC Port / AUX Channel) ──> Power Distribution Board (4-in-1 ESC bus)
+
+============================================================
+ASSEMBLY SEQUENCE INSTRUCTIONS:
+1. Mount the motors to the frame arms using the pattern: 16x16mm.
+2. Secure the propellers (APC 10x4.7 MR) only after verifying motor spin directions during autopilot calibration.
+3. Solder the ESC branch wires to the center plate Power Distribution Board.
+4. Mount the flight controller at the geometric center of gravity on vibration damping standoffs.
+5. Calibrate the ESC throttle endpoints using the autopilot setup wizard.
+============================================================

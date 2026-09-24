@@ -1,0 +1,10 @@
+VTOL Complete Sizing Build Specifications
+=========================================
+MTOW: 8.07 kg
+Empty Weight: 4.914 kg
+Payload Weight: 3.25 kg
+Configuration: Twin Boom VTOL
+Rotor positions count: 4
+Convergence: CONVERGED in 17 iterations
+Convergence Residual: 0.011818 kg (tolerance: 0.015 kg)
+CG Location: x_cg=0.5219 m (30.5% MAC)

@@ -1,0 +1,5 @@
+This is a placeholder for the multirotor_architecture_handbook.docx file.
+The full substantive technical content, source code references, equations, and diagrams are maintained in markdown format in:
+docs/multirotor/multirotor_architecture_handbook.md
+You can convert that file to DOCX using pandoc:
+pandoc docs/multirotor/multirotor_architecture_handbook.md -o docs/multirotor/multirotor_architecture_handbook.docx

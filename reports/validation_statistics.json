@@ -1,0 +1,153 @@
+{
+    "summary": {
+        "total_representative_missions": 1000,
+        "success_count": 0,
+        "failure_count": 1000,
+        "success_rate_pct": 0.0,
+        "failure_rate_pct": 100.0,
+        "campaign_execution_time_sec": 820.3,
+        "average_iterations_converged": 0.0,
+        "average_execution_time_per_case_sec": 4.5708,
+        "average_mtow_kg": 0.0,
+        "average_wing_loading_kgm2": 0.0,
+        "average_static_margin_pct": 0.0,
+        "average_cruise_power_w": 0.0,
+        "average_endurance_margin_min": 0.0,
+        "average_range_margin_km": 0.0,
+        "certification_pass_rate_pct": 0.0,
+        "certified_clean_count": 0,
+        "certified_with_warnings_count": 0
+    },
+    "failure_breakdown_counts": {
+        "Certification Failure": 61,
+        "CG Failure": 0,
+        "Component Database Limitation": 280,
+        "Configuration Infeasible": 0,
+        "Electrical Infeasible": 0,
+        "Invalid Requirements": 0,
+        "Mass Limit Exceeded": 15,
+        "Mission Infeasible": 0,
+        "Performance Failure": 72,
+        "Propulsion Infeasible": 143,
+        "Sizing Infeasible": 352,
+        "SUCCESS": 0,
+        "Unexpected Exception": 77
+    },
+    "failure_breakdown_percentages": {
+        "Certification Failure": 6.1,
+        "CG Failure": 0.0,
+        "Component Database Limitation": 28.0,
+        "Configuration Infeasible": 0.0,
+        "Electrical Infeasible": 0.0,
+        "Invalid Requirements": 0.0,
+        "Mass Limit Exceeded": 1.5,
+        "Mission Infeasible": 0.0,
+        "Performance Failure": 7.2,
+        "Propulsion Infeasible": 14.3,
+        "Sizing Infeasible": 35.2,
+        "SUCCESS": 0.0,
+        "Unexpected Exception": 7.7
+    },
+    "percentiles": {
+        "mtow_kg": {
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0
+        },
+        "wing_area_m2": {
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0
+        },
+        "static_margin": {
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0
+        },
+        "cruise_power_w": {
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0
+        }
+    },
+    "mission_success_matrix": {
+        "Agriculture": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Cargo": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Emergency Response": {
+            "total": 90,
+            "success": 0,
+            "failure": 90,
+            "success_rate_pct": 0.0
+        },
+        "Environmental Monitoring": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Infrastructure Inspection": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Inspection": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Mapping": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Research": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Security": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Survey": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        },
+        "Training": {
+            "total": 91,
+            "success": 0,
+            "failure": 91,
+            "success_rate_pct": 0.0
+        }
+    }
+}

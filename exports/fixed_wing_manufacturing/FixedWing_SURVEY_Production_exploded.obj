@@ -1,0 +1,9 @@
+# Exploded Assembly Mesh file for FixedWing_SURVEY_Production.
+g wing_left
+v 0.0 1.5 0.2
+g wing_right
+v 0.0 -1.5 0.2
+g fuselage
+v 0.0 0.0 0.0
+g tail
+v -1.38 0.0 0.1

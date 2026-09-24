@@ -1,0 +1,15 @@
+Category,Manufacturer,Model,Part Number,Quantity,Unit Mass (kg),Total Mass (kg),Dimensions,Electrical Rating,Selected Reason,Estimated Price (USD)
+Frame,Catalog Frame,DJI F450 FlameWheel,PN-FRAME-DJI-F450-FLAMEWHEEL,1,0.282,0.282,Wheelbase: 450mm,N/A,Optimized structure using Catalog Selection matching Quadcopter X layout. Wheelbase sized to 450mm with structural strength margin 0.00.,35.0
+Motor,T-Motor,F40 PRO IV-1950,PN-MOTOR-F40-PRO-IV-1950,4,0.032,0.128,Mounting pattern: 16x16mm,1950 KV,Selected T-Motor F40 PRO IV-1950 (1950 KV) providing 17.6N max thrust at 43.1% hover throttle with estimated AUW of 1.34 kg.,29.0
+Propeller,APC,10x4.7 MR,PN-PROP-10X4.7-MR,4,0.015,0.06,Diameter: 10.0 in,N/A,"Selected APC 10x4.7 MR (10.0 inch diameter, 4.7 inch pitch) achieving hover efficiency of 7.88 g/W at 4894 RPM.",3.5
+ESC,T-Motor,Flame 60A Pro,PN-ESC-FLAME-60A-PRO,4,0.073,0.292,N/A,60.0 A continuous,"Selected T-Motor Flame 60A Pro (60A continuous, 80A burst) supporting PWM signaling. Sized continuous headroom margin is 58.2A with thermal safety 92.3%.",65.0
+Battery,Molicel,4200mAh 6S Li-Ion,PN-BATT-4200MAH-6S-LI-ION,1,0.43,0.43,N/A,"4200 mAh, 6S","Selected Molicel 4200mAh 6S Li-Ion (Li-Ion chemistry, 6S) providing 4200 mAh capacity. Achieves sized flight endurance of 17.4 minutes under 1.69 kg takeoff weight.",40.0
+Power Distribution,Generic PDB,4-in-1 ESC bus,PN-PDB-4-IN-1-ESC-BUS,1,0.035,0.035,N/A,Dual BEC (5V / 12V),"Sized main battery wire to AWG 20 and ESC branch leads to AWG 8 to support continuous currents up to 10.3A with an overall voltage drop of 0.105V. Power distribution handled by 4-in-1 ESC bus with dual BEC (5V 5A, 12V 0A).",19.99
+Flight Controller,Holybro,Holybro Pixhawk 6C,PN-FC-HOLYBRO-PIXHAWK-6C,1,0.048,0.048,N/A,5V Autopilot System Power,Autonomous autopilot control unit.,150.0
+GPS,CubePilot,Here3 GPS,PN-GPS-HERE3-GPS,1,0.035,0.035,N/A,N/A,Precision navigation sensor unit.,89.0
+Telemetry,Holybro,Holybro 915MHz Telemetry,PN-TEL-HOLYBRO-915MHZ-TELEMETRY,1,0.025,0.025,N/A,100mW Link Power,Long-range communication link telemetry.,49.0
+Receiver,FrSky,FrSky Archer RS,PN-RC-FRSKY-ARCHER-RS,1,0.005,0.005,N/A,SBUS Output Channel,Manual RC piloting safety receiver.,24.5
+Payload,User Specified,Mission Payload (0.50 kg),PN-PAYLOAD-CUSTOM,1,0.5,0.5,Packaging Limits: 820x820mm,12V BEC Power Output Channel Input,Primary operational payload module.,0.0
+Wiring,Generic Wiring,Silicone AWG AWG 20 Wiring Set,PN-WIRE-HARNESS,1,0.045,0.045,N/A,60A rated power wire harness,Harness wiring sets.,4.99
+Connectors,Generic Connectors,XT30 Battery/PDB connector set,PN-CONN-XT60,1,0.015,0.015,N/A,XT-Series current handling,Battery power supply connectors.,2.99
+Mounting Hardware,Generic,M3 Standoffs and Carbon Screws Pack,PN-MOUNT-M3,1,0.02,0.02,N/A,N/A,Avionics and PDB structural mounts.,5.99

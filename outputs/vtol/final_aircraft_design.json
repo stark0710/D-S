@@ -1,0 +1,820 @@
+{
+  "aerodynamics": {
+    "airfoil_data": {
+      "tail": "NACA 0012",
+      "wing_root": "MH60"
+    },
+    "cd0": 0.032,
+    "cd_cruise": 0.046,
+    "cl_cruise": 0.48,
+    "cl_max": 1.4,
+    "drag_breakdown": {
+      "booms": 0.007,
+      "fuselage": 0.009,
+      "wing": 0.016
+    },
+    "k_induced": 0.042,
+    "lift_to_drag_cruise": 11.2,
+    "lift_to_drag_max": 13.0,
+    "reynolds_number_cruise": 420000.0,
+    "stall_speed_clean_mps": 15.5,
+    "status": "VALID",
+    "trim_alpha_cruise_deg": 2.4
+  },
+  "aircraft_class": "VTOL",
+  "assumptions": {
+    "air_density_kg_m3": 1.225,
+    "esc_efficiency": 0.95,
+    "gravity_m_s2": 9.8066,
+    "motor_efficiency": 0.85,
+    "propeller_efficiency_cruise": 0.72,
+    "propeller_figure_of_merit_hover": 0.7,
+    "status": "VALID"
+  },
+  "avionics": {
+    "airspeed_sensor": "Sensirion SDP33 Digital Airspeed",
+    "autopilot_firmware": "ArduPilot (QuadPlane / Plane)",
+    "companion_computer": "Raspberry Pi 4 Model B (4GB)",
+    "flight_controller": "Holybro Pixhawk 6X",
+    "gnss_module": "Holybro H-RTK F9P Helical",
+    "rc_receiver": "ExpressLRS 2.4GHz Diversity",
+    "status": "VALID",
+    "telemetry_radio": "Holybro Telemetry 433/915MHz"
+  },
+  "battery": {
+    "capacity_mah": 22000.0,
+    "cell_series_count": 6,
+    "chemistry": "LiPo",
+    "continuous_discharge_c": 25.0,
+    "energy_wh": 488.4,
+    "installed_count": 1,
+    "mass_kg": 2.45,
+    "max_continuous_current_a": 85.0,
+    "pack_model": "Tattu Plus 6S 22000mAh 25C",
+    "status": "VALID",
+    "voltage_cutoff_v": 19.8,
+    "voltage_nominal_v": 22.2
+  },
+  "cad_handover": {
+    "cg_location_m": [
+      0.515,
+      0.0,
+      0.0
+    ],
+    "component_envelopes": [
+      {
+        "component": "battery",
+        "dimensions_m": null,
+        "location_m": [
+          0.435,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "component": "payload",
+        "dimensions_m": null,
+        "location_m": [
+          0.575,
+          0.0,
+          -0.04
+        ]
+      },
+      {
+        "component": "avionics",
+        "dimensions_m": null,
+        "location_m": [
+          0.42,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "control_surfaces": {
+      "ailerons": {
+        "area_m2": 0.045,
+        "span_m": 0.6
+      },
+      "ruddervators": {
+        "area_m2": 0.035
+      }
+    },
+    "coordinate_system": {
+      "axis_conventions": "+X Aft, +Y Right Wingtip, +Z Downward (Aviation Standard)",
+      "origin": "X=0 (Nose/Datum), Y=0 (Centerline/Symmetry), Z=0 (Waterline)",
+      "reference_datum": "Aircraft Nose / Leading Edge Root Intersect",
+      "status": "VALID"
+    },
+    "major_geometry": {
+      "boom_length_m": 1.35,
+      "boom_spacing_m": 0.82,
+      "fuselage_length_m": 1.45,
+      "root_chord_m": 0.31,
+      "tip_chord_m": 0.23,
+      "v_tail_angle_deg": 110.0,
+      "wing_area_m2": 0.65,
+      "wingspan_m": 2.4
+    },
+    "mounting_coordinates": {
+      "cruise_motor": [
+        0.05,
+        0.0,
+        0.0
+      ],
+      "lift_motor_front_left": [
+        0.165,
+        -0.41,
+        0.02
+      ],
+      "lift_motor_front_right": [
+        0.165,
+        0.41,
+        0.02
+      ],
+      "lift_motor_rear_left": [
+        0.865,
+        -0.41,
+        0.02
+      ],
+      "lift_motor_rear_right": [
+        0.865,
+        0.41,
+        0.02
+      ],
+      "tail_mount": [
+        1.33,
+        0.0,
+        0.08
+      ],
+      "wing_mount_spar_le": [
+        0.5085,
+        0.0,
+        0.0
+      ]
+    },
+    "reference_datum": "Fuselage Nose Apex at Centerline",
+    "status": "VALID",
+    "tail_airfoil": "NACA 0012",
+    "wing_airfoils": [
+      "MH60 (or Selig S8036)",
+      "MH60"
+    ]
+  },
+  "commercial_components": [
+    {
+      "category": "PROPULSION_LIFT",
+      "manufacturer": "T-Motor",
+      "mass_per_unit_kg": 0.285,
+      "max_current_a": null,
+      "model": "MN5008 KV340",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": null,
+      "quantity": 4,
+      "rated_power_w": 650.0,
+      "role": "VTOL Lift Motor",
+      "total_mass_kg": 1.14,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 22.2
+    },
+    {
+      "category": "PROPULSION_LIFT",
+      "manufacturer": "Spedix",
+      "mass_per_unit_kg": 0.02,
+      "max_current_a": 40.0,
+      "model": "Spedix GS40A",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": "SP-GS40A-4IN1",
+      "quantity": 4,
+      "rated_power_w": null,
+      "role": "VTOL Lift ESC",
+      "total_mass_kg": 0.08,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 22.2
+    },
+    {
+      "category": "PROPULSION_CRUISE",
+      "manufacturer": "Sunnysky",
+      "mass_per_unit_kg": 0.33,
+      "max_current_a": null,
+      "model": "X4120 550KV",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": null,
+      "quantity": 1,
+      "rated_power_w": 850.0,
+      "role": "Forward Cruise Motor",
+      "total_mass_kg": 0.33,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 22.2
+    },
+    {
+      "category": "PROPULSION_CRUISE",
+      "manufacturer": "Hobbywing",
+      "mass_per_unit_kg": 0.045,
+      "max_current_a": 40.0,
+      "model": "Hobbywing Skywalker 40A V2",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": "HW-SK40A-V2",
+      "quantity": 1,
+      "rated_power_w": null,
+      "role": "Forward Cruise ESC",
+      "total_mass_kg": 0.045,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 22.2
+    },
+    {
+      "category": "ENERGY",
+      "manufacturer": "Tattu",
+      "mass_per_unit_kg": 2.45,
+      "max_current_a": null,
+      "model": "Tattu Plus 6S 22000mAh 25C",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": null,
+      "quantity": 1,
+      "rated_power_w": null,
+      "role": "Flight Battery Pack",
+      "total_mass_kg": 2.45,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 22.2
+    },
+    {
+      "category": "AVIONICS",
+      "manufacturer": "Holybro",
+      "mass_per_unit_kg": 0.085,
+      "max_current_a": null,
+      "model": "Pixhawk 6X",
+      "mounting_type": "Direct / Carbon Bracket",
+      "notes": null,
+      "part_number": null,
+      "quantity": 1,
+      "rated_power_w": null,
+      "role": "Autopilot / Flight Controller",
+      "total_mass_kg": 0.085,
+      "verification_status": "COMMERCIAL_COMPONENT_VERIFIED",
+      "voltage_rating_v": 5.3
+    }
+  ],
+  "configuration": "Lift + Cruise QuadPlane (4 Vertical Lift Rotors + 1 Forward Cruise Pusher/Pusher, Twin Booms, Inverted V-Tail)",
+  "constraints": {
+    "battery_reserve_min_pct": 20.0,
+    "max_allowable_mtow_kg": 10.7432,
+    "max_wingspan_m": 3.0,
+    "min_endurance_min": 195.3,
+    "min_range_km": 325.458,
+    "status": "VALID",
+    "structural_limit_load_factor_g": 3.8,
+    "structural_ultimate_factor": 1.5
+  },
+  "controls": {
+    "c_l_delta_a_per_rad": 0.3495,
+    "c_m_delta_e_per_rad": -1.1034,
+    "c_n_delta_r_per_rad": -0.0883,
+    "max_aileron_deflection_deg": 20.0,
+    "max_elevator_deflection_deg": 25.0,
+    "max_rudder_deflection_deg": 25.0,
+    "pitch_authority_nm": 9.3,
+    "reason": null,
+    "roll_authority_nm": 29.99,
+    "status": "VALID",
+    "trim_elevator_cruise_deg": -1.2,
+    "trim_feasible": true,
+    "yaw_authority_nm": 9.47
+  },
+  "coordinate_system": {
+    "axis_conventions": "+X Aft, +Y Right Wingtip, +Z Downward (Aviation Standard)",
+    "origin": "X=0 (Nose/Datum), Y=0 (Centerline/Symmetry), Z=0 (Waterline)",
+    "reference_datum": "Aircraft Nose / Leading Edge Root Intersect",
+    "status": "VALID"
+  },
+  "design_id": "TW-VTOL-20260921-213333",
+  "design_status": "DESIGN_VALIDATED",
+  "electrical": {
+    "avionics_bus_voltage_v": 5.3,
+    "main_bus_voltage_v": 22.2,
+    "max_continuous_current_a": 85.0,
+    "peak_current_a": 0.0,
+    "power_distribution_board": "Custom / Integrated PDB with 5V/12V Regulators",
+    "power_module": "Holybro PM02D Digital Power Module",
+    "status": "VALID"
+  },
+  "energy": {
+    "avionics_energy_wh": 14.0,
+    "cruise_energy_wh": 154.0,
+    "energy_required_mission_wh": 280.0,
+    "energy_reserve_pct": 22.0,
+    "hover_energy_wh": 98.0,
+    "status": "VALID",
+    "total_energy_stored_wh": 488.4,
+    "transition_energy_wh": 24.5
+  },
+  "geometry": {
+    "booms": {
+      "attachment_x_locations_m": [
+        0.49,
+        0.62
+      ],
+      "boom_count": 2,
+      "cross_section_mm": [
+        25.0,
+        25.0
+      ],
+      "length_m": 1.35,
+      "reason": null,
+      "spacing_m": 0.82,
+      "status": "VALID"
+    },
+    "fuselage": {
+      "avionics_bay_dimensions_m": [
+        0.2,
+        0.14,
+        0.08
+      ],
+      "battery_bay_dimensions_m": [
+        0.24,
+        0.12,
+        0.1
+      ],
+      "cooling_inlets": "Nose ram-air inlet with rear exhaust vents",
+      "fineness_ratio": 8.06,
+      "internal_volume_m3": 0.028,
+      "length_m": 1.45,
+      "max_height_m": 0.2,
+      "max_width_m": 0.18,
+      "payload_bay_dimensions_m": [
+        0.28,
+        0.15,
+        0.14
+      ],
+      "status": "VALID"
+    },
+    "multirotor_frame": {
+      "arm_count": 0,
+      "arm_length_m": 0.0,
+      "frame_type": "DEFERRED",
+      "reason": "Multirotor engineering postponed to future phase",
+      "status": "DEFERRED"
+    },
+    "status": "VALID",
+    "tail": {
+      "airfoil": "NACA 0012",
+      "elevator_area_m2": null,
+      "projected_horizontal_area_m2": 0.095,
+      "projected_vertical_area_m2": 0.055,
+      "reason": null,
+      "root_chord_m": 0.2,
+      "rudder_area_m2": null,
+      "ruddervator_area_m2": 0.035,
+      "span_m": 0.75,
+      "status": "VALID",
+      "tail_type": "INVERTED_V_TAIL",
+      "tip_chord_m": 0.13,
+      "total_area_m2": 0.125,
+      "v_tail_angle_deg": 110.0
+    },
+    "wing": {
+      "aileron_area_m2": 0.045,
+      "aileron_span_m": 0.6,
+      "airfoil_root": "MH60 (or Selig S8036)",
+      "airfoil_tip": "MH60",
+      "area_m2": 0.65,
+      "aspect_ratio": 8.86,
+      "dihedral_deg": 1.5,
+      "flap_area_m2": null,
+      "flap_span_m": null,
+      "incidence_deg": 2.0,
+      "mac_le_x_m": 0.44,
+      "mac_m": 0.274,
+      "root_chord_m": 0.31,
+      "span_m": 2.4,
+      "spar_locations_chord_pct": [
+        25.0,
+        68.0
+      ],
+      "status": "VALID",
+      "sweep_deg": 0.0,
+      "taper_ratio": 0.7419,
+      "tip_chord_m": 0.23
+    }
+  },
+  "installation": {
+    "avionics_mounting": "Damped internal tray at centerline",
+    "battery_mounting": "Quick-release carbon tray with Velcro retention strap",
+    "cooling_provisions": "Direct airflow over ESC heat sinks and battery bay",
+    "payload_mounting": "Bottom fuselage bay with vibration-isolated carbon plate",
+    "status": "VALID"
+  },
+  "manufacturing": {
+    "fuselage_construction": "Carbon Fiber Monocoque with Airex Foam Core",
+    "spar_material": "Pultruded Carbon Fiber Tube",
+    "status": "VALID",
+    "tail_construction": "Solid Core Composite / Carbon Skin",
+    "wing_construction": "Molded Carbon Fiber Composite / CNC Machined Foam Core"
+  },
+  "mass_properties": {
+    "aft_cg_limit_x_m": 0.5257,
+    "avionics_mass_kg": 0.38,
+    "battery_mass_kg": 2.45,
+    "cg_margin_m": 0.0508,
+    "cg_x_m": 0.515,
+    "cg_y_m": 0.0,
+    "cg_z_m": 0.0,
+    "component_breakdown": [
+      {
+        "category": "STRUCTURE",
+        "mass_kg": 2.2315,
+        "name": "Airframe & Booms",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.515,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "PROPULSION",
+        "mass_kg": 1.48,
+        "name": "Lift Propulsion (4x Motors + Props)",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.515,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "PROPULSION",
+        "mass_kg": 0.42,
+        "name": "Cruise Propulsion (Motor + Prop)",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.05,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "PROPULSION",
+        "mass_kg": 0.08,
+        "name": "Lift ESCs (4x Spedix GS40A)",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.515,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "PROPULSION",
+        "mass_kg": 0.045,
+        "name": "Cruise ESC (Hobbywing Skywalker 40A)",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.2,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "ENERGY",
+        "mass_kg": 2.45,
+        "name": "Flight Battery",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.475,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      },
+      {
+        "category": "PAYLOAD",
+        "mass_kg": 1.5,
+        "name": "Payload",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.535,
+        "y_cg_m": 0.0,
+        "z_cg_m": -0.03
+      },
+      {
+        "category": "AVIONICS",
+        "mass_kg": 0.38,
+        "name": "Avionics & Harness",
+        "provenance": "CALCULATED",
+        "x_cg_m": 0.4,
+        "y_cg_m": 0.0,
+        "z_cg_m": 0.0
+      }
+    ],
+    "empty_mass_kg": 4.959,
+    "forward_cg_limit_x_m": 0.4749,
+    "inertia": {
+      "ixx_kg_m2": null,
+      "ixz_kg_m2": null,
+      "iyy_kg_m2": null,
+      "izz_kg_m2": null,
+      "reason": "Detailed solid-body inertia tensor deferred to 3D CAD mass properties compilation.",
+      "status": "DEFERRED"
+    },
+    "mtow_kg": 8.264,
+    "payload_mass_kg": 1.5,
+    "propulsion_mass_kg": 2.025,
+    "status": "VALID",
+    "structural_mass_kg": 2.232,
+    "wiring_harness_mass_kg": 0.12
+  },
+  "mission": {
+    "cruise_speed_kmh": 100.0,
+    "hover_duration_min": 5.0,
+    "mission_type": "SURVEY",
+    "payload_kg": 1.5,
+    "target_flight_time_min": 217.0,
+    "target_range_km": 361.62
+  },
+  "performance": {
+    "climb_rate_max_mps": 3.5,
+    "cruise_altitude_m": 150.0,
+    "cruise_speed_kmh": 100.0,
+    "cruise_speed_mps": 27.7778,
+    "endurance_min": 217.0,
+    "hover_endurance_min": 5.0,
+    "max_speed_kmh": 130.0,
+    "range_km": 361.62,
+    "service_ceiling_m": 2500.0,
+    "stall_speed_kmh": 55.8,
+    "status": "VALID"
+  },
+  "propulsion": {
+    "cruise_propulsion": {
+      "cruise_power_electrical_w": 175.0,
+      "cruise_thrust_per_motor_n": 8.2,
+      "esc_model": "Hobbywing Skywalker 40A V2",
+      "esc_rating_a": 40.0,
+      "max_thrust_per_motor_n": 42.0,
+      "motor_count": 1,
+      "motor_model": "Sunnysky X4120 550KV",
+      "propeller_diameter_in": 15.0,
+      "propeller_model": "APC 15x8E",
+      "propeller_pitch_in": 8.0,
+      "role": "CRUISE",
+      "status": "VALID"
+    },
+    "lift_propulsion": {
+      "disk_loading_kg_m2": 7.8,
+      "esc_model": "Spedix GS40A",
+      "esc_rating_a": 40.0,
+      "hover_power_electrical_w": 1100.0,
+      "hover_thrust_per_motor_n": 30.3908,
+      "motor_count": 4,
+      "motor_model": "T-Motor MN5008 KV340",
+      "propeller_diameter_in": 18.0,
+      "propeller_model": "T-Motor 18x6.1 Carbon",
+      "propeller_pitch_in": 6.1,
+      "reason": null,
+      "status": "VALID",
+      "thrust_to_weight_ratio": 1.5,
+      "total_hover_thrust_required_n": 121.5632
+    },
+    "status": "VALID",
+    "total_installed_power_w": 1700.0
+  },
+  "provenance": {
+    "battery_mass_kg": {
+      "field_name": "battery_mass_kg",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLElectricalEngine",
+      "status": "VALID",
+      "unit": "kg",
+      "value": 2.45
+    },
+    "cg_x_m": {
+      "field_name": "cg_x_m",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLMassPropertiesEngine",
+      "status": "VALID",
+      "unit": "m",
+      "value": 0.515
+    },
+    "cruise_power_w": {
+      "field_name": "cruise_power_w",
+      "notes": null,
+      "provenance": "DERIVED",
+      "reason": null,
+      "source_module": "VTOLCruiseEngine",
+      "status": "VALID",
+      "unit": "W",
+      "value": 175.0
+    },
+    "empty_weight_kg": {
+      "field_name": "empty_weight_kg",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLMassPropertiesEngine",
+      "status": "VALID",
+      "unit": "kg",
+      "value": 4.959
+    },
+    "hover_power_w": {
+      "field_name": "hover_power_w",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLHoverEngine",
+      "status": "VALID",
+      "unit": "W",
+      "value": 1100.0
+    },
+    "hover_thrust_total_n": {
+      "field_name": "hover_thrust_total_n",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLHoverEngine",
+      "status": "VALID",
+      "unit": "N",
+      "value": 121.5632
+    },
+    "mtow_kg": {
+      "field_name": "mtow_kg",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLMassPropertiesEngine",
+      "status": "VALID",
+      "unit": "kg",
+      "value": 8.264
+    },
+    "payload_mass_kg": {
+      "field_name": "payload_mass_kg",
+      "notes": null,
+      "provenance": "PROJECT_REQUIREMENT",
+      "reason": null,
+      "source_module": "UserRequirements",
+      "status": "VALID",
+      "unit": "kg",
+      "value": 1.5
+    },
+    "static_margin_pct": {
+      "field_name": "static_margin_pct",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLStabilityEngine",
+      "status": "VALID",
+      "unit": "%",
+      "value": 7.27
+    },
+    "transition_speed_mps": {
+      "field_name": "transition_speed_mps",
+      "notes": null,
+      "provenance": "CALCULATED",
+      "reason": null,
+      "source_module": "VTOLTransitionEngine",
+      "status": "VALID",
+      "unit": "m/s",
+      "value": 18.6
+    }
+  },
+  "requirement_traceability": [
+    {
+      "design_value": 1.5,
+      "limit": "MIN",
+      "margin": 0.0,
+      "notes": null,
+      "provenance": "PROJECT_REQUIREMENT",
+      "required_value": 1.5,
+      "requirement": "Payload Mass",
+      "source_module": "VTOLPayloadEngine",
+      "status": "PASS",
+      "unit": "kg"
+    },
+    {
+      "design_value": 217.0,
+      "limit": "MIN",
+      "margin": 187.0,
+      "notes": null,
+      "provenance": "DERIVED",
+      "required_value": 30.0,
+      "requirement": "Cruise Endurance",
+      "source_module": "VTOLCruiseEngine",
+      "status": "PASS",
+      "unit": "min"
+    },
+    {
+      "design_value": 361.62,
+      "limit": "MIN",
+      "margin": 321.62,
+      "notes": null,
+      "provenance": "DERIVED",
+      "required_value": 40.0,
+      "requirement": "Range",
+      "source_module": "VTOLCruiseEngine",
+      "status": "PASS",
+      "unit": "km"
+    },
+    {
+      "design_value": 5.0,
+      "limit": "MIN",
+      "margin": 0.0,
+      "notes": null,
+      "provenance": "PROJECT_REQUIREMENT",
+      "required_value": 5.0,
+      "requirement": "Hover Duration",
+      "source_module": "VTOLHoverEngine",
+      "status": "PASS",
+      "unit": "min"
+    }
+  ],
+  "simulation_handover": {
+    "aerodynamics_polar": {
+      "cd0": 0.032,
+      "cl_cruise": 0.48,
+      "cl_max": 1.4,
+      "k_induced": 0.042,
+      "ld_cruise": 11.2
+    },
+    "battery_mass_kg": 2.45,
+    "cg_m": [
+      0.515,
+      0.0,
+      0.0
+    ],
+    "control_derivatives": {
+      "c_l_delta_a": 0.3495,
+      "c_m_delta_e": -1.1034,
+      "c_n_delta_r": -0.0883
+    },
+    "control_limits_deg": {
+      "aileron_max_deg": 20.0,
+      "ruddervator_max_deg": 25.0
+    },
+    "empty_mass_kg": 4.959,
+    "inertia": {
+      "ixx_kg_m2": null,
+      "ixz_kg_m2": null,
+      "iyy_kg_m2": null,
+      "izz_kg_m2": null,
+      "reason": "Detailed solid-body inertia tensor deferred to 3D CAD mass properties compilation.",
+      "status": "DEFERRED"
+    },
+    "mtow_kg": 8.264,
+    "payload_mass_kg": 1.5,
+    "propulsion_parameters": {
+      "cruise_motor": "Sunnysky X4120 550KV",
+      "cruise_propeller": "APC 15x8E",
+      "hover_power_w": 1100.0,
+      "hover_thrust_required_n": 121.5632,
+      "lift_motors": "T-Motor MN5008 KV340",
+      "lift_propellers": "T-Motor 18x6.1 Carbon"
+    },
+    "stability_derivatives": {
+      "c_l_beta": -0.0524,
+      "c_m_alpha": -0.3761,
+      "c_n_beta": 0.1093
+    },
+    "status": "VALID",
+    "trim_conditions": {
+      "cruise_speed_mps": 27.7778,
+      "trim_alpha_deg": 2.4,
+      "trim_elevator_deg": -1.2
+    }
+  },
+  "stability": {
+    "c_l_beta_per_rad": -0.0524,
+    "c_m_alpha_per_rad": -0.3761,
+    "c_n_beta_per_rad": 0.1093,
+    "is_directionally_stable": true,
+    "is_laterally_stable": true,
+    "is_longitudinally_stable": true,
+    "neutral_point_mac_pct": 49.23,
+    "neutral_point_x_m": 0.5332,
+    "reason": null,
+    "static_margin_m": 0.0108,
+    "static_margin_mac_pct": 7.27,
+    "status": "VALID"
+  },
+  "technical_requirements": {
+    "cruise_speed_kmh": 100.0,
+    "hover_duration_min": 5.0,
+    "landing_type": "VERTICAL",
+    "payload_weight_kg": 1.5,
+    "takeoff_type": "VERTICAL",
+    "target_flight_time_min": 217.0,
+    "target_range_km": 361.62
+  },
+  "transition": {
+    "forward_thrust_requirement_n": 16.0,
+    "reason": null,
+    "reverse_abort_thrust_available": true,
+    "safe_transition_speed_mps": 18.6,
+    "stall_speed_mps": 15.5,
+    "status": "VALID",
+    "transition_corridor_valid": true,
+    "transition_duration_s": 18.0,
+    "transition_energy_wh": 24.5,
+    "vertical_thrust_requirement_n": 103.3287
+  },
+  "validation_status": {
+    "commercial_component_verified": true,
+    "design_validated": true,
+    "flight_status_note": "DESIGN, BENCH, AND GROUND COMMISSIONED ONLY. FLIGHT TEST ENVELOPE NOT ESTABLISHED.",
+    "flight_validated": false,
+    "physical_ground_validated": true,
+    "status": "PHYSICAL_GROUND_VALIDATED"
+  }
+}

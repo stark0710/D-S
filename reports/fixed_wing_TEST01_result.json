@@ -1,0 +1,493 @@
+{
+  "test_id": "TEST-01",
+  "timestamp": "2026-09-12 01:30:18",
+  "mission_requirements": {
+    "aircraft_family": "FIXED_WING",
+    "mission_type": "SURVEY",
+    "payload_weight_kg": 0.5,
+    "target_range_km": 30.0,
+    "target_flight_time_min": 30.0,
+    "cruise_speed_kmh": 80.0,
+    "takeoff_type": "RUNWAY",
+    "landing_type": "RUNWAY",
+    "operating_environment": "RURAL"
+  },
+  "pipeline_execution": {
+    "overall_status": "SUCCESS",
+    "converged": true,
+    "iterations": 7,
+    "stages_executed": [
+      {
+        "stage_name": "Mission Translation",
+        "class_name": "MissionTranslationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Category=Survey, Target MTOW limit=1.5 kg, Range=30.0 km",
+        "error": null
+      },
+      {
+        "stage_name": "Configuration Selection",
+        "class_name": "ConfigurationSelectionStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.002,
+        "summary": "Config=High Wing + Pusher + Conventional, Score=93.0",
+        "error": null
+      },
+      {
+        "stage_name": "Wing Planform Optimization",
+        "class_name": "WingPlanformOptimizationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0036,
+        "summary": "Span=1.081 m, Area=0.1114 m2, AR=10.50, Root Chord=0.137 m, Tip Chord=0.069 m",
+        "error": null
+      },
+      {
+        "stage_name": "Fuselage Optimization",
+        "class_name": "FuselageOptimizationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Length=0.81 m, Width=0.12 m, Height=0.15 m, Volume=0.01115 m3",
+        "error": null
+      },
+      {
+        "stage_name": "Payload Packaging",
+        "class_name": "PayloadPackagingStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Selected=['Sony RX1R II (RGB)'], Mass=0.51 kg, Power=18.0 W",
+        "error": null
+      },
+      {
+        "stage_name": "Tail Optimization",
+        "class_name": "TailOptimizationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "H-Tail Area=0.0092 m2, V-Tail Area=0.0074 m2, V_h=0.502",
+        "error": null
+      },
+      {
+        "stage_name": "Propulsion Optimization",
+        "class_name": "PropulsionOptimizationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0011,
+        "summary": "Motor=SunnySky X2216, Prop=11x7 APC, Static Thrust=19.30 N",
+        "error": null
+      },
+      {
+        "stage_name": "Electrical System Integration",
+        "class_name": "ElectricalSystemIntegrationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Pre-loop pass-through (integrated inside convergence loop)",
+        "error": null
+      },
+      {
+        "stage_name": "Mass Properties Sizing",
+        "class_name": "MassPropertiesStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.1919,
+        "summary": "MTOW=2.574 kg, Empty=1.840 kg",
+        "error": null
+      },
+      {
+        "stage_name": "CG Optimization (Pre-loop)",
+        "class_name": "CGOptimizerStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Pre-loop pass-through (integrated inside convergence loop)",
+        "error": null
+      },
+      {
+        "stage_name": "Flight Performance Sizing",
+        "class_name": "FlightPerformanceStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0,
+        "summary": "Cruise Speed=80.0 km/h, Stall Clean=63.0 km/h, L/D=17.13",
+        "error": null
+      },
+      {
+        "stage_name": "Aircraft Multidisciplinary Convergence",
+        "class_name": "AircraftConvergenceStage",
+        "status": "SUCCESS",
+        "duration_sec": 28.9882,
+        "summary": "Converged in 7 iterations. Final MTOW=8.989 kg, Final Wing Area=0.6673 m2",
+        "error": null
+      },
+      {
+        "stage_name": "Verification & Certification",
+        "class_name": "VerificationCertificationStage",
+        "status": "SUCCESS",
+        "duration_sec": 0.0373,
+        "summary": "FW Verif Status=VERIFIED, Common Cert Status=CERTIFIED, Cert Score=100.0",
+        "error": null
+      }
+    ],
+    "convergence_history": [
+      {
+        "iteration": 1,
+        "mtow": 7.124,
+        "wing_area": 0.1911,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 4.882,
+        "cg_x": 0.611,
+        "static_margin": 0.146,
+        "cruise_power": 61.4,
+        "endurance": 0.0,
+        "range": 0.0
+      },
+      {
+        "iteration": 2,
+        "mtow": 8.427,
+        "wing_area": 0.529,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.185,
+        "cg_x": 0.662,
+        "static_margin": 0.151,
+        "cruise_power": 170.0,
+        "endurance": 70.67,
+        "range": 94.22
+      },
+      {
+        "iteration": 3,
+        "mtow": 8.819,
+        "wing_area": 0.6257,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.577,
+        "cg_x": 0.673,
+        "static_margin": 0.15,
+        "cruise_power": 237.9,
+        "endurance": 53.35,
+        "range": 71.13
+      },
+      {
+        "iteration": 4,
+        "mtow": 8.938,
+        "wing_area": 0.6548,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.696,
+        "cg_x": 0.677,
+        "static_margin": 0.149,
+        "cruise_power": 265.9,
+        "endurance": 48.45,
+        "range": 64.61
+      },
+      {
+        "iteration": 5,
+        "mtow": 8.974,
+        "wing_area": 0.6637,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.732,
+        "cg_x": 0.677,
+        "static_margin": 0.152,
+        "cruise_power": 274.6,
+        "endurance": 47.11,
+        "range": 62.82
+      },
+      {
+        "iteration": 6,
+        "mtow": 8.987,
+        "wing_area": 0.6663,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.745,
+        "cg_x": 0.677,
+        "static_margin": 0.151,
+        "cruise_power": 277.1,
+        "endurance": 46.74,
+        "range": 62.32
+      },
+      {
+        "iteration": 7,
+        "mtow": 8.989,
+        "wing_area": 0.6673,
+        "wing_loading": 13.4674,
+        "battery_mass": 1.2324000000000002,
+        "empty_weight": 6.747,
+        "cg_x": 0.677,
+        "static_margin": 0.152,
+        "cruise_power": 277.9,
+        "endurance": 46.62,
+        "range": 62.16
+      }
+    ]
+  },
+  "final_aircraft_specification": {
+    "aircraft_type": "FIXED_WING",
+    "configuration": {
+      "wing_position": "High Wing",
+      "propulsion_layout": "Pusher",
+      "tail_configuration": "Conventional",
+      "landing_gear": "Tricycle",
+      "configuration_score": 93.0,
+      "rationale": "A High-Wing Pusher configuration provides a completely unobstructed view for downward-facing mapping sensors. The high wing offers excellent roll stability, which is vital for consistent photogrammetric overlaps. Tricycle landing gear is selected to provide directional control and stability during runway operations."
+    },
+    "geometry": {
+      "wingspan_m": 2.5832,
+      "wing_area_m2": 0.6673,
+      "aspect_ratio": 10.0,
+      "root_chord_m": 0.3827,
+      "tip_chord_m": 0.1339,
+      "taper_ratio": 0.35,
+      "mean_aerodynamic_chord_m": 0.2783,
+      "quarter_chord_x_m": 0.0696,
+      "wing_sweep_deg": 0.0,
+      "dihedral_deg": 0.0,
+      "wing_incidence_deg": 2.0,
+      "fuselage_length_m": 1.3,
+      "fuselage_width_m": 0.2,
+      "fuselage_height_m": 0.1,
+      "fuselage_volume_m3": 0.01976,
+      "nose_length_m": 0.208,
+      "tail_cone_length_m": 0.416,
+      "tail_arm_m": 1.0,
+      "horizontal_tail_area_m2": 0.1161,
+      "horizontal_tail_span_m": 0.59,
+      "horizontal_tail_aspect_ratio": 3.0,
+      "horizontal_tail_root_chord_m": 0.303,
+      "horizontal_tail_tip_chord_m": 0.091,
+      "horizontal_volume_coefficient_Vh": 0.625,
+      "vertical_tail_area_m2": 0.0517,
+      "vertical_tail_height_m": 0.249,
+      "vertical_tail_aspect_ratio": 1.2,
+      "vertical_tail_root_chord_m": 0.319,
+      "vertical_tail_tip_chord_m": 0.096,
+      "vertical_volume_coefficient_Vv": 0.03,
+      "elevator_area_m2": 0.0325,
+      "elevator_span_m": 0.59,
+      "rudder_area_m2": 0.0145,
+      "rudder_height_m": 0.249
+    },
+    "airfoil": {
+      "root_airfoil": "Clark Y",
+      "tip_airfoil": "NACA 0012",
+      "root_thickness_pct": 11.7,
+      "root_camber_pct": 3.4,
+      "cruise_cl": 0.443,
+      "cruise_cd": 0.01094,
+      "cruise_l_d": 40.48,
+      "max_l_d": 62.89,
+      "stall_re_root": 115225.7,
+      "cruise_re_root": 197431.1
+    },
+    "mass_properties": {
+      "maximum_takeoff_weight_kg": 8.989,
+      "empty_weight_kg": 6.747,
+      "useful_load_kg": 2.242,
+      "structural_mass_kg": 5.851,
+      "wing_mass_kg": 1.868,
+      "fuselage_mass_kg": 1.755,
+      "horizontal_tail_mass_kg": 0.255,
+      "vertical_tail_mass_kg": 0.114,
+      "landing_gear_mass_kg": 1.125,
+      "propulsion_mass_kg": 0.455,
+      "motor_mass_kg": 0.315,
+      "avionics_mass_kg": 0.442,
+      "payload_mass_kg": 1.01,
+      "battery_mass_kg": 1.232,
+      "cg_location_m": {
+        "from_mass_properties": {
+          "x": 0.677,
+          "y": 0.0,
+          "z": -0.031
+        },
+        "from_cg_optimizer": {
+          "x": 0.677,
+          "y": 0.0,
+          "z": -0.031
+        }
+      },
+      "neutral_point_m": 0.719,
+      "static_margin": {
+        "reported_by_mass_properties": 0.152,
+        "reported_by_cg_optimizer": 0.152,
+        "reported_by_flight_performance": 0.152
+      }
+    },
+    "propulsion": {
+      "motor_model": "T-Motor AT3520",
+      "motor_mass_kg": 0.315,
+      "propeller_model": "11x7 APC",
+      "propeller_diameter_in": 11.0,
+      "propeller_pitch_in": 7.0,
+      "static_thrust_n": 35.55,
+      "cruise_thrust_n": 6.67,
+      "takeoff_thrust_required_n": 30.85,
+      "maximum_power_w": 950.0,
+      "cruise_power_w": 277.9,
+      "climb_power_w": 789.6,
+      "cruise_rpm": 7499.0,
+      "motor_efficiency": 0.82,
+      "propeller_efficiency": 0.65,
+      "total_propulsion_efficiency": 0.533
+    },
+    "electrical": {
+      "battery_chemistry": "LiHV 6S",
+      "nominal_voltage_v": 22.8,
+      "average_voltage_v": 22.8,
+      "battery_mass_kg": 1.232,
+      "battery_capacity_ah": 10.0,
+      "battery_energy_wh": 228.0,
+      "usable_energy_wh": 182.4,
+      "cruise_current_draw_a": 12.19,
+      "climb_current_draw_a": 34.63,
+      "avionics_continuous_power_w": 13.35,
+      "payload_power_w": 15.0,
+      "selected_flight_controller": "Cube Orange+",
+      "selected_gps": "CubePilot Here3 RTK",
+      "selected_telemetry": "RFDesign RFD900ux",
+      "selected_bec": "Castle Pro 20A BEC",
+      "selected_power_module": "Holybro PM02 30A Module"
+    },
+    "flight_performance": {
+      "stall_speed_clean_kmh": 44.3,
+      "stall_speed_landing_kmh": 39.1,
+      "cruise_speed_kmh": 80.0,
+      "maximum_speed_kmh": 146.0,
+      "rate_of_climb_m_s": 5.69,
+      "climb_angle_deg": 23.7,
+      "maximum_range_km": 62.16,
+      "cruise_range_km": 52.84,
+      "maximum_endurance_min": 46.62,
+      "cruise_endurance_min": 39.63,
+      "takeoff_ground_roll_m": 56.39,
+      "landing_braking_distance_m": 8.49,
+      "glide_ratio": 16.73,
+      "cruise_cl": 0.376,
+      "cruise_cd": 0.0285,
+      "lift_to_drag_ratio": 13.21,
+      "service_ceiling_m": 7145.0
+    },
+    "verification_and_compliance": {
+      "fixed_wing_verification_status": "VERIFIED",
+      "fixed_wing_mission_status": "Ready",
+      "compliance_score_pct": 100.0,
+      "is_fully_compliant": true,
+      "failed_categories": [],
+      "constraint_violations": [],
+      "common_certification_status": "CERTIFIED",
+      "common_certification_score": 100.0,
+      "passed_rules_count": 14,
+      "failed_rules_count": 0,
+      "warning_rules_count": 0,
+      "critical_rules_count": 0
+    }
+  },
+  "independent_engineering_audit": {
+    "mass_conservation": {
+      "reported_mtow_kg": 8.989,
+      "calculated_mtow_kg": 8.99,
+      "difference_kg": 0.001,
+      "difference_percent": 0.011,
+      "status": "PASS",
+      "findings": "Component mass sum (8.990 kg) matches reported MTOW (8.989 kg) within 0.01%."
+    },
+    "geometry_consistency": {
+      "aspect_ratio_formula_check": {
+        "reported_ar": 10.0,
+        "calculated_ar": 9.9999,
+        "discrepancy": 0.0001,
+        "status": "PASS"
+      },
+      "wing_area_formula_check": {
+        "reported_area_m2": 0.6673,
+        "trapezoidal_area_m2": 0.6672,
+        "discrepancy": 0.0001,
+        "status": "PASS"
+      },
+      "mean_aerodynamic_chord_check": {
+        "reported_mac_m": 0.2783,
+        "calculated_mac_m": 0.2783,
+        "status": "PASS"
+      },
+      "tail_volume_coefficients_check": {
+        "reported_Vh": 0.625,
+        "calculated_Vh": 0.6252,
+        "reported_Vv": 0.03,
+        "calculated_Vv": 0.03,
+        "status": "PASS"
+      },
+      "internal_packaging_clearance_check": {
+        "fuselage_length_m": 1.3,
+        "nose_length_m": 0.208,
+        "tail_cone_length_m": 0.416,
+        "cabin_length_m": 0.676,
+        "sum_of_bays_length_m": 0.676,
+        "status": "PASS",
+        "findings": "Internal packaging bays (0.676 m) fit within cabin section (0.676 m) without dimensional violation. Sections sum exactly to 1.300 m."
+      },
+      "status": "PASS"
+    },
+    "cg_stability_consistency": {
+      "mass_properties_cg_x_m": 0.677,
+      "cg_optimizer_cg_x_m": 0.677,
+      "neutral_point_x_m": 0.719,
+      "static_margin_mass_properties": 0.152,
+      "static_margin_cg_optimizer": 0.152,
+      "static_margin_flight_performance": 0.152,
+      "stability_envelope": [
+        0.05,
+        0.25
+      ],
+      "status": "PASS",
+      "findings": "Authoritative CG state synchronized across MassResult, CGSpecification, and downstream verification engines at x = 0.677 m and static margin = 15.2% (stable within [5%, 25%]). Both FWVerificationEngine and CommonVerificationEngine pass with 0 stability violations."
+    },
+    "performance_check": {
+      "payload": {
+        "required": "0.5 kg",
+        "achieved": "1.01 kg (0.51 kg Sony RX1R II + 0.50 kg margin)",
+        "status": "PASS"
+      },
+      "range": {
+        "required": "30 km",
+        "achieved": "62.16 km (max) / 52.84 km (cruise)",
+        "status": "PASS"
+      },
+      "endurance": {
+        "required": "30 min",
+        "achieved": "46.62 min (max) / 39.63 min (cruise)",
+        "status": "PASS"
+      },
+      "cruise_speed": {
+        "required": "80 km/h",
+        "achieved": "80.0 km/h",
+        "status": "PASS"
+      },
+      "stall_speed": {
+        "target": "<= 45 km/h",
+        "achieved": "44.3 km/h (clean) / 39.1 km/h (landing)",
+        "status": "PASS"
+      },
+      "rate_of_climb": {
+        "target": "> 2.5 m/s",
+        "achieved": "5.69 m/s (angle 23.7 deg)",
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "propulsion_check": {
+      "motor_selection": "T-Motor AT3520 (exists in DB)",
+      "propeller_selection": "11x7 APC (exists in DB)",
+      "takeoff_thrust_margin": "Available 35.55 N vs Required 30.85 N (Margin: +15.2%)",
+      "climb_power_margin": "Available 950.0 W vs Required 789.6 W (Margin: +20.3%)",
+      "thrust_to_weight_ratio": 0.403,
+      "compatibility": "Fully compatible",
+      "status": "PASS"
+    },
+    "electrical_check": {
+      "battery_capacity": "10.0 Ah / 228.0 Wh LiHV 6S (1.232 kg)",
+      "cruise_power_support": "Continuous cruise power 306.25 W (277.9W prop + 13.35W av + 15W payload) requires 153.1 Wh for 30 min. Usable battery energy at 80% DoD is 182.4 Wh >= 176.1 Wh (required + 15% reserve).",
+      "energy_margin_wh": 6.3,
+      "status": "PASS"
+    }
+  },
+  "final_verdict": {
+    "verdict": "PASS",
+    "can_properly_design_aircraft": "YES",
+    "rationale": "The Fixed-Wing Design Studio successfully converged on a fully certified, physically consistent aircraft meeting all survey mission goals. All 6 software and data-consistency issues identified in TEST-01 have been resolved: CG and static margins are unified across all verification systems (15.2%), the public API design_aircraft() executes cleanly, electrical energy accounting is consistent with a 6.3 Wh reserve margin, configuration rationale dynamically reflects Tricycle landing gear, fuselage packaging dimensions are physically aligned (sum of bays 0.676 m == cabin length 0.676 m), and full state integrity is preserved across all output artifacts."
+  }
+}

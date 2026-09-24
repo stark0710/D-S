@@ -1,0 +1,19 @@
+{
+  "aircraft_class": "VTOL",
+  "mission": {
+    "mission_type": "SURVEY",
+    "range_km": 40.0,
+    "endurance_min": 30.0,
+    "cruise_speed_kmh": 90.0,
+    "hover_duration_min": 5.0,
+    "cruise_altitude_m": 150.0
+  },
+  "payload": {
+    "mass_kg": 1.5
+  },
+  "lift_motor_count": 4,
+  "transition_speed_kmh": 65.0,
+  "environment": "RURAL",
+  "takeoff_type": "VERTICAL",
+  "landing_type": "VERTICAL"
+}
